@@ -1,5 +1,6 @@
 from time import sleep
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 
 # op = webdriver.ChromeOptions()
@@ -7,8 +8,12 @@ from selenium.webdriver.common.keys import Keys
 # driver = webdriver.Remote(options=op)
 
 def entertainmentSection():
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
+
+    # driver = webdriver.Chrome()
+    # driver.maximize_window()
     driver.get("https://empirenews.net/")
     sleep(3)
     result = driver.find_elements_by_xpath('//*[@class="suppaMenu"]')
