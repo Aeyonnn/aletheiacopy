@@ -17,27 +17,28 @@ for item in result:
         # Entertainment Section
         try:
             link = item.find_element_by_link_text('Entertainment').click()
-            sleep(3)
-            # scan = driver.find_element_by_link_text(' Older posts')
-            # print(scan)
-            # while scan:
-            try:
-                content = driver.find_elements_by_xpath('//*[@class="entry-header"]')
-                for data in content:
-                    headline = data.find_element_by_class_name('entry-title').get_attribute('innerText')
-                    print(headline)
+            sleep(5)
+            scan = driver.find_element_by_partial_link_text(' Older posts')
+            sleep(5)
+            print('scan')
+            while scan:
+                try:
+                    content = driver.find_elements_by_xpath('//*[@class="entry-header"]')
+                    for data in content:
+                        headline = data.find_element_by_class_name('entry-title').get_attribute('innerText')
+                        print(headline)
 
-                content = driver.find_elements_by_xpath('//*[@class="entry-content"]')
-                for data in content:
-                    paragraph = data.find_elements_by_tag_name('p')
-                    for body in paragraph[2:]:
-                        print(body.text)
-                    print('\n')
-                scan = driver.find_element_by_partial_link_text('Older').click()
-                sleep(3)
+                    content = driver.find_elements_by_xpath('//*[@class="entry-content"]')
+                    for data in content:
+                        paragraph = data.find_elements_by_tag_name('p')
+                        for body in paragraph[2:]:
+                            print(body.text)
+                        print('\n')
+                    scan = driver.find_element_by_partial_link_text(' Older posts').click()
+                    sleep(5)
 
-            except:
-                print('error1')
+                except:
+                    print('error1')
 
 
         except:
