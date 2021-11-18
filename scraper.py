@@ -1,7 +1,7 @@
 from time import sleep
 from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.common.keys import Keys
 
 # op = webdriver.ChromeOptions()
 # op.add_argument('headless')
