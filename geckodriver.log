@@ -359,31 +359,14 @@ JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adMa
 JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
 JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
 JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
- Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x230030,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1637411417614	geckodriver	INFO	Listening on 127.0.0.1:61169
-1637411420647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilebn5hGp"
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+ofile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilebn5hGp"
 1637411421358	Marionette	INFO	Marionette enabled
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilebn5hGp\\search.json.mozlz4", (void 0)))
 1637411424908	Marionette	INFO	Listening on port 61181
@@ -1830,3 +1813,20 @@ JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adMa
 JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
 JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
 JavaScript warning: https://pagead2.googlesyndication.com/bg/lK7Pd7B-H_9yBaI_NSshU4OXimYezFu1HmFuNXULOe8.js line 1 > eval line 6397 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
