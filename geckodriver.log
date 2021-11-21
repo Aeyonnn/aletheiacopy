@@ -2544,3 +2544,781 @@ JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parent
 JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
 JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
 JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5756 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1637474163296	geckodriver	INFO	Listening on 127.0.0.1:54852
+1637474166361	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileqtddEV"
+1637474167385	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileqtddEV\\search.json.mozlz4", (void 0)))
+1637474172190	Marionette	INFO	Listening on port 54864
+1637474172486	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 1517 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 6626 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 3834 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 7788 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5144 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 7375 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 4656 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 217 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 1426 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 1211 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 3925 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 7772 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5185 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 1961 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5837 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 3438 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 4304 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 6039 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5274 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 4633 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 5488 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/CRtE2hXI-Oo2CzbqEvynNThBTGvKRH_6so9ly1Scye0.js line 1 > eval line 3467 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://cdn.js7k.com/ix/talon-1.0.37.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1637483283789	Marionette	INFO	Stopped listening on port 54864
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1637486163334	geckodriver	INFO	Listening on 127.0.0.1:59011
+1637486166374	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileTtGN8R"
+1637486166821	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileTtGN8R\\search.json.mozlz4", (void 0)))
+1637486169051	Marionette	INFO	Listening on port 59022
+1637486169570	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4515 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5796 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 123 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4208 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2987 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 581 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 6111 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7384 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3173 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7558 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3170 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7756 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 32 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1785 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5388 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1559 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4331 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1079 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4059 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5851 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1637487173696	geckodriver	INFO	Listening on 127.0.0.1:61949
+1637487176749	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofile2nD4Ww"
+1637487177214	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofile2nD4Ww\\search.json.mozlz4", (void 0)))
+1637487179542	Marionette	INFO	Listening on port 61960
+1637487179932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4306 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4970 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 703 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5892 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4011 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4619 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4692 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5424 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://x.kinja-static.com/assets/new-client/permalinkPage.b312ab116e1c6abb1ddc.js, line 7: Error: /api/profile/blogs?ids=17&ids=12&ids=1636140418
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1530 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://x.kinja-static.com/assets/new-client/permalinkPage.b312ab116e1c6abb1ddc.js, line 7: Error: /api/core/corepost/getList?id=1848083265&id=1848083781&id=1846739681
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4605 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 87 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3000 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4349 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://x.kinja-static.com/assets/new-client/permalinkPage.b312ab116e1c6abb1ddc.js, line 7: Error: /api/core/corepost/getList?id=1843312469&id=1847605645&id=1846239706&id=1848090682&id=1848079990&id=1848077171&id=1848083868&id=1846239814&id=1846399091&id=1848036380&id=1846207633&id=1847992412
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5627 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5300 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7269 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 286 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4588 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2290 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3304 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 880 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2253 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1310 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2956 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+[Child 25028, MediaDecoderStateMachine #2] WARNING: 24a00d36820 Could not set cubeb stream name.: file /builds/worker/checkouts/gecko/dom/media/AudioStream.cpp:367
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+1637488348246	Marionette	INFO	Stopped listening on port 61960
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileLQoM8w\\search.json.mozlz4", (void 0)))
+1637488346842	Marionette	INFO	Listening on port 49476
+1637488347009	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 733 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://x.kinja-static.com/assets/new-client/runtime~curatedHomepage.ef87b42aaab94f4fa3e6.js, line 1: ChunkLoadError: Loading chunk 5 failed.
+(error: https://x.kinja-static.com/assets/new-client/5.4b70f3c7c5a220c77f7d.js)
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2786 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 6536 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 6631 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+1637488792666	Marionette	INFO	Stopped listening on port 49476
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 5652, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4271 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 6747 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2985 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+1637488791828	Marionette	INFO	Stopped listening on port 50116
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resconsole.
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileIU1vc6\\search.json.mozlz4", (void 0)))
+1637488793193	Marionette	INFO	Listening on port 50880
+1637488793618	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3240 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4311 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2223 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2893 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+1637489250590	Marionette	INFO	Stopped listening on port 50880
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 24580, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parenconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilebKDvHV\\search.json.mozlz4", (void 0)))
+1637489252571	Marionette	INFO	Listening on port 52360
+1637489252612	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1331 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3488 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3704 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 806 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1499 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5614 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1637489380823	geckodriver	INFO	Listening on 127.0.0.1:52794
+1637489383838	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofile7WqPVr"
+1637489384304	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofile7WqPVr\\search.json.mozlz4", (void 0)))
+1637489386872	Marionette	INFO	Listening on port 52982
+1637489387027	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637489412371	geckodriver	INFO	Listening on 127.0.0.1:53273
+1637489415410	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileEQguq6"
+1637489415864	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileEQguq6\\search.json.mozlz4", (void 0)))
+1637489418550	Marionette	INFO	Listening on port 53285
+1637489418610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2980 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1547 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2847 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1700 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2589 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7578 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4503 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5616 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5079 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://x.kinja-static.com/assets/new-client/permalinkPage.b312ab116e1c6abb1ddc.js, line 7: Error: /api/core/corepost/getList?id=1848093303&id=1848092390&id=1848042850&id=1848090682&id=1848078888&id=1848070124&id=1848090139&id=1848079990&id=1848084874&id=1848089644
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://www.theonion.com/x-kinja-static/assets/new-client/adManager.69998a1d2ab14446475f.js, line 7: TypeError: a is undefined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5708 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3857 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 7466 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3916 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 6834 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 680 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 1775 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 4668 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 5306 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 3014 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IDpL2rJiZrNY3rYqo4eIGDY6phXtx-GzYRENHMIWWlE.js line 1 > eval line 2936 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+JavaScript error: https://script-api.kinja.com/script?id=www.theonion.com&parentId=968ce6abb2, line 83: TypeError: document.body is null
+1637489728250	Marionette	INFO	Stopped listening on port 53285
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

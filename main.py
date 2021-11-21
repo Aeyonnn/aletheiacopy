@@ -1,3 +1,3 @@
-from scraper import politicsSection
+import scraper
 
-politicsSection()
+scraper.politicsSection()
