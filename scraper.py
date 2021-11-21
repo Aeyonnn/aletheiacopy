@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.options import Options
 # op = webdriver.ChromeOptions()
 # op.add_argument('headless')
 # driver = webdriver.Remote(options=op)
-
+link = []
 def politicsSection():
     # options = Options()
     # options.headless = True
@@ -25,11 +25,13 @@ def politicsSection():
             sleep(2)
             driver.find_element_by_partial_link_text('News In Brief').click()
             sleep(3)
-
-            list = driver.find_elements_by_xpath('//*[@class="cw4lnv-5 aoiLP"]')
-            for news in list:
-                print(news)
-                news.find_element_by_xpath('//*[@class="sc-759qgu-0 iRbzKE cw4lnv-6 pdtMb"]').click()
+            list = driver.find_elements_by_xpath('//*[@class="cw4lnv-0 iTueKC js_post_item"]')
+            print(len(list))
+            for extract in list:
+                link.append(extract.find_element_by_xpath('.//a[contains(@class, "sc-1out364-0 hMndXN js_link")]').get_attribute('href'))
+                print(extract.find_element_by_xpath('.//a[contains(@class, "sc-1out364-0 hMndXN js_link")]').get_attribute('href'))
+            for news in link:
+                driver.get(news)
                 sleep(3)
                 title = driver.find_element_by_xpath('//*[@class="sc-1efpnfq-0 bBLibw"]').get_attribute('textContent')
                 print(title)
@@ -41,24 +43,7 @@ def politicsSection():
                 loc+=1
                 nstring[loc:]
                 print(nstring[loc:])
-
-                # Go back to news list
-                driver.back()
                 sleep(3)
-            # while scan:
-            #     content = driver.find_elements_by_xpath('//*[@class="entry-header"]')
-            #     for data in content:
-            #         headline = data.find_element_by_class_name('entry-title').get_attribute('innerText')
-            #         print(headline)
-            #     content = driver.find_elements_by_xpath('//*[@class="entry-content"]')
-            #     for data in content:
-            #         paragraph = data.find_elements_by_tag_name('p')
-            #         for body in paragraph[2:]:
-            #             print(body.text)
-            #         print('\n')
-            #     sleep(5)
-            #     driver.find_element_by_partial_link_text(' Older posts').click()
-            #     sleep(5)
         except:
             print('error1')
 
