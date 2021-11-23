@@ -325,3 +325,6 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1637672632675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1637672677680	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 1637672759228	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1637672766944	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
