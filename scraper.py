@@ -41,12 +41,16 @@ def politicsSection():
                     title = driver.find_element_by_xpath('//*[@class="sc-1efpnfq-0 bBLibw"]').get_attribute('textContent')
                     print(title)
                     # Extract news and clean data
-                    paragraph = driver.find_element_by_xpath('//*[@class="sc-77igqf-0 bOfvBY"]')
-                    nstring = paragraph.text
-                    loc = nstring.find('—')
-                    loc+=1
-                    nstring[loc:]
-                    print(nstring[loc:])
+                    try:
+                        paragraph = driver.find_element_by_xpath('//*[@class="sc-77igqf-0 bOfvBY"]')
+                        nstring = paragraph.text
+                        loc = nstring.find('—')
+                        loc+=1
+                        nstring[loc:]
+                        print(nstring[loc:])
+                    except:
+                        print('No News Data Detected')
+
                     print('\n')
                     sleep(2)
                 driver.get(link[0])
