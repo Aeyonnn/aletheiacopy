@@ -1,3 +1,3 @@
-from scraper import technologySection
+import scraper
 
-technologySection()
+scraper.technologySection()
