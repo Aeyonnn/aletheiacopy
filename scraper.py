@@ -3,12 +3,12 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 
 def technologySection():
-    # options = Options()
-    # options.headless = True
-    # driver = webdriver.Firefox(options=options)
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
 
-    driver = webdriver.Firefox()
-    driver.maximize_window()
+    # driver = webdriver.Firefox()
+    # driver.maximize_window()
     driver.get("https://mindanation.com/")
     sleep(2)
 
