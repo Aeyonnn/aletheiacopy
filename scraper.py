@@ -1,19 +1,15 @@
 from time import sleep
 from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.firefox.options import Options
 
-# op = webdriver.ChromeOptions()
-# op.add_argument('headless')
-# driver = webdriver.Remote(options=op)
 
 def politicsSection():
-    # options = Options()
-    # options.headless = True
-    # driver = webdriver.Firefox(options=options)
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
 
-    driver = webdriver.Firefox()
-    driver.maximize_window()
+    # driver = webdriver.Firefox()
+    # driver.maximize_window()
     driver.get("https://www.theonion.com")
     sleep(3)
     result = driver.find_elements_by_xpath('//*[@class="dfwuc8-1 cXXEfi"]')
