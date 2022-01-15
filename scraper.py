@@ -1,7 +1,5 @@
 from time import sleep
 from selenium import webdriver
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
 
 link_list = []
 limit = 100
