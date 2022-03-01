@@ -35,4 +35,4 @@ def randForest():
     # test = input('enter news')
     # test_f = [test]
     # result = model_rf.predict(test_f)
-    # print(result) hello there im new
+    # print(result)
