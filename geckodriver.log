@@ -1,0 +1,1050 @@
+1638792920899	geckodriver	INFO	Listening on 127.0.0.1:50307
+1638792923931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileJnqqtj"
+1638792924945	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileJnqqtj\\search.json.mozlz4", (void 0)))
+1638792929455	Marionette	INFO	Listening on port 50316
+1638792929966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3905 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6646 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 717 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6406 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3617 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3972 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1907 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2244 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1200: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 710 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1199: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4892 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/7/, line 1195: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 146 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/8/, line 1192: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6196 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/9/, line 1196: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1648 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/10/, line 1193: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3484 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/11/, line 1193: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6128 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/12/, line 1179: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3572 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/13/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7039 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638793125640	Marionette	INFO	Stopped listening on port 50316
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638793257477	geckodriver	INFO	Listening on 127.0.0.1:50724
+1638793260509	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileSM8BUR"
+1638793260984	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileSM8BUR\\search.json.mozlz4", (void 0)))
+1638793264593	Marionette	INFO	Listening on port 50734
+1638793264671	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6019 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4801 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5092 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20211103_RC00/outstream.min.js, line 640: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: 
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20211201_RC00/outstream.min.js, line 662: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: 
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5791 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap-responsive.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/custom.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Oswald without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/jcarousel.connected-carousels.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/jquery-mega-menu/css/dcjq-mega-menu.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans%7C&ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderengine.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.5.0 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/style.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/addthis-smart-layers/frontend/build/addthis_wordpress_public.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/suppa_frontend_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/uploads/suppamenu/suppa_custom_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/fontAwesome/style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/Hover-master/css/hover.css?ver=1.7.14 without a browsingContextID set
+1638793328284	Marionette	INFO	Stopped listening on port 50734
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 568, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.console.
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+the file at E:\\System\\TEMP\\rust_mozprofileF5lGXq\\search.json.mozlz4", (void 0)))
+1638793330730	Marionette	INFO	Listening on port 50930
+1638793330745	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4385 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3375 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6151 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7194 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 130 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638793376355	Marionette	INFO	Stopped listening on port 50930
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1638794091966	geckodriver	INFO	Listening on 127.0.0.1:62922
+1638794094988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilexIjpim"
+1638794095365	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilexIjpim\\search.json.mozlz4", (void 0)))
+1638794099289	Marionette	INFO	Listening on port 62931
+1638794099303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638794103090	Marionette	INFO	Stopped listening on port 62931
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1638794111162	geckodriver	INFO	Listening on 127.0.0.1:62988
+1638794114178	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilelblA7Q"
+1638794114638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilelblA7Q\\search.json.mozlz4", (void 0)))
+1638794118461	Marionette	INFO	Listening on port 62998
+1638794118996	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5775 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2918 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 151 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2756 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5392 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638794159093	Marionette	INFO	Stopped listening on port 62998
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 16960, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638794239463	geckodriver	INFO	Listening on 127.0.0.1:63219
+1638794242501	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileWkrZy6"
+1638794242863	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileWkrZy6\\search.json.mozlz4", (void 0)))
+1638794246443	Marionette	INFO	Listening on port 63228
+1638794246890	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3662 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5518 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3377 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3306 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap-responsive.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/custom.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Oswald without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/jcarousel.connected-carousels.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/jquery-mega-menu/css/dcjq-mega-menu.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans%7C&ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderengine.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.5.0 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/style.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/addthis-smart-layers/frontend/build/addthis_wordpress_public.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/suppa_frontend_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/uploads/suppamenu/suppa_custom_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/fontAwesome/style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/Hover-master/css/hover.css?ver=1.7.14 without a browsingContextID set
+1638794330490	Marionette	INFO	Stopped listening on port 63228
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638794471037	geckodriver	INFO	Listening on 127.0.0.1:63494
+1638794474087	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofile2clDCk"
+1638794474502	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile2clDCk\\search.json.mozlz4", (void 0)))
+1638794478522	Marionette	INFO	Listening on port 63503
+1638794479150	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2441 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1785 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2966 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7138 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+1638794509121	Marionette	INFO	Stopped listening on port 63503
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 8924, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638794533357	geckodriver	INFO	Listening on 127.0.0.1:63690
+1638794536390	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileXeOBms"
+1638794536745	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileXeOBms\\search.json.mozlz4", (void 0)))
+1638794540797	Marionette	INFO	Listening on port 63700
+1638794541224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5462 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7562 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 954 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5050 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5849 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1200: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3027 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1199: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4238 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638794797148	Marionette	INFO	Stopped listening on port 63700
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  Message: Error: Data is not ready.
+  Stack:
+    get data@resource://gre/modules/JSONFile.jsm:186:13
+getListeners@resource://gre/modules/PushBroadcastService.jsm:66:5
+observe@resource://gre/modules/AsyncShutdown.jsm:575:16
+
+[Parent 18492, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+is session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4054 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4890 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2933 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4876 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638794921086	Marionette	INFO	Stopped listening on port 50272
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+o-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileIWNAIU"
+1638794918837	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileIWNAIU\\search.json.mozlz4", (void 0)))
+1638794923002	Marionette	INFO	Listening on port 50474
+1638794923443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 361 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4951 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6599 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4846 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7073 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4999 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7384 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6188 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4462 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/bootstrap-responsive.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/custom.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Oswald without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/css/jcarousel.connected-carousels.css without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.3 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/jquery-mega-menu/css/dcjq-mega-menu.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request http://fonts.googleapis.com/css?family=Open+Sans%7C&ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wonderplugin-slider/engine/wonderpluginsliderengine.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.5.0 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/themes/empire-news/style.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/addthis-smart-layers/frontend/build/addthis_wordpress_public.min.css?ver=5.8.2 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/suppa_frontend_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/uploads/suppamenu/suppa_custom_style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/fontAwesome/style.css?ver=1.7.14 without a browsingContextID set
+JavaScript error: resource://devtools/server/actors/network-monitor/network-event-actor.js, line 110: Error: Got a request https://empirenews.net/wp-content/plugins/suppamenu/standard/css/Hover-master/css/hover.css?ver=1.7.14 without a browsingContextID set
+1638795219365	Marionette	INFO	Stopped listening on port 50474
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 2328, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+he file at E:\\System\\TEMP\\rust_mozprofileioGmgc\\search.json.mozlz4", (void 0)))
+1638795197102	Marionette	INFO	Listening on port 50816
+1638795197537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/wp-content/themes/empire-news/js/jquery.js, line 421: NS_ERROR_NOT_INITIALIZED: 
+1638795200011	Marionette	INFO	Stopped listening on port 50816
+[Parent 5500, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 5500, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638795209133	geckodriver	INFO	Listening on 127.0.0.1:56524
+1638795212156	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileu5uGLo"
+1638795212533	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileu5uGLo\\search.json.mozlz4", (void 0)))
+1638795215894	Marionette	INFO	Listening on port 56534
+1638795216544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6277 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1287 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5639 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 922 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5020 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2539 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3519 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1200: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7195 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638795629708	Marionette	INFO	Stopped listening on port 56534
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+e enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilexeIQU5\\search.json.mozlz4", (void 0)))
+1638795406247	Marionette	INFO	Listening on port 56817
+1638795406810	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2526 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2722 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1711 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3275 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4844 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2258 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3807 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6167 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638795467196	Marionette	INFO	Stopped listening on port 56817
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 11712, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638795502406	geckodriver	INFO	Listening on 127.0.0.1:57098
+1638795505446	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilevHWehR"
+1638795505846	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilevHWehR\\search.json.mozlz4", (void 0)))
+1638795509711	Marionette	INFO	Listening on port 57107
+1638795510265	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 408 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1534 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6008 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5155 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1451 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1200: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1684 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638795630494	Marionette	INFO	Stopped listening on port 57107
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  TypeError
+[Parent 5996, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chrconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile4zLi9E\\search.json.mozlz4", (void 0)))
+1638795633784	Marionette	INFO	Listening on port 57366
+1638795634349	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6850 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5394 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 7159 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5700 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638795773006	Marionette	INFO	Stopped listening on port 57366
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1638795795791	geckodriver	INFO	Listening on 127.0.0.1:57617
+1638795798830	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileWJGHet"
+1638795799208	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileWJGHet\\search.json.mozlz4", (void 0)))
+1638795802811	Marionette	INFO	Listening on port 57627
+1638795803278	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6189 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6140 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5438 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3992 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638795948240	Marionette	INFO	Stopped listening on port 57621638795950612	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileZx5eke"
+1638795950993	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileZx5eke\\search.json.mozlz4", (void 0)))
+1638795954631	Marionette	INFO	Listening on port 61415
+1638795955083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 4657 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=850281daee289d8a82bf3316f0a179b4, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6815 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638796048884	Marionette	INFO	Stopped listening on port 61415
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 4520, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638796441979	geckodriver	INFO	Listening on 127.0.0.1:64786
+1638796445011	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileOJYuTz"
+1638796445402	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileOJYuTz\\search.json.mozlz4", (void 0)))
+1638796449293	Marionette	INFO	Listening on port 64797
+1638796449858	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3139 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 3275 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 5143 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6772 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638796817673	Marionette	INFO	Stopped listening on port 64797
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 12044, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_wiconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileHbkjH6\\search.json.mozlz4", (void 0)))
+1638796820562	Marionette	INFO	Listening on port 65168
+1638796821206	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 2502 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6836 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638797046724	Marionette	INFO	Stopped listening on port 65168
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+e enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileuUq0Ui\\search.json.mozlz4", (void 0)))
+1638797048156	Marionette	INFO	Listening on port 60450
+1638797048541	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6141 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4b376b745d6e151074a85700ad9168f, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 365 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1638797706099	Marionette	INFO	Stopped listening on port 60450
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 13852, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1638798100909	geckodriver	INFO	Listening on 127.0.0.1:60218
+1638798103942	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofile7pZAPH"
+1638798104320	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile7pZAPH\\search.json.mozlz4", (void 0)))
+1638798108184	Marionette	INFO	Listening on port 60227
+1638798108668	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4bcc3d13e50fa7079bd6dbe807e9b04, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6370 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4bcc3d13e50fa7079bd6dbe807e9b04, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6489 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638798271940	Marionette	INFO	Stopped listening on port 60227
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638798296899	geckodriver	INFO	Listening on 127.0.0.1:52676
+1638798299944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilefmd0pO"
+1638798300345	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilefmd0pO\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+[Parent 16172, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 138: AbortError: IOUtils.profileBeforeChange getter: IOUtils: profileBeforeChange phase has already finished
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://activity-stream/lib/PlacesFeed.jsm, line 178: NS_ERROR_UNEXPECTED: Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsINavBookmarksService.addObserver]
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 138: AbortError: IOUtils.profileBeforeChange getter: IOUtils: profileBeforeChange phase has already finished
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: "Could not load engine google@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2541\"  data: no]"
+console.error: "Could not load engine amazondotcom@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2541\"  data: no]"
+console.error: "Could not load engine wikipedia@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2541\"  data: no]"
+console.error: "Could not load engine bing@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2541\"  data: no]"
+console.error: "Could not load engine ddg@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2541\"  data: no]"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+1638798311031	geckodriver	INFO	Listening on 127.0.0.1:52710
+1638798314063	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileREVMAG"
+1638798314440	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileREVMAG\\search.json.mozlz4", (void 0)))
+1638798317985	Marionette	INFO	Listening on port 52719
+1638798318384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4bcc3d13e50fa7079bd6dbe807e9b04, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 1065 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=e4bcc3d13e50fa7079bd6dbe807e9b04, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/lpsW2_ffPYTZ8rZJjb0UUxqN4MuIngUyqdH9Px88Rrc.js line 1 > eval line 6689 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1638798705651	Marionette	INFO	Stopped listening on port 52719
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+[Parent 11100, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639397479745	geckodriver	INFO	Listening on 127.0.0.1:54910
+1639397482765	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileSelmpJ"
+1639397483946	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileSelmpJ\\search.json.mozlz4", (void 0)))
+1639397488426	Marionette	INFO	Listening on port 54933
+1639397489236	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/wp-content/themes/empire-news/js/jquery.js, line 421: NS_ERROR_NOT_INITIALIZED: 
+1639397492939	Marionette	INFO	Stopped listening on port 54933
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 22388, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1639397516082	geckodriver	INFO	Listening on 127.0.0.1:51180
+1639397519107	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileZFlQjm"
+1639397519766	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileZFlQjm\\search.json.mozlz4", (void 0)))
+1639397523181	Marionette	INFO	Listening on port 51188
+1639397523553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7565 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 929 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639397562395	Marionette	INFO	Stopped listening on port 51181639397564472	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileqNxI4h"
+1639397564963	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileqNxI4h\\search.json.mozlz4", (void 0)))
+1639397568473	Marionette	INFO	Listening on port 51315
+1639397568639	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3987 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7058 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6948 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4388 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1203: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6436 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1200: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2520 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1199: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 900 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 258 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639397898445	Marionette	INFO	Stopped listening on port 51315
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 20156, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_wiconsole.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilev1QZPH\\search.json.mozlz4", (void 0)))
+1639397901803	Marionette	INFO	Listening on port 49306
+1639397902773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7373 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5518 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639397963635	Marionette	INFO	Stopped listening on port 49301639397964908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileM3oauI"
+1639397965299	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileM3oauI\\search.json.mozlz4", (void 0)))
+1639397969067	Marionette	INFO	Listening on port 49444
+1639397969122	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5787 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3425 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7222 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6752 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398315987	Marionette	INFO	Stopped listening on port 49444
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 6464, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilejWEMOs\\search.json.mozlz4", (void 0)))
+1639398168666	Marionette	INFO	Listening on port 54300
+1639398169716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2169 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3766 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398315985	Marionette	INFO	Stopped listening on port 54300
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 8044, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+he file at E:\\System\\TEMP\\rust_mozprofile7Pz627\\search.json.mozlz4", (void 0)))
+1639398260710	Marionette	INFO	Listening on port 64667
+1639398261596	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4683 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5849 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1122 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3333 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398315984	Marionette	INFO	Stopped listening on port 64667
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 11736, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1639398386407	geckodriver	INFO	Listening on 127.0.0.1:64961
+1639398389465	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileSS9WAt"
+1639398389831	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileSS9WAt\\search.json.mozlz4", (void 0)))
+1639398393520	Marionette	INFO	Listening on port 64969
+1639398393708	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 3271 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5685 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4494 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398465163	Marionette	INFO	Stopped listening on port 64961639398467409	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileYbBZ2Q"
+1639398467771	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileYbBZ2Q\\search.json.mozlz4", (void 0)))
+1639398471322	Marionette	INFO	Listening on port 65113
+1639398472262	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1739 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6855 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1626 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398548691	Marionette	INFO	Stopped listening on port 65113
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 20400, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+rn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilellzkA2\\search.json.mozlz4", (void 0)))
+1639398516209	Marionette	INFO	Listening on port 65243
+1639398517212	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2862 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6042 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398547439	Marionette	INFO	Stopped listening on port 65243
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639398563007	geckodriver	INFO	Listening on 127.0.0.1:65365
+1639398566037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileOq33dX"
+1639398566401	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileOq33dX\\search.json.mozlz4", (void 0)))
+1639398570003	Marionette	INFO	Listening on port 65373
+1639398570840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6286 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5041 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1143 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398602255	Marionette	INFO	Stopped listening on port 65373
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 17548, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639398723213	geckodriver	INFO	Listening on 127.0.0.1:49182
+1639398726248	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileh15O7G"
+1639398726585	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileh15O7G\\search.json.mozlz4", (void 0)))
+1639398730127	Marionette	INFO	Listening on port 49190
+1639398730883	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2368 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 646 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4291 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639398906838	Marionette	INFO	Stopped listening on port 49190
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639399444769	geckodriver	INFO	Listening on 127.0.0.1:63602
+1639399447802	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileCtHS2J"
+1639399448123	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileCtHS2J\\search.json.mozlz4", (void 0)))
+1639399451974	Marionette	INFO	Listening on port 63611
+1639399453223	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7124 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 6135 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1997 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639399482944	Marionette	INFO	Stopped listening on port 63611
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639400214793	geckodriver	INFO	Listening on 127.0.0.1:56735
+1639400217816	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilelfcY8R"
+1639400218181	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilelfcY8R\\search.json.mozlz4", (void 0)))
+1639400222046	Marionette	INFO	Listening on port 56743
+1639400222136	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5256 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4149 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 276 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639400254680	Marionette	INFO	Stopped listening on port 56743
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 24064, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1639400287046	geckodriver	INFO	Listening on 127.0.0.1:56875
+1639400290080	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileLg4zHK"
+1639400290426	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileLg4zHK\\search.json.mozlz4", (void 0)))
+1639400294177	Marionette	INFO	Listening on port 56883
+1639400295178	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 4556 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 2922 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1737 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=ed7062b74c317a94c1792de57ab46c75, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5257 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639400351555	Marionette	INFO	Stopped listening on port 56883
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639400829625	geckodriver	INFO	Listening on 127.0.0.1:54883
+1639400832642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileegN3ti"
+1639400832991	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileegN3ti\\search.json.mozlz4", (void 0)))
+1639400836784	Marionette	INFO	Listening on port 54892
+1639400836826	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1224: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 7427 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1191: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 1804 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1190: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=818c47455a25557935e47f63f6a673e3, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/A3sS0H_86Eu8poIaUPJJxUQpsgwPL9Z0aaC7WTcRMFE.js line 1 > eval line 5292 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639401033520	Marionette	INFO	Stopped listening on port 54892
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639573481731	geckodriver	INFO	Listening on 127.0.0.1:51990
+1639573484740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofiled3R6Py"
+1639573485830	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofiled3R6Py\\search.json.mozlz4", (void 0)))
+1639573490719	Marionette	INFO	Listening on port 51998
+1639573491485	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1222: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2933 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1189: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 233 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3016 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1186: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 239 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1201: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4709 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1198: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7631 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1197: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1936 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639573609889	Marionette	INFO	Stopped listening on port 51998
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 13116, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639573822640	geckodriver	INFO	Listening on 127.0.0.1:63876
+1639573825678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofile7jrnEl"
+1639573826219	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile7jrnEl\\search.json.mozlz4", (void 0)))
+1639573829861	Marionette	INFO	Listening on port 63884
+1639573829905	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1222: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1464 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1189: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6260 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639573880478	Marionette	INFO	Stopped listening on port 63884
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 20600, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639573882676	geckodriver	INFO	Listening on 127.0.0.1:64000
+1639573885695	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofilemVOkga"
+1639573886269	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofilemVOkga\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: "Could not load engine google@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine amazondotcom@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine wikipedia@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine bing@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.error: "Could not load engine ddg@search.mozilla.org: TypeError: AddonManagerInternal._getProviderByName(...) is undefined"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 138: AbortError: IOUtils.profileBeforeChange getter: IOUtils: profileBeforeChange phase has already finished
+[Parent 17372, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639573901637	geckodriver	INFO	Listening on 127.0.0.1:64022
+1639573904673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileSWOiZM"
+1639573905062	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileSWOiZM\\search.json.mozlz4", (void 0)))
+1639573908608	Marionette	INFO	Listening on port 64030
+1639573909275	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1222: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3604 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1189: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7593 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3390 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1186: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4613 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1201: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 4896 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1198: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7065 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1197: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=fb96757b1d47edb1af7bf5099e2622ca, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6781 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639573993607	Marionette	INFO	Stopped listening on port 64030
+[Parent 17180, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639574212333	geckodriver	INFO	Listening on 127.0.0.1:64243
+1639574215369	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofile10foWJ"
+1639574215797	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile10foWJ\\search.json.mozlz4", (void 0)))
+1639574219334	Marionette	INFO	Listening on port 64251
+1639574220121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1222: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 737 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/, line 1189: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 2358 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1188: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 359 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1186: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 7501 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1201: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 6673 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1198: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 1737 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1197: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bda542392295a3b88d235fc752ea2f60, line 63: uncaught exception: Error: invalid version specified
+JavaScript warning: https://pagead2.googlesyndication.com/bg/b_8rsBg2pSAE7OSEuXeXkmKAJRzK7XLbOE8Wp2RNR2Q.js line 1 > eval line 3135 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639574305057	Marionette	INFO	Stopped listening on port 64251
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644324223569	geckodriver	INFO	Listening on 127.0.0.1:51410
+1644324226596	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofile9uSm2h"
+1644324227028	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofile9uSm2h\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://activity-stream/lib/ActivityStreamPrefs.jsm, line 27: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIPrefBranch.removeObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchEngineSelector: "Received empty search configuration!"
+console.error: SearchService: "_init: failure initializing search:" 2147549183
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/SearchService.jsm, line 196: NS_ERROR_UNEXPECTED: SearchService previously failed to initialize
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147549183
+JavaScript error: resource://gre/modules/JSONFile.jsm, line 186: Error: Data is not ready.
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+[Parent 12220, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+
+###!!! [Parent][DispatchAsyncMessage] Error: PBackgroundIDBFactory::Msg_PBackgroundIDBFactoryRequestConstructor Value error: message was deserialized, but contained an illegal value
+
+console.error: PushService: 
+  clearOriginData: Error clearing origin data:
+  UnknownError
+console.error: PushService: 
+  stateChangeProcessEnqueue: Error transitioning state
+  UnknownError
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
