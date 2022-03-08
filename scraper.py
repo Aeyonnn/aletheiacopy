@@ -5,10 +5,15 @@ limit = 100
 column_class = 'ms7aY blog-post-description-font blog-card-background-color blog-card-border-color blog-text-color undefined blog-post-category-border-color blog-post-category-post-container blog-post-category-background-color'
 
 def columnSection():
+    count = 0
+    count1 = 0
+    
     driver = webdriver.Firefox()
     driver.maximize_window()
     driver.get("https://www.bulgaronline.com/column/categories/news")
     sleep(3)
+    
+    
 
     try:
         driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
