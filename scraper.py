@@ -1,9 +1,12 @@
 from time import sleep
 from selenium import webdriver
 from loading_status import loading
+import csv
+
 limit = 100
 column_class = 'ms7aY blog-post-description-font blog-card-background-color blog-card-border-color blog-text-color undefined blog-post-category-border-color blog-post-category-post-container blog-post-category-background-color'
 title_class = 'zn0o0 VwmRm blog-post-category-title-font blog-post-category-title-color blog-post-title-color post-title blog-hover-container-element-color Zk5w2 blog-post-category-title-color blog-post-category-title-font'
+
 def columnSection():
     count = 0
     count1 = 0
@@ -12,6 +15,11 @@ def columnSection():
     driver.maximize_window()
     driver.get("https://www.bulgaronline.com/column/categories/news")
     sleep(3)
+    
+    BData = open('BData.csv', 'w', encoding='utf-8-sig')
+    writer = csv.writer(BData)
+    header = [['No','Headline','Body','link']]
+    writer.writerows(header)
     
     
 
@@ -30,6 +38,7 @@ def columnSection():
             print(news_count)
 
         for data in news:
+            count += 1
             # Extract title
             title = data.find_element_by_xpath('.//span[contains(@class, "blog-post-category-title-font blog-post-category-title-color blog-post-title-color")]').get_attribute('textContent')
             print(title)
@@ -48,5 +57,8 @@ def columnSection():
                 print(link)
             except:
                 print(data.error_handler)
+                
+            datarow = [[count, title, nstring, link]]
+            writer.writerows(datarow)
     except:
         print(driver.error_handler)
