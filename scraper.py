@@ -56,7 +56,7 @@ def politicsSection():
                     date = driver.find_element_by_xpath('//*[@class="sc-1out364-0 hMndXN js_meta-time js_link"]').get_attribute('innerText')
                     print(title)
                     print (date)
-                    # Extract news and clean data
+                    # Extract news and clean data hatdog
                     try:
                         paragraph = driver.find_element_by_xpath('//*[@class="sc-77igqf-0 bOfvBY"]')
                         nstring = paragraph.text
