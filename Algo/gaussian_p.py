@@ -15,9 +15,9 @@ def gaussianProcess():
     data['label']
 
     #Train-test split
-    x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
-    #KNeighbors classification
+    #Gaussian classification
     pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', GaussianNB())])
 
     model_gp = pipe1.fit(x_train, y_train)
@@ -30,7 +30,7 @@ def gaussianProcess():
     print("\nCLassification Report of Gaussian Process Classifier:\n")
     print(classification_report(y_test, gp_pred))
 
-    joblib.dump(model_gp, 'model/aletheia-gaussianp.pkl')
+    #joblib.dump(model_gp, 'model/aletheia-gaussianp.pkl')
 
     # test = input('enter news')
     # test_f = [test]

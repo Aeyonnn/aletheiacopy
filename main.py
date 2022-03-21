@@ -1,12 +1,12 @@
-from adaboost import adaboost
-from dt import decisionTree
+from Algo.adaboost import adaboost
+from Algo.dt import decisionTree
 # from gaussian_p import gaussianProcess
-from knn import knn
-from logreg import logisticRegression
-from naivbayes import naivBayes
-from randforest import randForest
-from supvec import supportVector
-from neural import neuralNetwork
+from Algo.knn import knn
+from Algo.logreg import logisticRegression
+from Algo.naivbayes import naivBayes
+from Algo.randforest import randForest
+from Algo.supvec import supportVector
+from Algo.neural import neuralNetwork
 
 # Create models from each algorithm
 adaboost()
