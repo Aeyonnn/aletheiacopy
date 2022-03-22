@@ -9,3 +9,5 @@ naivBayes()
 randForest()
 supportVector()
 neuralNetwork()
+
+print('----------Test Finished----------')
