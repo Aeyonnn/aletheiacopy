@@ -1,11 +1,25 @@
 from time import sleep
 from selenium import webdriver
+import csv
 
 limit = 100
 column_class = 'article'
 title_class = 'zn0o0 VwmRm blog-post-category-title-font blog-post-category-title-color blog-post-title-color post-title blog-hover-container-element-color Zk5w2 blog-post-category-title-color blog-post-category-title-font'
 link_list = []
 def viralnewsSection():
+    count = 0
+    count2 = 0
+    
+    PTData = open('PTData.csv', 'w', encoding='utf-8-sig')
+    writer = csv.writer(PTData)
+    header = [['No.', 'headling', 'Body']]
+    writer.writerows(header)
+    
+    LinkData = open('LinkData.csv', 'w', encoding='utf-8-sig')
+    writer2 = csv.writer(LinkData)
+    header2 = [['No.', 'Link']]
+    writer2.writerows(header2)
+    
     driver = webdriver.Firefox()
     driver.maximize_window()
     driver.get("https://pinoytrendingnews.net/category/viral-news/")
@@ -25,10 +39,14 @@ def viralnewsSection():
             driver.find_element_by_xpath('//*[@class="article"]//div[@id="load-posts"]//a').click()
 
         for data in news:
+            count2 += 1
             link = data.find_element_by_xpath(f'.//*[contains(@class, "title front-view-title")]//a').get_attribute('href')
             link_list.append(link)
+            datarow2 = [[count2, link]]
+            writer2.writerows(datarow2)
 
         for specnews in link_list:
+            count += 1
             driver.get(specnews)
             sleep(1)
 
@@ -46,6 +64,9 @@ def viralnewsSection():
             except:
                 print('No News Data Detected')
             print('\n')
+            
+            datarow = [[count, title, paragraph]]
+            writer.writerows(datarow)
 
     except:
         print(driver.error_handler)
