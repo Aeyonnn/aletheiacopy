@@ -11,9 +11,7 @@ import joblib
 
 def logisticRegression():
     data = pd.read_csv('data/news.csv')
-
-    data['label']
-
+    
     #Train-test split
     x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
