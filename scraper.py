@@ -20,6 +20,7 @@ def factCheckSection():
     LinkData = open ('LinkData.csv', 'w', encoding='utf-8-sig')
     writer2 = csv.writer(LinkData)
     header2 = [['No.', 'Link']]
+    writer2.writerows(header)
 
     driver = webdriver.Firefox()
     driver.maximize_window()
