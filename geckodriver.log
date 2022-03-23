@@ -1538,3 +1538,26 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1648038715615	geckodriver	INFO	Listening on 127.0.0.1:55295
+1648038718643	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "E:\\System\\TEMP\\rust_mozprofileeqwZj5"
+1648038719031	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at E:\\System\\TEMP\\rust_mozprofileeqwZj5\\search.json.mozlz4", (void 0)))
+1648038723065	Marionette	INFO	Listening on port 55304
+1648038723506	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.rappler.com/section/newsbreak/fact-check/ line 363 > injectedScript, line 2: ReferenceError: tp is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 6807 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 6949 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 6059 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1648038735573	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 1713 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 1972 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 7011 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 257 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/c9SOW3fm-cIOlp3tvRsibzkEuEO1MqMyQpfRRVluBWQ.js line 1 > eval line 3916 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
