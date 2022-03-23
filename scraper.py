@@ -62,6 +62,10 @@ def factCheckSection():
                 loc+=2
                 news_text = news_text_check[loc:]
             except:
+                news_text_check = driver.find_element_by_xpath('//div[@class="post-single__content entry-content"]//li').get_attribute('textContent')
+                loc = news_text_check.find(':')
+                loc+=2
+                news_text = news_text_check[loc:]
                 print('News source error')
             if validity_check == 'MISSING CONTEXT':
                 validity = 'False'
