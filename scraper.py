@@ -1,3 +1,4 @@
+import csv
 from time import sleep
 from selenium import webdriver
 
@@ -10,6 +11,15 @@ link_list = []
 def factCheckSection():
     count = 0
     count1 = 0
+    
+    RData = open('RData.csv', 'w', encoding='utf-8-sig')
+    writer = csv.writer(RData)
+    header = [['No.', 'headline', 'body','label']]
+    writer.writerows(header)
+    
+    LinkData = open ('LinkData.csv', 'w', encoding='utf-8-sig')
+    writer2 = csv.writer(LinkData)
+    header2 = [['No.', 'Link']]
 
     driver = webdriver.Firefox()
     driver.maximize_window()
@@ -31,10 +41,14 @@ def factCheckSection():
                 link = data.find_element_by_xpath('.//h2//a').get_attribute('href')
                 link_list.append(data.find_element_by_xpath('.//h2//a').get_attribute('href'))
                 print(link)
+                count1 += 1
+                lrows = [[count1, link]]
+                writer2.writerows(lrows)
             driver.get(load_more)
             sleep(2)
 
         for open_news in link_list:
+            count += 1
             driver.get(open_news)
             sleep(2)
             title = driver.find_element_by_xpath('//h1[@class="post-single__title"]').get_attribute('textContent')
@@ -63,5 +77,8 @@ def factCheckSection():
                 print(news_text)
             else:
                 print('News source error')
+            
+            Drows = [[count, title, news_text, validity]]
+            writer.writerows(Drows)
     except:
         print(driver.error_handler)
