@@ -7,17 +7,18 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.metrics import accuracy_score, confusion_matrix,classification_report
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn import metrics
 import joblib
 
 def knn():
     data = pd.read_csv('data/news.csv')
 
     #Train-test split
-    x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #KNeighbors classification
     pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', KNeighborsClassifier())])
-
+    
     model_kn = pipe1.fit(x_train, y_train)
     kn_pred = model_kn.predict(x_test)
 
