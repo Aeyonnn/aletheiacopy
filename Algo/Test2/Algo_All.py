@@ -177,10 +177,10 @@ def linearReg():
     model_svc = pipe2.fit(x_train, y_train)
     svc_pred = model_svc.predict(x_test)
 
-    print("\nConfusion Matrix of SVM Classifier:\n")
+    print("\nConfusion Matrix of Linear Regression:\n")
     print(confusion_matrix(y_test, svc_pred))
-    print("\nClassification Report of SVM Classifier:\n")
+    print("\nClassification Report of Linear Regression:\n")
     print(classification_report(y_test, svc_pred))
-    print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, svc_pred)*100,2)))
+    print("Accuracy of Linear Regression: {}%".format(round(accuracy_score(y_test, svc_pred)*100,2)))
 
     joblib.dump(model_svc, f'model/{target}/{test}/aletheia-linearRegression.pkl')

@@ -9,6 +9,6 @@ naivBayes()
 randForest()
 supportVector()
 neuralNetwork()
-linearReg
+linearReg()
 
 print('----------Test Finished----------')

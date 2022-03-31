@@ -16,10 +16,8 @@ from sklearn.svm import LinearSVC
 from sklearn.linear_model import LinearRegression
 import joblib
 
-from Algo.Test2.Algo_All import linearRegression
-
 data = pd.read_csv('Data/news.csv')
-target = 'Dataset2(OS)'
+target = 'Dataset1(OS)'
 test = 'Test1'
 
 def adaboost():
@@ -39,7 +37,7 @@ def adaboost():
     print("Accuracy of Adaboost Classifier: {}%".format(round(accuracy_score(y_test, ab_pred) * 100, 2)))
 
     # Save Model
-    joblib.dump(model_ab, f'model/{target}/aletheia-adaboost.pkl')
+    joblib.dump(model_ab, f'model/{target}/{test}/aletheia-adaboost.pkl')
 
 
 def decisionTree():
@@ -59,7 +57,7 @@ def decisionTree():
     print(classification_report(y_test, dt_pred))
     print("Accuracy of Decision Tree Classifier: {}%".format(round(accuracy_score(y_test, dt_pred)*100,2)))
 
-    joblib.dump(model_dt, f'model/{target}/aletheia-decisiontree.pkl')
+    joblib.dump(model_dt, f'model/{target}/{test}/aletheia-decisiontree.pkl')
  
 def knn():
     #Train-test split
@@ -77,7 +75,7 @@ def knn():
     print(classification_report(y_test, kn_pred))
     print("Accuracy of KNeighbors Classifier: {}%".format(round(accuracy_score(y_test, kn_pred)*100,2)))
 
-    joblib.dump(model_kn, f'model/{target}/aletheia-knn.pkl')
+    joblib.dump(model_kn, f'model/{target}/{test}/aletheia-knn.pkl')
 
 def logisticRegression():
     #Train-test split
@@ -95,7 +93,7 @@ def logisticRegression():
     print(classification_report(y_test, lr_pred))
     print("Accuracy of Logistic Regression Classifier: {}%".format(round(accuracy_score(y_test, lr_pred)*100,2)))
 
-    joblib.dump(model_lr, f'model/{target}/aletheia-logreg.pkl')
+    joblib.dump(model_lr, f'model/{target}/{test}/aletheia-logreg.pkl')
 
 def naivBayes():
     #Train-test split
@@ -113,7 +111,7 @@ def naivBayes():
     print(classification_report(y_test, nb_pred))
     print("Accuracy of Naive Bayes Classifier: {}%".format(round(accuracy_score(y_test, nb_pred)*100,2)))
 
-    joblib.dump(model_nb, f'model/{target}/aletheia-naivbayes.pkl')
+    joblib.dump(model_nb, f'model/{target}/{test}/aletheia-naivbayes.pkl')
 
 def neuralNetwork():
     #Train-test split
@@ -131,7 +129,7 @@ def neuralNetwork():
     print(classification_report(y_test, mlp_pred))
     print("Accuracy of Neural Network: {}%".format(round(accuracy_score(y_test, mlp_pred)*100,2)))
 
-    joblib.dump(model_mlp, f'model/{target}/aletheia-neural.pkl')
+    joblib.dump(model_mlp, f'model/{target}/{test}/aletheia-neural.pkl')
 
 def randForest():
     #Train-test split
@@ -149,7 +147,7 @@ def randForest():
     print(classification_report(y_test, rf_pred))
     print("Accuracy of Random Forest  Classifier: {}%".format(round(accuracy_score(y_test, rf_pred)*100,2)))
 
-    joblib.dump(model_rf, f'model/{target}/aletheia-randforest.pkl')
+    joblib.dump(model_rf, f'model/{target}/{test}/aletheia-randforest.pkl')
     
 def supportVector():
     #Train-test split
@@ -167,7 +165,7 @@ def supportVector():
     print(classification_report(y_test, svc_pred))
     print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, svc_pred)*100,2)))
 
-    joblib.dump(model_svc, f'model/{target}/aletheia-supportvector.pkl')
+    joblib.dump(model_svc, f'model/{target}/{test}/aletheia-supportvector.pkl')
     
 def linearReg():
     #Train-test split
@@ -179,10 +177,10 @@ def linearReg():
     model_svc = pipe2.fit(x_train, y_train)
     lg_pred = model_svc.predict(x_test)
 
-    print("\nConfusion Matrix of SVM Classifier:\n")
+    print("\nConfusion Matrix of Linear Regression:\n")
     print(confusion_matrix(y_test, lg_pred))
-    print("\nClassification Report of SVM Classifier:\n")
+    print("\nClassification Report of Linear Regression:\n")
     print(classification_report(y_test, lg_pred))
-    print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, lg_pred)*100,2)))
+    print("Accuracy of Linear Regression: {}%".format(round(accuracy_score(y_test, lg_pred)*100,2)))
 
     joblib.dump(model_svc, f'model/{target}/{test}/aletheia-linearRegression.pkl')
