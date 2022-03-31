@@ -167,20 +167,3 @@ def supportVector():
 
     joblib.dump(model_svc, f'model/{target}/{test}/aletheia-supportvector.pkl')
     
-def linearReg():
-    #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'],test_size=0.2, random_state=1)
-
-    #Support Vector classification
-    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LinearRegression())])
-
-    model_svc = pipe2.fit(x_train, y_train)
-    lg_pred = model_svc.predict(x_test)
-
-    print("\nConfusion Matrix of Linear Regression:\n")
-    print(confusion_matrix(y_test, lg_pred))
-    print("\nClassification Report of Linear Regression:\n")
-    print(classification_report(y_test, lg_pred))
-    print("Accuracy of Linear Regression: {}%".format(round(accuracy_score(y_test, lg_pred)*100,2)))
-
-    joblib.dump(model_svc, f'model/{target}/{test}/aletheia-linearRegression.pkl')

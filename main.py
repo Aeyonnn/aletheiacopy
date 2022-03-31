@@ -1,4 +1,4 @@
-from Algo.Test1.Algo_All import adaboost, decisionTree, knn, logisticRegression, naivBayes, randForest, supportVector, neuralNetwork, linearReg
+from Algo.Test2.Algo_All import adaboost, decisionTree, knn, logisticRegression, naivBayes, randForest, supportVector, neuralNetwork
 
 # Create models from each algorithm
 adaboost()
@@ -9,6 +9,5 @@ naivBayes()
 randForest()
 supportVector()
 neuralNetwork()
-linearReg()
 
 print('----------Test Finished----------')
