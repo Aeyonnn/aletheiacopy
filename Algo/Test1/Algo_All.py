@@ -13,10 +13,14 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import LinearSVC
+from sklearn.linear_model import LinearRegression
 import joblib
+
+from Algo.Test2.Algo_All import linearRegression
 
 data = pd.read_csv('Data/news.csv')
 target = 'Dataset2(OS)'
+test = 'Test1'
 
 def adaboost():
     # Train-test split
@@ -164,3 +168,21 @@ def supportVector():
     print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, svc_pred)*100,2)))
 
     joblib.dump(model_svc, f'model/{target}/aletheia-supportvector.pkl')
+    
+def linearReg():
+    #Train-test split
+    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'],test_size=0.2, random_state=1)
+
+    #Support Vector classification
+    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LinearRegression())])
+
+    model_svc = pipe2.fit(x_train, y_train)
+    lg_pred = model_svc.predict(x_test)
+
+    print("\nConfusion Matrix of SVM Classifier:\n")
+    print(confusion_matrix(y_test, lg_pred))
+    print("\nClassification Report of SVM Classifier:\n")
+    print(classification_report(y_test, lg_pred))
+    print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, lg_pred)*100,2)))
+
+    joblib.dump(model_svc, f'model/{target}/{test}/aletheia-linearRegression.pkl')
