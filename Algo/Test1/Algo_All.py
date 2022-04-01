@@ -16,7 +16,7 @@ from sklearn.svm import LinearSVC
 from sklearn.linear_model import LinearRegression
 import joblib
 
-data = pd.read_csv('Data/news.csv')
+data = pd.read_csv('data/Dataset1(OS)/news.csv')
 target = 'Dataset1(OS)'
 test = 'Test1'
 
