@@ -13,7 +13,6 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import LinearSVC
-from sklearn.linear_model import LinearRegression
 import joblib
 
 data = pd.read_csv('data/Dataset1(OS)/news.csv')
@@ -22,7 +21,7 @@ test = 'Test1'
 
 def adaboost():
     # Train-test split
-    x_train, x_test, y_train, y_test, z_train, z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
+    x_train, x_test, y_train, y_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
     # Adaboost classification
     pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', AdaBoostClassifier())])
@@ -49,7 +48,6 @@ def decisionTree():
 
     model_dt = pipe1.fit(x_train, y_train)
     dt_pred = model_dt.predict(x_test)
-
 
     print("\nConfusion Matrix of Decision Tree Classifier:\n")
     print(confusion_matrix(y_test, dt_pred))
