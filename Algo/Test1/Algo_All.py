@@ -24,7 +24,7 @@ def adaboost():
     x_train, x_test, y_train, y_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
     # Adaboost classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', AdaBoostClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', AdaBoostClassifier(n_estimators=100, base_estimator= None, learning_rate=1, random_state = 1))])
 
     model_ab = pipe1.fit(x_train, y_train)
     ab_pred = model_ab.predict(x_test)
@@ -44,7 +44,7 @@ def decisionTree():
     x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
     #Decision Tree classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', DecisionTreeClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', DecisionTreeClassifier(criterion='entropy',ccp_alpha= 0.0, class_weight=None, splitter='best', random_state=0))])
 
     model_dt = pipe1.fit(x_train, y_train)
     dt_pred = model_dt.predict(x_test)
@@ -62,7 +62,7 @@ def knn():
     x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
     #KNeighbors classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', KNeighborsClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', KNeighborsClassifier(n_neighbors=1, algorithm='brute'))])
 
     model_kn = pipe1.fit(x_train, y_train)
     kn_pred = model_kn.predict(x_test)
@@ -116,7 +116,7 @@ def neuralNetwork():
     x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['text'], data['label'], data['title'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier())])
+    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier(hidden_layer_sizes=(150,100,50), activation='relu', random_state=1, max_iter=300))])
 
     model_mlp = pipe2.fit(x_train, y_train)
     mlp_pred = model_mlp.predict(x_test)
