@@ -22,7 +22,7 @@ test = 'Test2'
 
 def adaboost():
     # Train-test split
-    x_train, x_test, y_train, y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     # Adaboost classification
     pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', AdaBoostClassifier(n_estimators=100, base_estimator= None, learning_rate=1, random_state = 1))])
@@ -97,12 +97,12 @@ def logisticRegression():
 
 def naivBayes():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'],test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     #Naive-Bayes classification
-    pipe3 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', BernoulliNB())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', BernoulliNB())])
 
-    model_nb = pipe3.fit(x_train, y_train)
+    model_nb = pipe1.fit(x_train, y_train)
     nb_pred = model_nb.predict(x_test)
 
     print("\nConfusion Matrix of Naive Bayes Classifier:\n")
@@ -118,9 +118,9 @@ def neuralNetwork():
     x_train,x_test,y_train,y_test, = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier(hidden_layer_sizes=(150,100,50), activation='relu', random_state=1, max_iter=300))])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier(hidden_layer_sizes=(150,100,50), activation='relu', random_state=1, max_iter=300))])
 
-    model_mlp = pipe2.fit(x_train, y_train)
+    model_mlp = pipe1.fit(x_train, y_train)
     mlp_pred = model_mlp.predict(x_test)
 
     print("\nConfusion Matrix of Neural Network:\n")
@@ -151,12 +151,12 @@ def randForest():
     
 def supportVector():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'],test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LinearSVC())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LinearSVC())])
 
-    model_svc = pipe2.fit(x_train, y_train)
+    model_svc = pipe1.fit(x_train, y_train)
     svc_pred = model_svc.predict(x_test)
 
     print("\nConfusion Matrix of SVM Classifier:\n")
@@ -169,12 +169,12 @@ def supportVector():
 
 def passiveAgressiveClassifier():
     #Train-test split
-    x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['title'], data['label'], data['title'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', PassiveAggressiveClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', PassiveAggressiveClassifier())])
 
-    model_pac = pipe2.fit(x_train, y_train)
+    model_pac = pipe1.fit(x_train, y_train)
     pac_pred = model_pac.predict(x_test)
 
     print("\nConfusion Matrix of Passive Agressive Classifier:\n")
