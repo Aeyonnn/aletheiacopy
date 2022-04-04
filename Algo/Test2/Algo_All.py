@@ -9,7 +9,7 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import LinearSVC
@@ -99,7 +99,7 @@ def naivBayes():
     x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'],test_size=0.2, random_state=1)
 
     #Naive-Bayes classification
-    pipe3 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MultinomialNB())])
+    pipe3 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', BernoulliNB())])
 
     model_nb = pipe3.fit(x_train, y_train)
     nb_pred = model_nb.predict(x_test)
@@ -135,7 +135,7 @@ def randForest():
     x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
 
     #Random Forest classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', RandomForestClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', RandomForestClassifier(n_estimators=200))])
 
     model_rf = pipe1.fit(x_train, y_train)
     rf_pred = model_rf.predict(x_test)

@@ -9,7 +9,7 @@ from sklearn.ensemble import AdaBoostClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import LinearSVC
@@ -20,16 +20,16 @@ target = 'Dataset1(OS)'
 test = 'Test2'
 
 #Train-test split
-x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['title'], data['label'], data['title'], test_size=0.2, random_state=1)
 
-#KNeighbors classification
-pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', KNeighborsClassifier(n_neighbors=30, algorithm='brute'))])
+#Support Vector classification
+pipe2 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier())])
 
-model_kn = pipe1.fit(x_train, y_train)
-kn_pred = model_kn.predict(x_test)
+model_mlp = pipe2.fit(x_train, y_train)
+mlp_pred = model_mlp.predict(x_test)
 
-print("\nConfusion Matrix of KNeighbors Classifier:\n")
-print(confusion_matrix(y_test, kn_pred))
-print("\nCLassification Report of KNeighbors Classifier:\n")
-print(classification_report(y_test, kn_pred))
-print("Accuracy of KNeighbors Classifier: {}%".format(round(accuracy_score(y_test, kn_pred)*100,2)))
+print("\nConfusion Matrix of Neural Network:\n")
+print(confusion_matrix(y_test, mlp_pred))
+print("\nClassification Report of Neural Network:\n")
+print(classification_report(y_test, mlp_pred))
+print("Accuracy of Neural Network: {}%".format(round(accuracy_score(y_test, mlp_pred)*100,2)))
