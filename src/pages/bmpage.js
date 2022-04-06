@@ -8,8 +8,6 @@ Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 // Hanggang dito
 
-
-
 function App() {
   const [greeting, setGreeting] = useState(null)
   async function fetchGreeting(){
