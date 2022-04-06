@@ -1,0 +1,51 @@
+import Icon1 from '../../images/vince.jpg'
+import Icon2 from '../../images/ej.jpg'
+import Icon3 from '../../images/kynch.jpg'
+export const homeObjOne = {
+    id: 'Vince sec',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Vince L. Dela Peña',
+    headline: 'Benchmark',
+    description: 'The goal of this study is to create a system that can establish an optimized NLP algorithm for the researchers dataset in order to offer accurate and precise results. This research also focuses on developing a dataset that will be used to evaluate various NLP algorithms.',
+    buttonLabel: 'Benchmark',
+    imgStart: false,
+    img: Icon1,
+    alt: 'Vince',
+    dark: true,
+    primary: true,
+    darkText: false,
+}
+export const homeObjTwo = {
+    id: 'Ej sec',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Elnathan John L. Salavarria',
+    headline: 'Search',
+    description: 'Determining if a news is fake can be as easy as doing a Google search. Otherwise, further investigation is needed. Some false stories may contain a grain of truth or may be the result of a misunderstanding. Our mission is to find out the truth.',
+    buttonLabel: 'Search',
+    imgStart: true,
+    img: Icon2,
+    alt: 'EJ',
+    dark: false,
+    primary: false,
+    darkText: true,
+}
+export const homeObjThree = {
+    id: 'Kynch sec',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Kynch Tito R. Silao',
+    headline: 'School',
+    description: 'DLSU-D takes an unconventional approach to education, allowing students to learn in a natural setting and instilling not only the Lasallian values of faith, zeal, and service in them, but also allowing them to experience and participate in socially responsible projects throughout their time at the university.',
+    buttonLabel: 'School',
+    imgStart: false,
+    img: Icon3,
+    alt: 'Kynch',
+    dark: true,
+    primary: true,
+    darkText: false,
+}

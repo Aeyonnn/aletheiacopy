@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/pythonapi": {
+      "name": "/pythonapi",
+      "lambdaFunction": "aletheiawebpaged43aabeb",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aletheiawebpage-dev-210824-authRole",
+      "UnauthRoleArn": "arn:aws:iam::823142838959:role/amplify-aletheiawebpage-dev-210824-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::823142838959:role/amplify-aletheiawebpage-dev-210824-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+      "UnauthRoleName": "amplify-aletheiawebpage-dev-210824-unauthRole",
+      "StackName": "amplify-aletheiawebpage-dev-210824",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:823142838959:stack/amplify-aletheiawebpage-dev-210824/a91312b0-b5aa-11ec-aea7-06855712f3b2",
+      "AmplifyAppId": "d14jbdaoj82nso"
+    },
+    "categories": {
+      "function": {
+        "aletheiawebpaged43aabeb": {
+          "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-6b594c59397757736368-build.zip"
+        }
+      }
+    }
+  }
+}
