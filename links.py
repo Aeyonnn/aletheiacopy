@@ -13,3 +13,5 @@ gaussianProcess()
 
 #DATA
 #https://www.kaggle.com/code/marianmohammed/fake-news-detection-using-random-forest/data
+
+#https://www.kaggle.com/code/ankumagawa/donald-trump-2024-how-to-detect-fake-news
