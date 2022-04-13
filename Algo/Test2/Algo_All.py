@@ -18,14 +18,14 @@ import joblib
 
 data = pd.read_csv('data/Dataset1/news.csv')
 target = 'Dataset1'
-test = 'Test2'
+test = 'Test5'
 
 def adaboost():
     # Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     # Adaboost classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', AdaBoostClassifier(n_estimators=100, base_estimator= None, learning_rate=1, random_state = 1))])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', AdaBoostClassifier(n_estimators=100, base_estimator= None, learning_rate=1, random_state = 1))])
 
     model_ab = pipe1.fit(x_train, y_train)
     ab_pred = model_ab.predict(x_test)
@@ -42,14 +42,13 @@ def adaboost():
 
 def decisionTree():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Decision Tree classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', DecisionTreeClassifier(criterion='entropy',ccp_alpha= 0.0, class_weight=None, splitter='best', random_state=0))])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', DecisionTreeClassifier(criterion='entropy',ccp_alpha= 0.0, class_weight=None, splitter='best', random_state=0))])
 
     model_dt = pipe1.fit(x_train, y_train)
     dt_pred = model_dt.predict(x_test)
-
 
     print("\nConfusion Matrix of Decision Tree Classifier:\n")
     print(confusion_matrix(y_test, dt_pred))
@@ -61,10 +60,10 @@ def decisionTree():
  
 def knn():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #KNeighbors classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', KNeighborsClassifier(n_neighbors=30, algorithm='brute'))])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', KNeighborsClassifier(n_neighbors=1, algorithm='brute'))])
 
     model_kn = pipe1.fit(x_train, y_train)
     kn_pred = model_kn.predict(x_test)
@@ -79,10 +78,10 @@ def knn():
 
 def logisticRegression():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Logistic regression classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LogisticRegression())])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', LogisticRegression())])
 
     model_lr = pipe1.fit(x_train, y_train)
     lr_pred = model_lr.predict(x_test)
@@ -97,10 +96,10 @@ def logisticRegression():
 
 def naivBayes():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Naive-Bayes classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', BernoulliNB())])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', BernoulliNB())])
 
     model_nb = pipe1.fit(x_train, y_train)
     nb_pred = model_nb.predict(x_test)
@@ -115,10 +114,10 @@ def naivBayes():
 
 def neuralNetwork():
     #Train-test split
-    x_train,x_test,y_train,y_test, = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', MLPClassifier(hidden_layer_sizes=(150,100,50), activation='relu', random_state=1, max_iter=300))])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', MLPClassifier(hidden_layer_sizes=(150,100,50), activation='relu', random_state=1, max_iter=300))])
 
     model_mlp = pipe1.fit(x_train, y_train)
     mlp_pred = model_mlp.predict(x_test)
@@ -133,10 +132,10 @@ def neuralNetwork():
 
 def randForest():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Random Forest classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', RandomForestClassifier(n_estimators=200))])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', RandomForestClassifier(n_estimators=200))])
 
     model_rf = pipe1.fit(x_train, y_train)
     rf_pred = model_rf.predict(x_test)
@@ -151,10 +150,10 @@ def randForest():
     
 def supportVector():
     #Train-test split
-    x_train,x_test,y_train,y_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', LinearSVC())])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', LinearSVC())])
 
     model_svc = pipe1.fit(x_train, y_train)
     svc_pred = model_svc.predict(x_test)
@@ -166,13 +165,13 @@ def supportVector():
     print("Accuracy of SVM Classifier: {}%".format(round(accuracy_score(y_test, svc_pred)*100,2)))
 
     joblib.dump(model_svc, f'model/{target}/{test}/aletheia-supportvector.pkl')
-
+    
 def passiveAgressiveClassifier():
     #Train-test split
-    x_train,x_test,y_train,y_test,z_train,z_test = train_test_split(data['title'], data['label'], test_size=0.2, random_state=1)
+    x_train,x_test,y_train,y_test = train_test_split(data['text'], data['label'], test_size=0.2, random_state=1)
 
     #Support Vector classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', PassiveAggressiveClassifier())])
+    pipe1 = Pipeline([('vect', CountVectorizer(stop_words='english')), ('model', PassiveAggressiveClassifier())])
 
     model_pac = pipe1.fit(x_train, y_train)
     pac_pred = model_pac.predict(x_test)

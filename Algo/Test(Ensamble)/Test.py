@@ -31,7 +31,7 @@ def adaboost():
     # knnclf=KNeighborsClassifier(n_neighbors=5,p=2,metric='minkowski')
 
     # Adaboost classification
-    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', EnsembleVoteClassifier(clfs=[logclf,treeclf],weights=[1.5,1]))])
+    pipe1 = Pipeline([('vect', CountVectorizer()), ('tfidf', TfidfTransformer()), ('model', EnsembleVoteClassifier(clfs=[logclf,treeclf],weights=[1,1]))])
 
     model_ab = pipe1.fit(x_train, y_train)
     ab_pred = model_ab.predict(x_test)

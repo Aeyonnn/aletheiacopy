@@ -39,7 +39,11 @@ if fake > real:
     perecentage = (fake/9)*100
     percent = str(round(perecentage,2))
     descip = 'fake'
-    print('it is {}% {}'.format(percent,descip)) 
+    print('it is {}% {}'.format(percent,descip))
+elif fake == real:
+    percent = 50
+    descip = 'half fake and half true'
+    print('it is {}% {}'.format(percent,descip))
 else:
     perecentage = (real/9)*100
     percent = str(round(perecentage,2))
