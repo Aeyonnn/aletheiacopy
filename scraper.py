@@ -1,8 +1,9 @@
 import csv
 from time import sleep
 from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 
-limit = 100
+limit = 1200
 title_class = 'archive-article__content'
 column_class = 'primary'
 link_list = []
@@ -17,13 +18,19 @@ def factCheckSection():
     header = [['No.', 'headline', 'body','label']]
     writer.writerows(header)
     
-    LinkData = open ('LinkData.csv', 'w', encoding='utf-8-sig')
+    LinkData = open('LinkData.csv', 'w', encoding='utf-8-sig')
     writer2 = csv.writer(LinkData)
     header2 = [['No.', 'Link']]
-    writer2.writerows(header)
+    writer2.writerows(header2)
 
-    driver = webdriver.Firefox()
-    driver.maximize_window()
+    options = Options()
+    options.headless = True
+    options.add_argument("--disable-notifications")
+    driver = webdriver.Firefox(options=options)
+
+    # driver = webdriver.Firefox()
+    # driver.maximize_window()
+
     driver.get("https://www.rappler.com/section/newsbreak/fact-check/")
     sleep(3)
 
@@ -62,28 +69,25 @@ def factCheckSection():
                 loc = news_text_check.find(':')
                 loc+=2
                 news_text = news_text_check[loc:]
+
+                if validity_check == 'MISSING CONTEXT':
+                    validity = 'False'
+                    print(news_text)
+                elif validity_check == 'FALSE':
+                    validity = 'False'
+                    print(news_text)
+                elif validity_check == 'HINDI TOTOO':
+                    validity = 'False'
+                    print(news_text)
+                elif validity_check == 'KULANG SA KONTEKSTO':
+                    validity = 'False'
+                    print(news_text)
+                else:
+                    print('News source error')
+
+                Drows = [[count, title, news_text, validity]]
+                writer.writerows(Drows)
             except:
-                news_text_check = driver.find_element_by_xpath('//div[@class="post-single__content entry-content"]//li').get_attribute('textContent')
-                loc = news_text_check.find(':')
-                loc+=2
-                news_text = news_text_check[loc:]
                 print('News source error')
-            if validity_check == 'MISSING CONTEXT':
-                validity = 'False'
-                print(news_text)
-            elif validity_check == 'FALSE':
-                validity = 'False'
-                print(news_text)
-            elif validity_check == 'HINDI TOTOO':
-                validity = 'False'
-                print(news_text)
-            elif validity_check == 'KULANG SA KONTEKSTO':
-                validity = 'False'
-                print(news_text)
-            else:
-                print('News source error')
-            
-            Drows = [[count, title, news_text, validity]]
-            writer.writerows(Drows)
     except:
         print(driver.error_handler)
