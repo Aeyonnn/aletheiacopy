@@ -74,7 +74,7 @@ def entertainmentSection():
                     driver.find_element_by_partial_link_text(' Older posts').click()
                     sleep(2)
 
-                    if count == 1200:
+                    if counter == 1200:
                         scan = False
                         print ('process stop')
                         driver.quit()

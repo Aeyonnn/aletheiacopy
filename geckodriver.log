@@ -1112,3 +1112,33 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1650898605861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://empirenews.net/, line 1207: TypeError: document.getElementById(...) is null
 JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/, line 1195: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1170: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1165: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1183: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1175: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1176: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/7/, line 1174: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/8/, line 1172: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/9/, line 1173: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/10/, line 1172: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/11/, line 1170: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/12/, line 1159: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/13/, line 1163: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/14/, line 1193: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/15/, line 1181: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
