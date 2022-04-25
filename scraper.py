@@ -8,6 +8,7 @@ import pandas
 # op.add_argument('headless')
 # driver = webdriver.Remote(options=op)
 
+
 def entertainmentSection():
     count = 0
 
@@ -21,8 +22,12 @@ def entertainmentSection():
     header2 = [['No.','body']]
     writer2.writerows(header2)
 
-    driver = webdriver.Firefox()
-    driver.maximize_window()
+    options = Options()
+    options.headless = True
+    driver = webdriver.Firefox(options=options)
+
+    # driver = webdriver.Firefox()
+    # driver.maximize_window()
     driver.get("https://empirenews.net/")
     sleep(3)
     biginfo = ''
@@ -35,9 +40,9 @@ def entertainmentSection():
             # Entertainment Section
             try:
                 link = item.find_element_by_link_text('Entertainment').click()
-                sleep(5)
+                sleep(2)
                 scan = driver.find_element_by_partial_link_text(' Older posts')
-                sleep(5)
+                sleep(2)
                 print('scan')
                 while scan:
                     count += 1
@@ -65,9 +70,9 @@ def entertainmentSection():
                         print (biginfo)
                         biginfo = ''
 
-                    sleep(5)
+                    sleep(2)
                     driver.find_element_by_partial_link_text(' Older posts').click()
-                    sleep(5)
+                    sleep(2)
 
                     if count == 1200:
                         scan = False

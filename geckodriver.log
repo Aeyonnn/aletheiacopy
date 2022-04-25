@@ -1048,3 +1048,67 @@ JavaScript error: , line 0: UnknownError: The operation failed for reasons unrel
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1650898210998	geckodriver	INFO	Listening on 127.0.0.1:55550
+1650898214042	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileGW78aR"
+1650898214482	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileGW78aR\\search.json.mozlz4", (void 0)))
+1650898216521	Marionette	INFO	Listening on port 55559
+1650898216720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1207: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/, line 1195: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/2/, line 1170: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/3/, line 1165: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/4/, line 1183: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/5/, line 1175: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/page/6/, line 1176: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+1650898305395	Marionette	INFO	Stopped listening on port 55559
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1650898356413	geckodriver	INFO	Listening on 127.0.0.1:55776
+1650898359443	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofiles3vche"
+1650898359753	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofiles3vche\\search.json.mozlz4", (void 0)))
+1650898362388	Marionette	INFO	Listening on port 55785
+1650898362640	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1207: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/, line 1195: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+1650898478689	Marionette	INFO	Stopped listening on port 55785
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1650898563804	geckodriver	INFO	Listening on 127.0.0.1:56087
+1650898566868	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilem8c0Rf"
+*** You are running in headless mode.
+1650898567169	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofilem8c0Rf\\search.json.mozlz4", (void 0)))
+1650898568444	Marionette	INFO	Listening on port 56096
+1650898568922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1207: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+JavaScript error: https://empirenews.net/category/entertainment/, line 1195: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
+1650898600775	geckodriver	INFO	Listening on 127.0.0.1:56219
+1650898603797	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-no-remote" "-profile" "C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileZgvKqR"
+*** You are running in headless mode.
+1650898604183	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Elnathan\\AppData\\Local\\Temp\\rust_mozprofileZgvKqR\\search.json.mozlz4", (void 0)))
+1650898605610	Marionette	INFO	Listening on port 56229
+1650898605861	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://empirenews.net/, line 1207: TypeError: document.getElementById(...) is null
+JavaScript error: https://connect.facebook.net/en_US/sdk.js?hash=bc2424a7a233f9d72ce963309c2e6aed, line 63: uncaught exception: Error: invalid version specified
