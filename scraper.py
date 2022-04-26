@@ -99,5 +99,7 @@ def businessSection():
             driver.get(link[0])
             sleep(2)
             driver.find_element_by_xpath('.//i[contains(@class, "mb-icon-arrow-right")]').click()
+            if count == 1200:
+                driver.quit()
     except:
         print(driver.error_handler)
