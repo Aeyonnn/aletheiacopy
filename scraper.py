@@ -97,9 +97,9 @@ def businessSection():
 
 
             driver.get(link[0])
-            sleep(2)
-            driver.find_element_by_xpath('.//i[contains(@class, "mb-icon-arrow-right")]').click()
-            if count == 1200:
-                driver.quit()
+            sleep(5)
+            driver.get(driver.find_element_by_xpath('.//a[contains(@class, "nextpostslink")]').get_attribute('href'))
+            # if count == 1200:
+            #     driver.quit()
     except:
         print(driver.error_handler)
