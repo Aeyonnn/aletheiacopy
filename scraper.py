@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.options import Options
 
 def worldSection():
     
-    bbcData = open('BBC/bbcdata.csv', 'w', encoding='utf-8-sig')
+    bbcData = open('bbcdata.csv', 'w', encoding='utf-8-sig')
     writer = csv.writer(bbcData)
     header1 = [['No.','headline','body','link','date']]
     writer.writerows(header1)
@@ -40,7 +40,8 @@ def worldSection():
                         # get news title
                         count += 1
                         title = newsdata.find_element_by_xpath('.//span[contains(@class, "lx-stream-post__header-text gs-u-align-middle")]').get_attribute('textContent')
-                        link = newsdata.find_element_by_xpath('.//a[contains(@class, "qa-heading-link lx-stream-post__header-link")]').get_attribute('href')
+                        link = driver.find_element_by_xpath('.//a[contains(@class, "qa-heading-link lx-stream-post__header-link")]').get_attribute('href')
+                        print(link)
                         print(title)
                         for data in clean:
                             paragraph = data.find_elements_by_tag_name('p')
