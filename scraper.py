@@ -5,12 +5,21 @@ import pandas
 from selenium.webdriver.firefox.options import Options
 
 def worldSection():
+    
+    bbcData = open('BBC/bbcdata.csv', 'w', encoding='utf-8-sig')
+    writer = csv.writer(bbcData)
+    header1 = [['No.','headline','body','link','date']]
+    writer.writerows(header1)
+    
     driver = webdriver.Firefox()
     driver.maximize_window()
     # For Vince: Create new def and change link to scrape another category
     driver.get("https://www.bbc.com/news/world")
     sleep(10)
-
+    
+    count = 0
+    count1 = 0
+    
     try:
         # Huwag galawin nakakamatay -- Closes POPUP NA PAMBIHIRA KAYA AYAW PALA MAKUHA DATAAAAA
         driver.find_element_by_xpath('//button[contains(@class, "tp-close tp-active")]').click()
@@ -21,6 +30,7 @@ def worldSection():
             newscontainer = driver.find_elements_by_xpath('//li[contains(@class, "lx-stream__post-container")]')
             print(len(newscontainer))
             cur_page = driver.current_url
+            print(cur_page)
             for newsdata in newscontainer:
                 bodyp=[]
                 try:
@@ -28,6 +38,7 @@ def worldSection():
                     # print('clean found')
                     if clean:
                         # get news title
+                        count += 1
                         title = newsdata.find_element_by_xpath('.//span[contains(@class, "lx-stream-post__header-text gs-u-align-middle")]').get_attribute('textContent')
                         link = newsdata.find_element_by_xpath('.//a[contains(@class, "qa-heading-link lx-stream-post__header-link")]').get_attribute('href')
                         print(title)
@@ -46,10 +57,12 @@ def worldSection():
                                 print(news_paragraph)
                                 # bodyp.append(final)
                             # print(bodyp)
+                            rows = [[count,title,news_paragraph,link]]
+                            writer.writerows(rows)
                     print('\n')
                 except:
                         print('error cannot find clean')
             driver.find_element_by_xpath(".//div[@class='lx-pagination__controls lx-pagination__controls--right  qa-pagination-right']/a[@rel='next']").click()
+        driver.quit()
     except:
         print(driver.error_handler)
-        driver.quit()
