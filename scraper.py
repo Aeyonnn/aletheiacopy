@@ -29,6 +29,7 @@ def worldSection():
                     if clean:
                         # get news title
                         title = newsdata.find_element_by_xpath('.//span[contains(@class, "lx-stream-post__header-text gs-u-align-middle")]').get_attribute('textContent')
+                        link = newsdata.find_element_by_xpath('.//a[contains(@class, "qa-heading-link lx-stream-post__header-link")]').get_attribute('href')
                         print(title)
                         for data in clean:
                             paragraph = data.find_elements_by_tag_name('p')
@@ -49,6 +50,6 @@ def worldSection():
                 except:
                         print('error cannot find clean')
             driver.find_element_by_xpath(".//div[@class='lx-pagination__controls lx-pagination__controls--right  qa-pagination-right']/a[@rel='next']").click()
-        driver.quit()
     except:
         print(driver.error_handler)
+        driver.quit()
