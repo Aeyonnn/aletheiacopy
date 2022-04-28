@@ -6,7 +6,7 @@ from selenium.webdriver.firefox.options import Options
 
 def worldSection():
     
-    bbcData = open('bbcdata.csv', 'w', encoding='utf-8-sig')
+    bbcData = open('bbcworlddata.csv', 'w', encoding='utf-8-sig')
     writer = csv.writer(bbcData)
     header1 = [['No.','headline','body','link','date']]
     writer.writerows(header1)
@@ -30,7 +30,7 @@ def worldSection():
             newscontainer = driver.find_elements_by_xpath('//li[contains(@class, "lx-stream__post-container")]')
             print(len(newscontainer))
             cur_page = driver.current_url
-            print(cur_page)
+            # print(cur_page)
             for newsdata in newscontainer:
                 bodyp=[]
                 try:
@@ -56,11 +56,35 @@ def worldSection():
                                 print(news_paragraph)
                                 # bodyp.append(final)
                             # print(bodyp)
-                            rows = [[count,title,news_paragraph,link]]
+                            rows = [[count,title,news_paragraph]]
+                            writer.writerows(rows)
+                    else:
+                        count += 1
+                        title = newsdata.find_element_by_xpath('.//span[contains(@class, "lx-stream-post__header-text gs-u-align-middle")]').get_attribute('textContent')
+                        print(title)
+                        oppoclean = newsdata.find_elements_by_xpath('.//div[contains(@class, "gel-5/8@l")]')
+                        for data in oppoclean:
+                            paragraph = data.find_elements_by_tag_name('p')
+                            # print(paragraph)
+                            for body in paragraph:
+                                # Removes the Ads
+                                # if(body.text != 'ADVERTISEMENT'):
+                                #     clean = body.text
+                                # else:
+                                #     clean = ''
+                                # Removes redundant spaces
+                                news_paragraph = body.text
+                                # final = news_paragraph.strip()
+                                print(news_paragraph)
+                                # bodyp.append(final)
+                            # print(bodyp)
+                            rows = [[count,title,news_paragraph]]
                             writer.writerows(rows)
                     print('\n')
+
                 except:
                         print('error cannot find clean')
+            sleep(2)
             driver.find_element_by_xpath(".//div[@class='lx-pagination__controls lx-pagination__controls--right  qa-pagination-right']/a[@rel='next']").click()
         driver.quit()
     except:
