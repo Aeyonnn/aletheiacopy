@@ -40,8 +40,6 @@ def worldSection():
                         # get news title
                         count += 1
                         title = newsdata.find_element_by_xpath('.//span[contains(@class, "lx-stream-post__header-text gs-u-align-middle")]').get_attribute('textContent')
-                        link = driver.find_element_by_xpath('.//a[contains(@class, "qa-heading-link lx-stream-post__header-link")]').get_attribute('href')
-                        print(link)
                         print(title)
                         for data in clean:
                             paragraph = data.find_elements_by_tag_name('p')
