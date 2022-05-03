@@ -15,7 +15,11 @@
       "function": {
         "aletheiawebpaged43aabeb": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
-          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-6b594c59397757736368-build.zip"
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-3465566976697638512f-build.zip"
+        },
+        "aletheiawebscraper": {
+          "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+          "s3Key": "amplify-builds/aletheiawebscraper-706a385272562b4a3961-build.zip"
         }
       }
     }

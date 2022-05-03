@@ -1,8 +1,12 @@
 import json
+from test.testalgo import lambdaGet
 
 def handler(event, context):
+  data = event['news']
   body = {
-    "message": "Hello from Lambda!"
+    # "message": "Hello from Lambda!"
+    "news": data,
+    "message": str(lambdaGet(data))
   }
 
   response = {
@@ -15,3 +19,4 @@ def handler(event, context):
   }
   
   return response
+# print(str(lambdaGet()))
