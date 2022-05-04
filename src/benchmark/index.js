@@ -1,12 +1,31 @@
-import React, {useMemo} from 'react'
+import React, {useMemo, useState, useEffect} from 'react'
 import {useTable} from 'react-table'
 import { Columns } from './table';
 import MOCK_DATA from './MOCK_DATA.json'
 import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, IconSearch, input } from './BenchmarkElements'
 import './table.css'
 import SearchIcon from '@mui/icons-material/Search';
-const Progress = () => {
 
+//KYNCH wag galaw
+import { API } from 'aws-amplify';
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
+//Up to here
+
+function Progress() {
+  //AWS
+  const [greeting, setGreeting] = useState(null)
+  async function fetchGreeting(){
+    const apiData = await API.get('algoapi', '/pythonapi')
+    setGreeting(apiData.message)
+  }
+
+  useEffect(() => {
+    fetchGreeting()
+  }, [])
+  //Up to here
   //Use useMemo() if you want to have the older data in cache
   const columns = useMemo(() => Columns, [])
   const data = useMemo(() => MOCK_DATA, [])

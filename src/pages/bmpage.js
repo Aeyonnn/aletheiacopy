@@ -1,33 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import '../App.css';
-import Progress from '../components/benchmark'
-// Kynch wag mo galawin ito
-import { API } from 'aws-amplify';
-import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from '../aws-exports';
-Amplify.configure(awsconfig);
-Auth.configure(awsconfig);
-// Hanggang dito
+import React from 'react'
+import Progress from '../benchmark'
 
-function App() {
-  const [greeting, setGreeting] = useState(null)
-  async function fetchGreeting(){
-    const apiData = await API.get('algoapi', '/pythonapi')
-    setGreeting(apiData.message)
-  }
 
-  useEffect(() => {
-    fetchGreeting()
-  }, [])
 
+const bmpage = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>{greeting}</h1>
-        <Progress/>
-      </header>
-    </div>
-  );
+    <>
+    <Progress/>
+    </>
+  )
 }
 
-export default App;
+export default bmpage
