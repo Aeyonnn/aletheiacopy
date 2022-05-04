@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import Progress from '../components/benchmark'
 // Kynch wag mo galawin ito
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>{greeting}</h1>
+        <Progress/>
       </header>
     </div>
   );

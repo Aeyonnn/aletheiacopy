@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {FaYoutube,FaGithub} from 'react-icons/fa'
 import {animateScroll as scroll} from 'react-scroll';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterEmail, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterLinkL, FooterEmail, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements';
 
 const Footer = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -29,11 +29,9 @@ const Footer = ({ toggle }) => {
                   <FooterLinksWrapper>
                       <FooterLinkItems>
                         <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to="/benchmark"></FooterLink>
-                            <FooterLink to="/benchmark"></FooterLink>
-                            <FooterLink to="/abtpage" target="_blank">Thesis</FooterLink>
-                            <FooterLink to="/benchmark"></FooterLink>
+                            <FooterLinkL to="/abtpage" target="_blank">Thesis</FooterLinkL>
                       </FooterLinkItems>
+                       {/* If you want to add more footer links */}
                       {/* <FooterLinkItems>
                         <FooterLinkTitle>Lorem</FooterLinkTitle>
                             <FooterLink to="/benchmark">Lorem Ipsum</FooterLink>

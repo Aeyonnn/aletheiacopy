@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoContainter, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img, Icon } from './aboutelements';
+import { InfoContainter, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img } from './aboutelements';
 
 const About = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt, primary, dark, dark2}) => {
   return (

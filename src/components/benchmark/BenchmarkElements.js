@@ -2,15 +2,14 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
-    min-height: 692px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    overflow: hidden;
-    background: #0466C8;
+    height: 1080px;
+    background: #EDEDED;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 20px;
+    
 `
 export const FormWrap = styled.div`
     height: 100%;
@@ -23,56 +22,57 @@ export const FormWrap = styled.div`
     }
 `
 export const Icon = styled(Link)`
+    position: fixed;
     margin-left: 32px;
     margin-top: 32px;
     text-decoration: none;
-    color: #fff;
+    color: #33415C;
     font-weight: 700;
     font-size: 32px;
-
     @media screen and (max-width: 480px){
         margin-left: 16px;
         margin-top: 8px;
     }
 ` 
 export const FormContent = styled.div`
-    height: 100%;
+    height: 50%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    margin: auto;
+    width: 50%;
+    padding: .625rem;
+    border: 10rem;
     @media screen and (max-width: 480px){
         padding: 10px;
     }
 `
-export const Form = styled.form`
-    background: #001233;
-    max-width: 400px;
-    height: auto;
-    width: 100%;
-    z-index: 1;
-    display: grid;
-    margin: 0 auto;
-    padding: 80px 32px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0, 0.9);
-
-    @media screen and (max-width: 480px){
-        padding: 32px 32px;
-    }
+export const SearchInputs = styled.div`
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
 `
-export const FormInput = styled.input`
+export const IconSearch = styled.div`
+    height: 3.75rem;
+    width: 3.125rem;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+`
+export const Search = styled.div`
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
+    width: 800px;
 `
-export const FormButton = styled.button`
-    background: #001233;
-    padding: 16px 0;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 20px;
-    cursor: pointer;
+
+export const input = styled.input`
+    background-color: #fff;
+    border: 0;
+    border-radius: .125rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 1.125rem;
+    padding: 0.9375rem;
+    height: 1.875rem;
+    width: 1.75rem;
 `

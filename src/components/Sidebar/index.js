@@ -8,10 +8,10 @@ const Sidebar = ({isOpen, toggle }) => {
           </Icon>
           <SidebarWrapper>
               <SidebarMenu>
-                  <SidebarLink to="" onClick={toggle}> Home </SidebarLink>
-                  <SidebarLink to="" onClick={toggle}> Search </SidebarLink>
-                  <SidebarLink to="" onClick={toggle}> School </SidebarLink>
-                  <SidebarLink to="" onClick={toggle}> Github </SidebarLink>
+                  <SidebarLink to="home" onClick={toggle}> Home </SidebarLink>
+                  <SidebarLink to="search" onClick={toggle}> Search </SidebarLink>
+                  <SidebarLink to="school" onClick={toggle}> School </SidebarLink>
+                  <SidebarLink to="github" onClick={toggle}> Github </SidebarLink>
               </SidebarMenu>
               <SideBtnWrap>
                 <SidebarRoute to="/bmpage" onClick={toggle}> Benchmark </SidebarRoute>
