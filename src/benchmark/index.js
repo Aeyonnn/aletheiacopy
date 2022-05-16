@@ -15,15 +15,20 @@ Auth.configure(awsconfig);
 //Up to here
 
 function Progress() {
-  //AWS
   const [greeting, setGreeting] = useState(null)
-  async function fetchGreeting(){
-    const apiData = await API.get('algoapi', '/pythonapi')
+  const myInit = {
+    queryStringParameters: {
+      news: "More people come together for the benefit of the school"
+    }
+  };
+  
+  async function fetchNewsAlgo(){
+    const apiData = await API.get('algoapi', '/pythonapi', myInit)
     setGreeting(apiData.message)
   }
 
   useEffect(() => {
-    fetchGreeting()
+    fetchNewsAlgo()
   }, [])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
@@ -46,7 +51,7 @@ function Progress() {
             <FormContent>
              <Search>
                <SearchInputs>
-                <input type="text" placeholder='Enter URL'/>
+                <input type="text" placeholder={greeting}/>
                 <IconSearch>
                 <SearchIcon />
                 </IconSearch>

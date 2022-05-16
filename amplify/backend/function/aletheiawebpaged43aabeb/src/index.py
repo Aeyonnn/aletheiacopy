@@ -1,12 +1,14 @@
 import json
-from test.testalgo import lambdaGet
+from test.testalgo import combiModel, neuralModel, decisionModel, randomModel
 
 def handler(event, context):
-  data = event['news']
+  data = event['queryStringParameters']['news']
   body = {
-    # "message": "Hello from Lambda!"
     "news": data,
-    "message": str(lambdaGet(data))
+    "combination": str(combiModel(data)),
+    "neural": str(neuralModel(data)),
+    "decision": str(decisionModel(data)),
+    "random": str(randomModel(data))
   }
 
   response = {
