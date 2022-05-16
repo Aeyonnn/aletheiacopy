@@ -8,7 +8,7 @@ def handler(event, context):
     "combination": str(combiModel(data)),
     "neural": str(neuralModel(data)),
     "decision": str(decisionModel(data)),
-    "random": str(randomModel(data))
+    "randomf": str(randomModel(data))
   }
 
   response = {

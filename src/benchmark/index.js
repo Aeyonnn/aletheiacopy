@@ -15,16 +15,24 @@ Auth.configure(awsconfig);
 //Up to here
 
 function Progress() {
-  const [greeting, setGreeting] = useState(null)
-  const myInit = {
+  // Variables to extract algorithm model predictions
+  const [combination, getCombination] = useState(null)
+  const [decision, getDecision] = useState(null)
+  const [neural, getNeural] = useState(null)
+  const [randomf, getRandomf] = useState(null)
+  
+  const getPredict = {
     queryStringParameters: {
       news: "More people come together for the benefit of the school"
     }
   };
   
   async function fetchNewsAlgo(){
-    const apiData = await API.get('algoapi', '/pythonapi', myInit)
-    setGreeting(apiData.message)
+    const apiData = await API.get('algoapi', '/pythonapi', getPredict)
+    getCombination(apiData.combination)
+    getDecision(apiData.decision)
+    getNeural(apiData.neural)
+    getRandomf(apiData.randomf)
   }
 
   useEffect(() => {
@@ -51,7 +59,7 @@ function Progress() {
             <FormContent>
              <Search>
                <SearchInputs>
-                <input type="text" placeholder={greeting}/>
+                <input type="text" placeholder={neural}/>
                 <IconSearch>
                 <SearchIcon />
                 </IconSearch>
