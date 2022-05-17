@@ -64,7 +64,7 @@ function Progress() {
                <SearchInputs>
                <Formik
       initialValues={{
-        news: '',
+        newsSubmit: '',
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
