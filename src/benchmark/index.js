@@ -5,6 +5,8 @@ import MOCK_DATA from './MOCK_DATA.json'
 import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, IconSearch, input } from './BenchmarkElements'
 import './table.css'
 import SearchIcon from '@mui/icons-material/Search';
+import { Formik, Field, Form } from 'formik';
+
 
 //KYNCH wag galaw
 import { API } from 'aws-amplify';
@@ -48,8 +50,8 @@ function Progress() {
     data,
   })
   
-  const {getTableProps, getTableBodyProps,headerGroups,rows,prepareRow, } = tableInstance
-
+  const {getTableProps, getTableBodyProps,headerGroups,rows,prepareRow, } = tableInstance;
+  
 
   return (
     <>
@@ -58,11 +60,23 @@ function Progress() {
         <FormWrap>
             <FormContent>
              <Search>
+               {/* Div Input */}
                <SearchInputs>
-                <input type="text" placeholder={neural}/>
-                <IconSearch>
-                <SearchIcon />
-                </IconSearch>
+               <Formik
+      initialValues={{
+        news: '',
+      }}
+      onSubmit={async (values) => {
+        await new Promise((r) => setTimeout(r, 500));
+        alert(JSON.stringify(values, null, 2));
+      }}
+    >
+      <Form>
+        <label htmlFor="newsSubmit"></label>
+        <Field id="newsSubmit" name="newsSubmit" placeholder="Enter News Here" />
+        <button type="submit">Submit</button>
+      </Form>
+    </Formik>
                </SearchInputs>
              </Search>
             </FormContent>
@@ -100,3 +114,5 @@ function Progress() {
   );
 };
 export default Progress;
+
+
