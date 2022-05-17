@@ -4,9 +4,8 @@ import { Columns } from './table';
 import MOCK_DATA from './MOCK_DATA.json'
 import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, IconSearch, input } from './BenchmarkElements'
 import './table.css'
-import SearchIcon from '@mui/icons-material/Search';
 import { Formik, Field, Form } from 'formik';
-
+import {Spinner} from 'react-bootstrap'
 
 //KYNCH wag galaw
 import { API } from 'aws-amplify';
@@ -23,6 +22,7 @@ function Progress() {
   const [neural, getNeural] = useState(null)
   const [randomf, getRandomf] = useState(null)
   
+  const [prediction,setprediction] = useState(null)
   const getPredict = {
     queryStringParameters: {
       news: "More people come together for the benefit of the school"
@@ -39,6 +39,7 @@ function Progress() {
 
   useEffect(() => {
     fetchNewsAlgo()
+    setprediction(fetchNewsAlgo)
   }, [])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
@@ -81,7 +82,7 @@ function Progress() {
              </Search>
             </FormContent>
             <FormContent>
-            <table {...getTableProps()}>
+              {prediction ? (<table {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
                 <tr {...headerGroup.getHeaderGroupProps}>
@@ -106,7 +107,8 @@ function Progress() {
               })
             }
           </tbody>
-        </table>
+        </table>) : ("Loading")}
+            
         </FormContent>
         </FormWrap>
     </Container>
