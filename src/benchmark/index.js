@@ -83,9 +83,12 @@ function Progress() {
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
         getNews.queryStringParameters.newslink = values.newsSubmit;
-        console.log(values.newsSubmit)
-        fetchNewsArt()
-        alert(JSON.stringify(news_art, null, 2));
+        await fetchNewsArt()
+        getPredict.queryStringParameters.news = news_art;
+        console.log(getPredict.queryStringParameters.news)
+        await fetchNewsAlgo()
+        console.log(neural)
+        alert(JSON.stringify(news_art+neural, null, 2));
       }}
     >
       <Form>
