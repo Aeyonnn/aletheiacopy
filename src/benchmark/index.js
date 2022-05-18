@@ -6,6 +6,7 @@ import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, IconSearc
 import './table.css'
 import { Formik, Field, Form } from 'formik';
 import {Spinner} from 'react-bootstrap'
+import Table from 'react-bootstrap/Table'
 
 //KYNCH wag galaw
 import { API } from 'aws-amplify';
@@ -37,6 +38,9 @@ function Progress() {
   };
   
   async function fetchNewsAlgo(){
+    //all functions answer are either true or fake, manually input the names of the model.
+    //show news use news_art variable
+    //combination,decision,neural,randomf
     const apiData = await API.get('algoapi', '/pythonapi', getPredict)
     getCombination(apiData.combination)
     getDecision(apiData.decision)
@@ -60,6 +64,7 @@ function Progress() {
   //Up to here
   //Use useMemo() if you want to have the older data in cache
   const columns = useMemo(() => Columns, [])
+  //import tayo dito ng json file. idk pano to kasi importing yun from the database itself
   const data = useMemo(() => MOCK_DATA, [])
 
   const tableInstance = useTable({
@@ -107,33 +112,33 @@ function Progress() {
              </Search>
             </FormContent>
             <FormContent>
-              {prediction ? (<table {...getTableProps()}>
-          <thead>
-            {headerGroups.map((headerGroup) => (
-                <tr {...headerGroup.getHeaderGroupProps}>
-                  {headerGroup.headers.map((column) => (
-                      <th {...column.getHeaderProps()}>{column.render('Header')}</th>
-                    ))}
+              {prediction ? (<Table striped bordered hover size="sm">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Result</th>
                 </tr>
-              ))}
-          </thead>
-          <tbody {...getTableBodyProps()}>
-            {
-              rows.map(row => {
-                prepareRow(row)
-                return(
-                  <tr {...row.getRowProps()}>
-                    {row.cells.map((cell) => {
-                      return <td {...cell.getCellProps()}>
-                        {cell.render('Cell')}</td>
-                    })}
-                  </tr>
-                )
-              })
-            }
-          </tbody>
-        </table>) : ("Loading")}
-            
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Combination</td>
+                  <td>{combination}</td>
+                </tr>
+                <tr>
+                <td>Decision Tree</td>
+                <td>{decision}</td>
+                </tr>
+                <tr>
+                <td>Neural Network</td>
+                <td>{neural}</td>
+                </tr>
+                <tr>
+                <td>Random Forest</td>
+                <td>{randomf}</td>
+                </tr>
+                </tbody>
+                </Table>) : 
+                ("Loading")}
         </FormContent>
         </FormWrap>
     </Container>
