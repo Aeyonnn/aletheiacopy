@@ -63,16 +63,7 @@ function Progress() {
   }, [])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
-  const columns = useMemo(() => Columns, [])
-  //import tayo dito ng json file. idk pano to kasi importing yun from the database itself
-  const data = useMemo(() => MOCK_DATA, [])
-
-  const tableInstance = useTable({
-    columns,
-    data,
-  })
-  
-  const {getTableProps, getTableBodyProps,headerGroups,rows,prepareRow, } = tableInstance;
+ 
   
 
   return (
@@ -89,15 +80,16 @@ function Progress() {
         newsSubmit: '',
       }}
       onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 2000));
+        await new Promise((r) => setTimeout(r, 5000));
         getNews.queryStringParameters.newslink = values.newsSubmit;
+        // await new Promise((r) => setTimeout(r, 5000));
         fetchNewsArt()
-        await new Promise((r) => setTimeout(r, 20000));
+
         getPredict.queryStringParameters.news = news_art;
         console.log(getPredict.queryStringParameters.news)
-        
         fetchNewsAlgo()
-        await new Promise((r) => setTimeout(r, 20000));
+
+        // await new Promise((r) => setTimeout(r, 20000));
         console.log(prediction)
         alert(JSON.stringify(news_art+neural, null, 2));
       }}
