@@ -21,18 +21,18 @@ function Progress() {
   const [decision, getDecision] = useState(null)
   const [neural, getNeural] = useState(null)
   const [randomf, getRandomf] = useState(null)
-  const [prediction,setprediction] = useState(null)
   const [news_art,getNewsArt] = useState(null)
-
+  
+  const [prediction,setprediction] = useState(null)
   const getPredict = {
     queryStringParameters: {
-      news: "More people come together for the benefit of the school"
+      news: ""
     }
   };
 
   const getNews = {
     queryStringParameters: {
-      newslink: "More people come together for the benefit of the school"
+      newslink: ""
     }
   };
   
@@ -42,6 +42,9 @@ function Progress() {
     getDecision(apiData.decision)
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
+    
+    setprediction(apiData)
+    return apiData
   }
 
   async function fetchNewsArt(){
@@ -50,9 +53,9 @@ function Progress() {
   }
 
   useEffect(() => {
-    fetchNewsArt()
-    fetchNewsAlgo()
-    setprediction(fetchNewsAlgo)
+    // fetchNewsArt()
+    // fetchNewsAlgo()
+    setprediction(prediction)
   }, [])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
@@ -81,13 +84,16 @@ function Progress() {
         newsSubmit: '',
       }}
       onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 500));
+        await new Promise((r) => setTimeout(r, 2000));
         getNews.queryStringParameters.newslink = values.newsSubmit;
-        await fetchNewsArt()
+        fetchNewsArt()
+        await new Promise((r) => setTimeout(r, 20000));
         getPredict.queryStringParameters.news = news_art;
         console.log(getPredict.queryStringParameters.news)
-        await fetchNewsAlgo()
-        console.log(neural)
+        
+        fetchNewsAlgo()
+        await new Promise((r) => setTimeout(r, 20000));
+        console.log(prediction)
         alert(JSON.stringify(news_art+neural, null, 2));
       }}
     >
