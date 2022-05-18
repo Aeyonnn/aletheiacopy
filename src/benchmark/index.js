@@ -21,11 +21,18 @@ function Progress() {
   const [decision, getDecision] = useState(null)
   const [neural, getNeural] = useState(null)
   const [randomf, getRandomf] = useState(null)
-  
   const [prediction,setprediction] = useState(null)
+  const [news_art,getNewsArt] = useState(null)
+
   const getPredict = {
     queryStringParameters: {
       news: "More people come together for the benefit of the school"
+    }
+  };
+
+  const getNews = {
+    queryStringParameters: {
+      newslink: "More people come together for the benefit of the school"
     }
   };
   
@@ -37,7 +44,13 @@ function Progress() {
     getRandomf(apiData.randomf)
   }
 
+  async function fetchNewsArt(){
+    const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
+    getNewsArt(apiData.newsart)
+  }
+
   useEffect(() => {
+    fetchNewsArt()
     fetchNewsAlgo()
     setprediction(fetchNewsAlgo)
   }, [])
@@ -69,7 +82,10 @@ function Progress() {
       }}
       onSubmit={async (values) => {
         await new Promise((r) => setTimeout(r, 500));
-        alert(JSON.stringify(values, null, 2));
+        getNews.queryStringParameters.newslink = values.newsSubmit;
+        console.log(values.newsSubmit)
+        fetchNewsArt()
+        alert(JSON.stringify(news_art, null, 2));
       }}
     >
       <Form>
