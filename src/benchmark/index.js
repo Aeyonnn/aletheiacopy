@@ -60,7 +60,6 @@ function Progress() {
     const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
-
   }
 
   window.onload = setprediction;
