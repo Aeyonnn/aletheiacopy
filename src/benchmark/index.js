@@ -22,9 +22,11 @@ function Progress() {
   const [decision, getDecision] = useState(null)
   const [neural, getNeural] = useState(null)
   const [randomf, getRandomf] = useState(null)
-  const [news_art,getNewsArt] = useState(null)
   
+  const [news_art,getNewsArt] = useState(null)
   const [prediction,setprediction] = useState(null)
+
+  
   const getPredict = {
     queryStringParameters: {
       news: ""
@@ -37,30 +39,37 @@ function Progress() {
     }
   };
   
-  async function fetchNewsAlgo(){
+  async function fetchNewsAlgo(article){
     //all functions answer are either true or fake, manually input the names of the model.
     //show news use news_art variable
     //combination,decision,neural,randomf
+    getPredict.queryStringParameters.news = article
     const apiData = await API.get('algoapi', '/pythonapi', getPredict)
     getCombination(apiData.combination)
     getDecision(apiData.decision)
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
+
+
     
     setprediction(apiData)
-    return apiData
   }
 
-  async function fetchNewsArt(){
+  async function fetchNewsArt(link){
+    getNews.queryStringParameters.newslink = link
     const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
     getNewsArt(apiData.newsart)
+    await fetchNewsAlgo(apiData.newsart)
+
   }
+
+  window.onload = setprediction;
 
   useEffect(() => {
     // fetchNewsArt()
     // fetchNewsAlgo()
-    setprediction(prediction)
-  }, [])
+    setprediction()
+  }, [prediction])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
  
@@ -80,18 +89,17 @@ function Progress() {
         newsSubmit: '',
       }}
       onSubmit={async (values) => {
-        await new Promise((r) => setTimeout(r, 5000));
+        await new Promise((r) => setTimeout(r, 1000));
         getNews.queryStringParameters.newslink = values.newsSubmit;
-        // await new Promise((r) => setTimeout(r, 5000));
-        fetchNewsArt()
 
-        getPredict.queryStringParameters.news = news_art;
-        console.log(getPredict.queryStringParameters.news)
-        fetchNewsAlgo()
+        fetchNewsArt(values.newsSubmit);
 
-        // await new Promise((r) => setTimeout(r, 20000));
-        console.log(prediction)
-        alert(JSON.stringify(news_art+neural, null, 2));
+        // getPredict.queryStringParameters.news = news_art;
+        // console.log(getPredict.queryStringParameters.news);
+        // fetchNewsAlgo();
+
+        // console.log(prediction);
+        // alert(JSON.stringify(news_art+neural, null, 2));
       }}
     >
       <Form>
@@ -104,7 +112,7 @@ function Progress() {
              </Search>
             </FormContent>
             <FormContent>
-              {prediction ? (<Table striped bordered hover size="sm">
+              {news_art ? (<Table striped bordered hover size="sm">
               <thead>
                 <tr>
                   <th>Model</th>
