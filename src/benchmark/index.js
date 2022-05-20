@@ -1,10 +1,9 @@
 import React, { useState, useEffect} from 'react'
-import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, FormContentTable} from './BenchmarkElements'
+import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, FormContentTable, FormLoader} from './BenchmarkElements'
 import './table.css'
 import { Formik, Field, Form } from 'formik';
 import CircularProgress from '@mui/material/CircularProgress';
 import Table from 'react-bootstrap/Table'
-
 //KYNCH wag galaw
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
@@ -19,11 +18,16 @@ function Progress() {
   const [decision, getDecision] = useState(null)
   const [neural, getNeural] = useState(null)
   const [randomf, getRandomf] = useState(null)
-  
-  const [news_art,getNewsArt] = useState(null)
-  const [prediction,setprediction] = useState(null)
+  const [news_art, getNewsArt] = useState(null)
+  const [prediction, setprediction] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const handleClick = () => {
+    setLoading(true)
 
-  const [show,setShow] = useState(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+  }
   const getPredict = {
     queryStringParameters: {
       news: ""
@@ -46,8 +50,6 @@ function Progress() {
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
 
-
-    
     setprediction(apiData)
   }
 
@@ -57,9 +59,6 @@ function Progress() {
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
   }
-  function table(){
-    
-  }
 
   window.onload = setprediction;
 
@@ -68,8 +67,6 @@ function Progress() {
     // fetchNewsAlgo()
     setprediction()
   }, [prediction])
-  //Up to here
-  //Use useMemo() if you want to have the older data in cache
   return (
     <>
     <Container>
@@ -102,15 +99,20 @@ function Progress() {
       <Form>
         <label htmlFor="newsSubmit"></label>
         <Field id="newsSubmit" name="newsSubmit" placeholder="Enter News Here" />
-        <button id="submit" type="submit" disabled={isSubmitting} onClick={() => setShow(true) }>Submit</button>
+        <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+          Submit</button>
       </Form>
      )}
     </Formik>
                </SearchInputs>
              </Search>
             </FormContent>
+            <FormLoader>
+        {loading ? (<CircularProgress/>) : ("") }
+        </FormLoader>
             <FormContentTable>
-            {news_art ? (<Table striped bordered hover size="sm">
+            {combination ? (
+            <Table striped bordered hover size="sm">
                   <thead>
                     <tr>
                       <th>Model</th>
@@ -144,5 +146,3 @@ function Progress() {
   );
 };
 export default Progress;
-
-

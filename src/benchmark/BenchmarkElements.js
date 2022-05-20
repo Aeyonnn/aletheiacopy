@@ -34,17 +34,7 @@ export const Icon = styled(Link)`
         margin-top: 8px;
     }
 ` 
-export const FormContent = styled.div`
-    height: 50%;
-    display: flex;
-    margin: auto;
-    width: 50%;
-    padding: .625rem;
-    border: 10rem;
-    @media screen and (max-width: 480px){
-        padding: 10px;
-    }
-`
+
 export const FormContentTable = styled.div`
     height: 50%;
     display: flex;
@@ -86,4 +76,26 @@ export const input = styled.input`
     padding: 0.9375rem;
     height: 1.875rem;
     width: 1.75rem;
+`
+export const FormContent = styled.div`
+    height: 25%;
+    display: flex;
+    margin: auto;
+    width: 50%;
+    padding: .625rem;
+    border: 10rem;
+    @media screen and (max-width: 480px){
+        padding: 10px;
+    }
+`
+export const FormLoader = styled.div`
+    height: 25%;
+    display: flex;
+    margin: auto;
+    width: auto;
+    padding: .625rem;
+    border: 10rem;
+    @media screen and (max-width: 480px){
+        padding: 10px;
+    }
 `
