@@ -1,11 +1,8 @@
-import React, {useMemo, useState, useEffect} from 'react'
-import {useTable} from 'react-table'
-import { Columns } from './table';
-import MOCK_DATA from './MOCK_DATA.json'
-import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, IconSearch, input } from './BenchmarkElements'
+import React, { useState, useEffect} from 'react'
+import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, FormContentTable} from './BenchmarkElements'
 import './table.css'
 import { Formik, Field, Form } from 'formik';
-import {Spinner} from 'react-bootstrap'
+import CircularProgress from '@mui/material/CircularProgress';
 import Table from 'react-bootstrap/Table'
 
 //KYNCH wag galaw
@@ -26,7 +23,7 @@ function Progress() {
   const [news_art,getNewsArt] = useState(null)
   const [prediction,setprediction] = useState(null)
 
-  
+  const [show,setShow] = useState(false)
   const getPredict = {
     queryStringParameters: {
       news: ""
@@ -38,7 +35,6 @@ function Progress() {
       newslink: ""
     }
   };
-  
   async function fetchNewsAlgo(article){
     //all functions answer are either true or fake, manually input the names of the model.
     //show news use news_art variable
@@ -61,6 +57,9 @@ function Progress() {
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
   }
+  function table(){
+    
+  }
 
   window.onload = setprediction;
 
@@ -71,9 +70,6 @@ function Progress() {
   }, [prediction])
   //Up to here
   //Use useMemo() if you want to have the older data in cache
- 
-  
-
   return (
     <>
     <Container>
@@ -87,58 +83,61 @@ function Progress() {
       initialValues={{
         newsSubmit: '',
       }}
-      onSubmit={async (values) => {
+      onSubmit=
+      {async (values, actions) => {
         await new Promise((r) => setTimeout(r, 1000));
         getNews.queryStringParameters.newslink = values.newsSubmit;
 
         fetchNewsArt(values.newsSubmit);
-
         // getPredict.queryStringParameters.news = news_art;
         // console.log(getPredict.queryStringParameters.news);
         // fetchNewsAlgo();
 
         // console.log(prediction);
         // alert(JSON.stringify(news_art+neural, null, 2));
+        actions.setSubmitting(false);
       }}
-    >
+   >  
+     {({isSubmitting}) => (
       <Form>
         <label htmlFor="newsSubmit"></label>
         <Field id="newsSubmit" name="newsSubmit" placeholder="Enter News Here" />
-        <button type="submit">Submit</button>
+        <button id="submit" type="submit" disabled={isSubmitting} onClick={() => setShow(true) }>Submit</button>
       </Form>
+     )}
     </Formik>
                </SearchInputs>
              </Search>
             </FormContent>
-            <FormContent>
-              {news_art ? (<Table striped bordered hover size="sm">
-              <thead>
-                <tr>
-                  <th>Model</th>
-                  <th>Result</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Combination</td>
-                  <td>{combination}</td>
-                </tr>
-                <tr>
-                <td>Decision Tree</td>
-                <td>{decision}</td>
-                </tr>
-                <tr>
-                <td>Neural Network</td>
-                <td>{neural}</td>
-                </tr>
-                <tr>
-                <td>Random Forest</td>
-                <td>{randomf}</td>
-                </tr>
-                </tbody>
-                </Table>) : 
-                ("Loading")}
-        </FormContent>
+            <FormContentTable>
+            {news_art ? (<Table striped bordered hover size="sm">
+                  <thead>
+                    <tr>
+                      <th>Model</th>
+                      <th>Result</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>Combination</td>
+                      <td>{combination}</td>
+                    </tr>
+                    <tr>
+                    <td>Decision Tree</td>
+                    <td>{decision}</td>
+                    </tr>
+                    <tr>
+                    <td>Neural Network</td>
+                    <td>{neural}</td>
+                    </tr>
+                    <tr>
+                    <td>Random Forest</td>
+                    <td>{randomf}</td>
+                    </tr>
+                    </tbody>
+                    </Table>) : 
+                    ("")}
+        </FormContentTable>
         </FormWrap>
     </Container>
     </>

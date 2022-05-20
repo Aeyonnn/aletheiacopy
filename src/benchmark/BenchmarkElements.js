@@ -45,6 +45,17 @@ export const FormContent = styled.div`
         padding: 10px;
     }
 `
+export const FormContentTable = styled.div`
+    height: 50%;
+    display: flex;
+    margin: auto;
+    width: auto;
+    padding: .625rem;
+    border: 10rem;
+    @media screen and (max-width: 480px){
+        padding: 10px;
+    }
+`
 export const SearchInputs = styled.div`
     margin-top: 105px;
     display: flex;
