@@ -5,7 +5,7 @@ def get_page_text(url):
     html_page = requests.get(url).content
     soup = BeautifulSoup(html_page, 'html.parser')
 
-    whitelist = ['p', 'strong', 'em', 'b', 'u', 'i', 'h1', 'h2', 'h3']
+    whitelist = ['p', 'strong', 'em', 'b', 'u', 'i', 'h1', 'h2', 'h3', 'text']
     # whitelist = ['p', 'strong', 'em', 'b', 'u', 'i', 'h2', 'h3']
     out = ""
 

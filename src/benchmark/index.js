@@ -108,7 +108,7 @@ function Progress() {
              </Search>
             </FormContent>
             <FormLoader>
-        {loading ? (<CircularProgress/>) : ("") }
+        {loading ? (<CircularProgress/>) : ([news_art]) }
         </FormLoader>
             <FormContentTable>
             {combination ? (
