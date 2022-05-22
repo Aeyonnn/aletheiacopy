@@ -25,7 +25,7 @@ function Progress() {
 
     setTimeout(() => {
       setLoading(false)
-    }, 5000)
+    }, 8000)
   }
   //Prediction Function
   const getPredict = {
@@ -66,9 +66,10 @@ function Progress() {
     <Container>
       <Icon to='/'>Aletheia</Icon>
         <FormWrap>
+          <FormContent></FormContent>
             <FormContent>
              <Search>
-               {/* Div Input */}
+             
                <SearchInputs>
                <Formik
                 initialValues={{
