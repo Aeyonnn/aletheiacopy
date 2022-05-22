@@ -1,9 +1,8 @@
 import React, { useState, useEffect} from 'react'
-import { Container, FormWrap, Icon, FormContent, Search, SearchInputs, FormContentTable, FormLoader} from './BenchmarkElements'
+import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable} from './BenchmarkElements'
 import './table.css'
 import { Formik, Field, Form } from 'formik';
 import CircularProgress from '@mui/material/CircularProgress';
-import Table from 'react-bootstrap/Table'
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
@@ -25,7 +24,7 @@ function Progress() {
 
     setTimeout(() => {
       setLoading(false)
-    }, 8000)
+    }, 9000)
   }
   //Prediction Function
   const getPredict = {
@@ -63,14 +62,35 @@ function Progress() {
 
   return (
     <>
+    <Icon to='/'>Aletheia</Icon>
     <Container>
-      <Icon to='/'>Aletheia</Icon>
         <FormWrap>
-          <FormContent></FormContent>
             <FormContent>
-             <Search>
-             
-               <SearchInputs>
+               <Formik
+                  initialValues={{
+                  picked: '',
+                  }}
+                  onSubmit={async (values) => {
+                  await new Promise((r) => setTimeout(r, 500));
+                  alert(JSON.stringify(values, null, 2));
+                  }}
+                    >
+                  {({ values }) => (
+                  <Form>
+                  <div role="group" aria-labelledby="my-radio-group">
+                  <label>
+                    <Field type="radio" name="picked" value="URL" />
+                      URL
+                    </label>
+                    <label>
+                    <Field type="radio" name="picked" value="Text" />
+                      Text
+                </label>
+                <div>Picked: {values.picked}</div>
+              </div>
+          </Form>
+          )}
+        </Formik>
                <Formik
                 initialValues={{
                 newsSubmit: '',
@@ -93,45 +113,44 @@ function Progress() {
                 </Form>
                 )}
               </Formik>
-            </SearchInputs>
-          </Search>
-        </FormContent>
+          </FormContent>
+        </FormWrap>
       <FormLoader>
         {//shows loading screen
         loading ? (<CircularProgress/>) : ("") }
       </FormLoader>
-      <FormContentTable>
+      <ContentTable>
         {//shows table
         combination ? (
-          <Table striped bordered hover size="sm">
-            <thead>
-                <tr>
-                  <th>Model</th>
-                  <th>Result</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td>Combination</td>
-                  <td>{combination}</td>
-                </tr>
-                <tr>
-                  <td>Decision Tree</td>
-                  <td>{decision}</td>
-                </tr>
-                <tr>
-                  <td>Neural Network</td>
-                  <td>{neural}</td>
-                </tr>
-                <tr>
-                  <td>Random Forest</td>
-                  <td>{randomf}</td>
-                </tr>
-            </tbody>
-          </Table>) : 
-                    ("")}
-        </FormContentTable>
-        </FormWrap>
+                  <div class="table-wrapper">
+                  <table class="fl-table">
+                      <thead>
+                      <tr>
+                          <th>Model</th>
+                          <th>Result</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td>Combination</td>
+                          <td>{combination}</td>
+                      </tr>
+                      <tr>
+                          <td>Decision Tree</td>
+                          <td>{decision}</td>
+                      </tr>
+                      <tr>
+                          <td>Neural Network</td>
+                          <td>{neural}</td>
+                      </tr>
+                      <tr>
+                          <td>Random Forest</td>
+                          <td>{randomf}</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </div>) : ("")}
+        </ContentTable>
     </Container>
     </>
   );
