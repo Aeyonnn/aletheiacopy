@@ -2,12 +2,17 @@ import React, { useState, useEffect} from 'react'
 import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable} from './BenchmarkElements'
 import './table.css'
 import { Formik, Field, Form } from 'formik';
+import RadioGroup from '@mui/material/RadioGroup';
+import  Radio from '@mui/material/Radio'
+import FormLabel from '@mui/material/FormLabel';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
+
 
 function Progress() {
   // Variables to extract algorithm model predictions
@@ -17,6 +22,8 @@ function Progress() {
   const [randomf, getRandomf] = useState(null)
   const [news_art, getNewsArt] = useState(null)
   const [prediction, setprediction] = useState(null)
+  //Setting Category
+  const [category,setCategory] = useState("URL")
   //Loading Spinner
   const [loading, setLoading] = useState(false)
   const handleClick = () => {
@@ -66,53 +73,65 @@ function Progress() {
     <Container>
         <FormWrap>
             <FormContent>
-               <Formik
-                  initialValues={{
-                  picked: '',
-                  }}
-                  onSubmit={async (values) => {
-                  await new Promise((r) => setTimeout(r, 500));
-                  alert(JSON.stringify(values, null, 2));
-                  }}
-                    >
-                  {({ values }) => (
-                  <Form>
-                  <div role="group" aria-labelledby="my-radio-group">
-                  <label>
-                    <Field type="radio" name="picked" value="URL" />
-                      URL
-                    </label>
-                    <label>
-                    <Field type="radio" name="picked" value="Text" />
-                      Text
-                </label>
-                <div>Picked: {values.picked}</div>
-              </div>
-          </Form>
-          )}
-        </Formik>
-               <Formik
-                initialValues={{
-                newsSubmit: '',
-                }}
-                onSubmit=
-                {async (values, actions) => {
-                await new Promise((r) => setTimeout(r, 1000));
-                getNews.queryStringParameters.newslink = values.newsSubmit;
+              <FormLabel>Select Category</FormLabel>
+               <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
+                  <FormControlLabel value="Text" control={<Radio/>} label="Text" />
+                  <FormControlLabel value="URL" control={<Radio/>} label="URL" />
+               </RadioGroup>
+                                  {(() => {
 
-                fetchNewsArt(values.newsSubmit);
-                actions.setSubmitting(false);
-                }}>  
-                {({isSubmitting}) => (
-                <Form>
-                <label htmlFor="newsSubmit"></label>
-                  <Field id="newsSubmit" name="newsSubmit" placeholder="Enter News Here" />
-                  <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
-                  Submit
-                  </button>
-                </Form>
-                )}
-              </Formik>
+                    if (category === "URL") {
+                      return (
+                        <div><Formik
+                        initialValues={{
+                        newsSubmit: '',
+                        }}
+                        onSubmit=
+                        {async (values, actions) => {
+                        await new Promise((r) => setTimeout(r, 1000));
+                        getNews.queryStringParameters.newslink = values.newsSubmit;
+        
+                        fetchNewsArt(values.newsSubmit);
+                        actions.setSubmitting(false);
+                        }}>  
+                        {({isSubmitting}) => (
+                        <Form>
+                        <label htmlFor="newsSubmit"></label>
+                          <Field id="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
+                          <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                          Submit
+                          </button>
+                        </Form>
+                        )}
+                      </Formik></div>
+                      )
+                    } else if (category === "Text") {
+                      return (
+                        <div><Formik
+                        initialValues={{
+                        newsSubmit: '',
+                        }}
+                        onSubmit=
+                        {async (values, actions) => {
+                        await new Promise((r) => setTimeout(r, 1000));
+                        getNews.queryStringParameters.newslink = values.newsSubmit;
+        
+                        fetchNewsArt(values.newsSubmit);
+                        actions.setSubmitting(false);
+                        }}>  
+                        {({isSubmitting}) => (
+                        <Form>
+                        <label htmlFor="newsSubmit"></label>
+                          <Field id="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
+                          <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                          Submit
+                          </button>
+                        </Form>
+                        )}
+                      </Formik></div>
+                      )
+                    }
+                    })()}
           </FormContent>
         </FormWrap>
       <FormLoader>
