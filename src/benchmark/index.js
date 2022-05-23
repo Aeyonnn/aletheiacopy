@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react'
 import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable} from './BenchmarkElements'
 import './table.css'
-import { Formik, Field, Form } from 'formik';
+import { Formik, Field, Form, useFormik } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
 import  Radio from '@mui/material/Radio'
 import FormLabel from '@mui/material/FormLabel';
@@ -75,14 +75,15 @@ function Progress() {
             <FormContent>
               <FormLabel>Select Category</FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
-                  <FormControlLabel value="Text" control={<Radio/>} label="Text" />
-                  <FormControlLabel value="URL" control={<Radio/>} label="URL" />
+                  <FormControlLabel value="Text" control={<Radio/>} label="Text"/>
+                  <FormControlLabel value="URL" control={<Radio/>} label="URL"/>
                </RadioGroup>
                                   {(() => {
 
                     if (category === "URL") {
                       return (
-                        <div><Formik
+                        <div> You are using URL
+                        <Formik
                         initialValues={{
                         newsSubmit: '',
                         }}
@@ -107,7 +108,8 @@ function Progress() {
                       )
                     } else if (category === "Text") {
                       return (
-                        <div><Formik
+                        <div> You are using Text
+                        <Formik
                         initialValues={{
                         newsSubmit: '',
                         }}
