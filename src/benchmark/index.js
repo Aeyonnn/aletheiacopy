@@ -65,6 +65,7 @@ function Progress() {
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
+    // setCategory()
   }, [prediction])
 
   return (
@@ -118,7 +119,7 @@ function Progress() {
                         await new Promise((r) => setTimeout(r, 1000));
                         getNews.queryStringParameters.newslink = values.newsSubmit;
         
-                        fetchNewsArt(values.newsSubmit);
+                        fetchNewsAlgo(values.newsSubmit);
                         actions.setSubmitting(false);
                         }}>  
                         {({isSubmitting}) => (
