@@ -19,6 +19,7 @@ Auth.configure(awsconfig);
 
 
 function Progress({ signOut, user }) {
+  const [user_id, getId] = useState(null)
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
   const [decision, getDecision] = useState(null)
@@ -37,6 +38,11 @@ function Progress({ signOut, user }) {
       setLoading(false)
     }, 9000)
   }
+  const getUser = {
+    queryStringParameters: {
+      email: ""
+    }
+  };
   //Prediction Function
   const getPredict = {
     queryStringParameters: {
@@ -48,6 +54,11 @@ function Progress({ signOut, user }) {
       newslink: ""
     }
   };
+  async function fetchUserId(email){
+    getUser.queryStringParameters.news = email
+    const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
+    getId(apiData.user_id)
+  }
   //Calling API to get results
   async function fetchNewsAlgo(article){
     getPredict.queryStringParameters.news = article
@@ -68,6 +79,7 @@ function Progress({ signOut, user }) {
   useEffect(() => {
     // fetchNewsArt()
     // fetchNewsAlgo()
+    fetchUserId(user.attributes.email)
     setprediction()
     // setCategory()
   }, [prediction])
@@ -76,7 +88,7 @@ function Progress({ signOut, user }) {
     <>
     <Icon to='/'>Aletheia</Icon>
     <Container>
-        <h1>Hello {user.attributes.email}</h1>
+        <h1>Hello {user_id}</h1>
         <button onClick={signOut}>Sign out</button>
         <FormWrap>
             <FormContent>

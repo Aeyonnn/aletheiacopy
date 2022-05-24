@@ -78,7 +78,7 @@
             "Arn"
           ]
         },
-        "Runtime": "nodejs14.x",
+        "Runtime": "python3.8",
         "Layers": [],
         "Timeout": 25
       }
@@ -89,12 +89,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "aletheiawebpageLambdaRoled59b351d",
+            "aletheiawebpageLambdaRole6736660f",
             {
               "Fn::Join": [
                 "",
                 [
-                  "aletheiawebpageLambdaRoled59b351d",
+                  "aletheiawebpageLambdaRole6736660f",
                   "-",
                   {
                     "Ref": "env"

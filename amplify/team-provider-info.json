@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-aletheiawebpage-dev-210824-unauthRole",
       "StackName": "amplify-aletheiawebpage-dev-210824",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:823142838959:stack/amplify-aletheiawebpage-dev-210824/a91312b0-b5aa-11ec-aea7-06855712f3b2",
-      "AmplifyAppId": "d14jbdaoj82nso"
+      "AmplifyAppId": "d14jbdaoj82nso",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-aletheiawebpage-dev-210824-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {
@@ -23,7 +24,7 @@
         },
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
-          "s3Key": "amplify-builds/aletheiadbconnect-48447a7a643578486e6f-build.zip"
+          "s3Key": "amplify-builds/aletheiadbconnect-376f55306943472b7676-build.zip"
         }
       },
       "auth": {

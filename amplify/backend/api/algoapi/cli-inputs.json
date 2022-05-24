@@ -15,11 +15,17 @@
         "setting": "open"
       }
     },
-    "/aletheiadb": {
-      "name": "/aletheiadb",
+    "/aletheiadbconnect": {
+      "name": "/aletheiadbconnect",
       "lambdaFunction": "aletheiadbconnect",
       "permissions": {
-        "setting": "open"
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
       }
     }
   }
