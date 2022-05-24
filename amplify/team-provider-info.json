@@ -20,6 +20,10 @@
         "aletheiawebscraper": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
           "s3Key": "amplify-builds/aletheiawebscraper-2b706e63306573613466-build.zip"
+        },
+        "aletheiadbconnect": {
+          "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+          "s3Key": "amplify-builds/aletheiadbconnect-48447a7a643578486e6f-build.zip"
         }
       },
       "auth": {

@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/aletheiadb": {
+      "name": "/aletheiadb",
+      "lambdaFunction": "aletheiadbconnect",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
