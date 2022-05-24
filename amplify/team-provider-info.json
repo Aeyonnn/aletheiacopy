@@ -24,7 +24,7 @@
         },
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
-          "s3Key": "amplify-builds/aletheiadbconnect-376f55306943472b7676-build.zip"
+          "s3Key": "amplify-builds/aletheiadbconnect-7643622b554842783878-build.zip"
         }
       },
       "auth": {

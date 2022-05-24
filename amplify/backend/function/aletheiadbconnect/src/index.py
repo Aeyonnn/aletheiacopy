@@ -1,7 +1,7 @@
 import json
 from database_connection.check import connectUser
 def handler(event, context):
-  email = event['queryStringParameters']['email']
+  email = event['queryStringParameters']['user']
   body = {
     "user_id": connectUser(email)
   }

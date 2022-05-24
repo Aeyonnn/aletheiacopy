@@ -23,13 +23,13 @@ def connectUser(email):
       val = (email,)
       cursor.execute(sql, val)
       mydb.commit()
-      user_id = cursor.lastrowid
+      id = cursor.lastrowid
       print (id)
   else:
-      user_id = data[0]
-      print(f'user exist and id is: {user_id}')
+      id = data[0]
+      print(f'user exist and id is: {id}')
   
-  return user_id
+  return id
   # return{
   #   'statusCode': 200,
   #   'headers': { 'Content-Type': 'application/json' },
