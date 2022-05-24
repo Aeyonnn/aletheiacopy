@@ -7,6 +7,10 @@ import  Radio from '@mui/material/Radio'
 import FormLabel from '@mui/material/FormLabel';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
+
+import { withAuthenticator } from '@aws-amplify/ui-react';
+import '@aws-amplify/ui-react/styles.css';
+
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
@@ -14,7 +18,7 @@ Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
 
-function Progress() {
+function Progress({ signOut, user }) {
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
   const [decision, getDecision] = useState(null)
@@ -72,6 +76,8 @@ function Progress() {
     <>
     <Icon to='/'>Aletheia</Icon>
     <Container>
+        <h1>Hello {user.attributes.email}</h1>
+        <button onClick={signOut}>Sign out</button>
         <FormWrap>
             <FormContent>
               <FormLabel>Select Category</FormLabel>
@@ -174,7 +180,8 @@ function Progress() {
               </div>) : ("")}
         </ContentTable>
     </Container>
+
     </>
   );
 };
-export default Progress;
+export default withAuthenticator(Progress);
