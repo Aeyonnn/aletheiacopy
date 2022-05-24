@@ -19,6 +19,7 @@ Auth.configure(awsconfig);
 
 
 function Progress({ signOut, user }) {
+  //Database Access
   const [userid, getId] = useState(null)
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
