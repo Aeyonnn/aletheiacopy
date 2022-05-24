@@ -19,5 +19,16 @@ export type AmplifyDependentResourcesAttributes = {
             "ApiName": "string",
             "ApiId": "string"
         }
+    },
+    "auth": {
+        "aletheiawebpage75048700": {
+            "IdentityPoolId": "string",
+            "IdentityPoolName": "string",
+            "UserPoolId": "string",
+            "UserPoolArn": "string",
+            "UserPoolName": "string",
+            "AppClientIDWeb": "string",
+            "AppClientID": "string"
+        }
     }
 }

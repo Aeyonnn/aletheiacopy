@@ -21,6 +21,9 @@
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
           "s3Key": "amplify-builds/aletheiawebscraper-2b706e63306573613466-build.zip"
         }
+      },
+      "auth": {
+        "aletheiawebpage75048700": {}
       }
     }
   }
