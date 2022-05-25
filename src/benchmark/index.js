@@ -20,6 +20,7 @@ Auth.configure(awsconfig);
 function Progress({ signOut, user }) {
   //Database Access
   const [userid, getId] = useState(null)
+  const [user_hist, getHist] = useState(null)
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
   const [decision, getDecision] = useState(null)
@@ -27,10 +28,13 @@ function Progress({ signOut, user }) {
   const [randomf, getRandomf] = useState(null)
   const [news_art, getNewsArt] = useState(null)
   const [prediction, setprediction] = useState(null)
+
   //Setting Category
   const [category,setCategory] = useState("URL")
   //Loading Spinner
   const [loading, setLoading] = useState(false)
+
+
   const handleClick = () => {
     setLoading(true)
 
@@ -38,6 +42,22 @@ function Progress({ signOut, user }) {
       setLoading(false)
     }, 9000)
   }
+  //Get user history
+  const queryUserHistory = {
+    queryStringParameters: {
+      user: ""
+    }
+  };
+  //Insert data from user query
+  const inputUserQuery = {
+    queryStringParameters: {
+      user: "",
+      ntype: "",
+      nbody: "",
+      alcomb: "",
+      usereval: ""
+    }
+  };
   const getUser = {
     queryStringParameters: {
       user: ""
@@ -54,6 +74,23 @@ function Progress({ signOut, user }) {
       newslink: ""
     }
   };
+  //Create or Check User from database
+  async function getHistory(user_id){
+    queryUserHistory.queryStringParameters.user = user_id
+    const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
+    console.log(apiData)
+    getHist(apiData.inputHistory)
+  }
+  async function writeUserQuery(user_id, type, newsbody, comb, usereval){
+    inputUserQuery.queryStringParameters.user = user_id
+    inputUserQuery.queryStringParameters.ntype = type
+    inputUserQuery.queryStringParameters.nbody = newsbody
+    inputUserQuery.queryStringParameters.alcomb = comb
+    inputUserQuery.queryStringParameters.usereval = usereval
+    const apiData = await API.get('algoapi', '/aletheiadbwrite', inputUserQuery)
+    console.log(apiData)
+  }
+  //Create or Check User from database
   async function fetchUserId(email){
     getUser.queryStringParameters.user = email
     const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
@@ -69,6 +106,7 @@ function Progress({ signOut, user }) {
     getRandomf(apiData.randomf)
     setprediction(apiData)
   }
+  //Calling API to extract new from link
   async function fetchNewsArt(link){
     getNews.queryStringParameters.newslink = link
     const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
