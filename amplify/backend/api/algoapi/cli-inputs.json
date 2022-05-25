@@ -27,6 +27,32 @@
           "delete"
         ]
       }
+    },
+    "/aletheiadbwrite": {
+      "name": "/aletheiadbwrite",
+      "lambdaFunction": "aletheiadbwrite",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/aletheidbhistory": {
+      "name": "/aletheidbhistory",
+      "lambdaFunction": "aletheiadbhistory",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }

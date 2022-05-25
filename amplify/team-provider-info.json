@@ -25,6 +25,14 @@
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
           "s3Key": "amplify-builds/aletheiadbconnect-7643622b554842783878-build.zip"
+        },
+        "aletheiadbwrite": {
+          "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+          "s3Key": "amplify-builds/aletheiadbwrite-7838742f4d79342f4652-build.zip"
+        },
+        "aletheiadbhistory": {
+          "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
+          "s3Key": "amplify-builds/aletheiadbhistory-57766b417534324e6755-build.zip"
         }
       },
       "auth": {
