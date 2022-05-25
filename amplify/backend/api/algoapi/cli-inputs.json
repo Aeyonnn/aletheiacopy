@@ -27,6 +27,19 @@
           "delete"
         ]
       }
+    },
+    "/aletheiadbwrite": {
+      "name": "/aletheiadbwrite",
+      "lambdaFunction": "aletheiadbwrite",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }

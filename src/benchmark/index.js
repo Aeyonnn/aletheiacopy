@@ -85,6 +85,7 @@ function Progress({ signOut, user }) {
     // setCategory()
   }, [prediction])
 
+
   return (
     <>
     <Icon to='/'>Aletheia</Icon>
@@ -191,6 +192,15 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
+                  <div>
+                  <p>Is it true?</p>
+                          <button id="submit" type="submit" disabled='true' onClick={handleClick}> 
+                          Yes
+                          </button>
+                          <button id="submit" type="submit"  onClick={handleClick}> 
+                          No
+                          </button>
+                  </div>
               </div>) : ("")}
         </ContentTable>
     </Container>
