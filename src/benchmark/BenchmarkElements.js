@@ -15,9 +15,8 @@ export const Icon = styled(Link)`
     }
 ` 
 export const Container = styled.div`
-    height: 1080px;
-    background: #EDEDED;
     height: 100vh;
+    background: #EDEDED;
     display: flex;
     flex-direction: column;
     row-gap: 20px;

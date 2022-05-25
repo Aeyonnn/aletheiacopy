@@ -1,13 +1,13 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState, useEffect, Component} from 'react'
 import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable} from './BenchmarkElements'
 import './table.css'
-import { Formik, Field, Form, useFormik } from 'formik';
+import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
 import  Radio from '@mui/material/Radio'
 import FormLabel from '@mui/material/FormLabel';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
-
+import { Link } from 'react-router-dom'
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 
@@ -33,14 +33,34 @@ function Progress({ signOut, user }) {
   const [category,setCategory] = useState("URL")
   //Loading Spinner
   const [loading, setLoading] = useState(false)
-
+  //Enabling
+  const [enable,setEnable] = useState(false)
+  //Disabling
+  const [disable,setDisable] = useState(false)
+  //Feedback
+  const [yes,setYes] = useState('')
+  const [no,setNo] = useState('')
 
   const handleClick = () => {
     setLoading(true)
-
+    setDisable(false)
     setTimeout(() => {
       setLoading(false)
     }, 9000)
+  }
+  
+  //Feedback call
+  const feedbackVariable = (value) => {
+    if (value === 'YES'){
+      setYes(...yes,'YES')
+      setDisable(true)
+      console.log(value)
+    }
+    if (value === 'NO'){
+      setNo(...no,'NO')
+      setDisable(true)
+      console.log(no)
+    }
   }
   //Get user history
   const queryUserHistory = {
@@ -77,7 +97,7 @@ function Progress({ signOut, user }) {
   //Create or Check User from database
   async function getHistory(user_id){
     queryUserHistory.queryStringParameters.user = user_id
-    const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
+    const apiData = await API.get('algoapi', '/aletheidbhistory', queryUserHistory)
     console.log(apiData)
     getHist(apiData.inputHistory)
   }
@@ -142,8 +162,9 @@ function Progress({ signOut, user }) {
     <>
     <Icon to='/'>Aletheia</Icon>
     <Container>
+        {/* user reference for new navbar since hatdog si ej */}
         <h1>Hello {user.attributes.email}</h1>
-        <h1>Hello {userid}</h1>
+        {/* <h1>Hello {userid}</h1> */}
         <button onClick={signOut}>Sign out</button>
         <FormWrap>
             <FormContent>
@@ -246,15 +267,22 @@ function Progress({ signOut, user }) {
                   </table>
                   <div>
                     <p>Is it true?</p>
-                    <button id="submit" type="submit" onClick={handleClick}> 
-                          Submit
+                    <button id="submit" type="submit" disabled={disable}  onClick={() => feedbackVariable('YES')}> 
+                          Yes
                           </button>
-                          <button id="submit" type="submit"  onClick={handleClick}> 
-                          Submit
+                          <button id="submit" type="submit" disabled={disable} onClick={() => feedbackVariable('NO')}> 
+                          No
                           </button>
                   </div>
               </div>) : ("")}
         </ContentTable>
+        <button
+            type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href='https://forms.gle/zmsf1yn5rwCYKXJm6';
+              }}
+        Click here>Survey Here!</button>
     </Container>
 
     </>
