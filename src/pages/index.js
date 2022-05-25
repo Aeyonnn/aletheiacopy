@@ -5,6 +5,8 @@ import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/Data';
 import Github from '../components/Github';
 import Footer from '../components/Footer';
+import Carousel from '../components/carousel';
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,6 +19,7 @@ const Home = () => {
       <>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
+      <Carousel />
       <InfoSection {...homeObjOne}/>
       <InfoSection {...homeObjTwo}/>
       <InfoSection {...homeObjThree}/>

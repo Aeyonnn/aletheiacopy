@@ -19,11 +19,20 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
     },
     "aletheiadbhistory": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 18626ba841cda8427e98f0fe7d31c7464377cc9e
+>>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
     }
   },
   "api": {
@@ -62,6 +71,10 @@
             "Name",
             "Arn"
           ]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
         },
         {
           "category": "function",
@@ -70,6 +83,11 @@
             "Name",
             "Arn"
           ]
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 18626ba841cda8427e98f0fe7d31c7464377cc9e
+>>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
         }
       ]
     }

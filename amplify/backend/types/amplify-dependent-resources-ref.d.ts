@@ -23,12 +23,15 @@ export type AmplifyDependentResourcesAttributes = {
             "Arn": "string",
             "Region": "string",
             "LambdaExecutionRole": "string"
+<<<<<<< HEAD
         },
         "aletheiadbhistory": {
             "Name": "string",
             "Arn": "string",
             "Region": "string",
             "LambdaExecutionRole": "string"
+=======
+>>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
         }
     },
     "api": {
