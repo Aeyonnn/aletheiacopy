@@ -41,6 +41,9 @@ function Progress({ signOut, user }) {
   const [yes,setYes] = useState('')
   const [no,setNo] = useState('')
 
+  //Text Field Var
+  const [textf, getText] = useState(null)
+
   const handleClick = () => {
     setLoading(true)
     setDisable(false)
@@ -55,11 +58,13 @@ function Progress({ signOut, user }) {
       setYes(value)
       setDisable(true)
       console.log(value)
+      writeUserQuery(userid, category, textf, combination, 'YES')
     }
     if (value === 'NO'){
       setNo(value)
       setDisable(true)
       console.log(value)
+      writeUserQuery(userid, category, textf, combination, 'NO')
     }
   }
   //Get user history
@@ -134,20 +139,6 @@ function Progress({ signOut, user }) {
     await fetchNewsAlgo(apiData.newsart)
   }
 
-  // const mysql = require('mysql');
-  // const con = mysql.createConnection({
-  //   host: 'database-1.cyqaefb6grs6.ap-southeast-1.rds.amazonaws.com',
-  //   user: 'admin',
-  //   password: 'admin123',
-  //   database: 'Aletheia'
-  // });
-
-  // // show connection to the database
-  // con.connect((err) => {
-  //   if (err) throw err;
-  //   console.log('Connected!');
-  // });
-
 
   window.onload = setprediction;
   fetchUserId(user.attributes.email)
@@ -170,7 +161,7 @@ function Progress({ signOut, user }) {
             <FormContent>
               <FormLabel>Select Category</FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
-                  <FormControlLabel value="Text" control={<Radio/>} label="Text"/>
+                  <FormControlLabel value="TEXT" control={<Radio/>} label="Text"/>
                   <FormControlLabel value="URL" control={<Radio/>} label="URL"/>
                </RadioGroup>
                                   {(() => {
@@ -186,6 +177,7 @@ function Progress({ signOut, user }) {
                         {async (values, actions) => {
                         await new Promise((r) => setTimeout(r, 1000));
                         getNews.queryStringParameters.newslink = values.newsSubmit;
+                        getText(values.newsSubmit)
         
                         fetchNewsArt(values.newsSubmit);
                         actions.setSubmitting(false);
@@ -201,7 +193,7 @@ function Progress({ signOut, user }) {
                         )}
                       </Formik></div>
                       )
-                    } else if (category === "Text") {
+                    } else if (category === "TEXT") {
                       return (
                         <div> You are using Text
                         <Formik
@@ -212,7 +204,8 @@ function Progress({ signOut, user }) {
                         {async (values, actions) => {
                         await new Promise((r) => setTimeout(r, 1000));
                         getNews.queryStringParameters.newslink = values.newsSubmit;
-        
+                        getText(values.newsSubmit)
+
                         fetchNewsAlgo(values.newsSubmit);
                         actions.setSubmitting(false);
                         }}>  
