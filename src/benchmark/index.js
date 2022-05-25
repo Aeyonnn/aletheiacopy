@@ -208,10 +208,10 @@ function Progress({ signOut, user }) {
                   </table>
                   <div>
                     <p>Is it true?</p>
-                    <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                    <button id="submit" type="submit" onClick={handleClick}> 
                           Submit
                           </button>
-                          <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                          <button id="submit" type="submit"  onClick={handleClick}> 
                           Submit
                           </button>
                   </div>
