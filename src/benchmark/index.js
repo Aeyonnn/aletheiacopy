@@ -17,7 +17,6 @@ import awsconfig from '../aws-exports';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
-
 function Progress({ signOut, user }) {
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
@@ -64,6 +63,22 @@ function Progress({ signOut, user }) {
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
   }
+
+  const mysql = require('mysql');
+  const con = mysql.createConnection({
+    host: 'database-1.cyqaefb6grs6.ap-southeast-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'admin123',
+    database: 'Aletheia'
+  });
+
+  // // show connection to the database
+  // con.connect((err) => {
+  //   if (err) throw err;
+  //   console.log('Connected!');
+  // });
+
+
   window.onload = setprediction;
   useEffect(() => {
     // fetchNewsArt()
