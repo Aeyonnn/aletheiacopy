@@ -52,14 +52,14 @@ function Progress({ signOut, user }) {
   //Feedback call
   const feedbackVariable = (value) => {
     if (value === 'YES'){
-      setYes(...yes,'YES')
+      setYes(value)
       setDisable(true)
       console.log(value)
     }
     if (value === 'NO'){
-      setNo(...no,'NO')
+      setNo(value)
       setDisable(true)
-      console.log(no)
+      console.log(value)
     }
   }
   //Get user history
