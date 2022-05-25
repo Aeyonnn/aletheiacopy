@@ -40,19 +40,6 @@
           "delete"
         ]
       }
-    },
-    "/aletheidbhistory": {
-      "name": "/aletheidbhistory",
-      "lambdaFunction": "aletheiadbhistory",
-      "permissions": {
-        "setting": "private",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ]
-      }
     }
   }
 }

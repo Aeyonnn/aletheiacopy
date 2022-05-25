@@ -19,11 +19,14 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+<<<<<<< HEAD
     },
     "aletheiadbhistory": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+=======
+>>>>>>> 18626ba841cda8427e98f0fe7d31c7464377cc9e
     }
   },
   "api": {
@@ -62,6 +65,7 @@
             "Name",
             "Arn"
           ]
+<<<<<<< HEAD
         },
         {
           "category": "function",
@@ -70,6 +74,8 @@
             "Name",
             "Arn"
           ]
+=======
+>>>>>>> 18626ba841cda8427e98f0fe7d31c7464377cc9e
         }
       ]
     }
