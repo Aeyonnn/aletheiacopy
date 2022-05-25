@@ -36,11 +36,7 @@
     "react-scroll": "^1.8.4",
     "react-slick": "^0.29.0",
     "react-table": "^7.7.0",
-<<<<<<< HEAD
-    "stream-browserify": "^3.0.0",
-=======
     "slick-carousel": "^1.8.1",
->>>>>>> 9582bc4422b150bccec3eeec217e97ad88c04402
     "styled-components": "^5.3.5",
     "util": "^0.12.4",
     "uuid": "^8.3.2",

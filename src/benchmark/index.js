@@ -76,13 +76,13 @@ function Progress({ signOut, user }) {
     await fetchNewsAlgo(apiData.newsart)
   }
 
-  const mysql = require('mysql');
-  const con = mysql.createConnection({
-    host: 'database-1.cyqaefb6grs6.ap-southeast-1.rds.amazonaws.com',
-    user: 'admin',
-    password: 'admin123',
-    database: 'Aletheia'
-  });
+  // const mysql = require('mysql');
+  // const con = mysql.createConnection({
+  //   host: 'database-1.cyqaefb6grs6.ap-southeast-1.rds.amazonaws.com',
+  //   user: 'admin',
+  //   password: 'admin123',
+  //   database: 'Aletheia'
+  // });
 
   // // show connection to the database
   // con.connect((err) => {
