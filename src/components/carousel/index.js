@@ -8,6 +8,7 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import multicar1 from "../../images/multicar1.jpg";
 import multicar2 from "../../images/multicar2.jpg";
 import multicar3 from "../../images/multicar3.jpg";
+import {Heading,Subtitle,CarouselOne,CarouselTwo,CarouselThree} from './data'
 
 const PreviousBtn = (props) => {
   console.log(props);
@@ -35,16 +36,16 @@ const Carousel = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
         <h1 style={{ marginBottom: 20 }}>LoremIpsum</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={multicar1} />
-          <Card img={multicar2} />
-          <Card img={multicar3} />
+          <Card img={multicar1} {...CarouselOne}/>
+          <Card img={multicar2} {...CarouselTwo}/>
+          <Card img={multicar3} {...CarouselThree}/>
         </Slider>
       </div>
     </div>
   );
 };
 
-const Card = ({ img }, paragraph, text) => {
+const Card = ({ img, title, paragraph }) => {
   return (
     <div
       style={{
@@ -66,13 +67,8 @@ const Card = ({ img }, paragraph, text) => {
           marginBottom: 20,
         }}
       />
-      <p>
-        Lorem May Hatdog
-      </p>
-      <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "green" }}>
-          Si Lorem</span> May Hatdog
-      </p>
+      <Heading>{title}</Heading>
+      <Subtitle>{paragraph}</Subtitle>
     </div>
   );
 };
