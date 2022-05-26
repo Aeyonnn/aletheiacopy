@@ -1,14 +1,25 @@
-import React, {useState} from 'react'
+import React, {useState, useMemo} from 'react'
 import '@aws-amplify/ui-react/styles.css';
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
-
+import { useTable } from 'react-table'
+import { Columns } from './table'
 function History({ signOut, user }) {
+
+
+  const columns = useMemo(() => Columns,[])
+  //const datas = useMemo(() => data,[])
+  const tableInstance = useTable({
+    columns,
+    //datas
+  })
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,} = tableInstance
   //Database Access
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
+  const [data, getData] = useState(null)
 
   //Get user history
   const queryUserHistory = {
@@ -44,7 +55,39 @@ function History({ signOut, user }) {
 
   return (
     <>
-    <div>{userid} hello</div> 
+    <table {...getTableProps()}>
+      <thead>
+        {headerGroups.map((headerGroup) => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {
+              headerGroup.headers.map((column) => (
+                <th {...column.getHeaderProps()}> {column.render('Header')} </th>
+              )) 
+            }
+        </tr>
+        ))}
+        
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {
+          rows.map(row => {
+            prepareRow(row)
+            return (
+              <tr {...row.getRowProps()}>
+                {
+                  row.cells.map( cell => {
+                    return <td {...cell.getCellProps()}>
+                      {cell.render('Cell')}
+                    </td>
+                  })
+                }
+            </tr>
+            )
+          })
+        }
+        
+      </tbody>
+    </table>
     </>
   )
 }

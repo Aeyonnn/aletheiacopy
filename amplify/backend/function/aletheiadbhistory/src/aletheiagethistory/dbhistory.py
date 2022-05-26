@@ -25,5 +25,6 @@ def getHistory(user_id):
         myresult = cursor.fetchall()
         for x in myresult:
             data = myresult
-        info = json.dumps(data)
-        return info
+        # info = json.dumps(data)
+        # return info
+        return data

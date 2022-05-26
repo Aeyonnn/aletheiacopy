@@ -3,7 +3,7 @@ from aletheiagethistory.dbhistory import getHistory
 def handler(event, context):
   user_id = event['queryStringParameters']['user']
   body = {
-    getHistory(user_id)
+    "inputHistory": getHistory(user_id)
   }
   response = {
     "statusCode": 200,
