@@ -51,11 +51,13 @@ function Progress({ signOut, user }) {
   //Feedback
   const [yes,setYes] = useState('')
   const [no,setNo] = useState('')
-
+  //Submitting
+  const [submitting,setSubmitting] = useState(false)
   //Text Field Var
   const [textf, getText] = useState(null)
   const historyClick = () => {
     setEnable(true)
+    fetchUserId(user.attributes.email)
     console.log(user_hist)
     console.table(user_hist)
   }
@@ -147,6 +149,7 @@ function Progress({ signOut, user }) {
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
     setprediction(apiData)
+    setSubmitting(false);
   }
   //Calling API to extract new from link
   async function fetchNewsArt(link){
@@ -197,8 +200,7 @@ function Progress({ signOut, user }) {
                         getNews.queryStringParameters.newslink = values.newsSubmit;
                         getText(values.newsSubmit)
         
-                        fetchNewsArt(values.newsSubmit);
-                        actions.setSubmitting(false);
+                        fetchNewsArt(values.newsSubmit)
                         }}>  
                         {({isSubmitting}) => (
                         <Form>
@@ -225,7 +227,7 @@ function Progress({ signOut, user }) {
                         getText(values.newsSubmit)
 
                         fetchNewsAlgo(values.newsSubmit);
-                        actions.setSubmitting(false);
+                        
                         }}>  
                         {({isSubmitting}) => (
                         <Form>
