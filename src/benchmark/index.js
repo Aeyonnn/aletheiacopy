@@ -141,8 +141,9 @@ function Progress({ signOut, user }) {
 
 
   window.onload = setprediction;
-  fetchUserId(user.attributes.email)
+  
   useEffect(() => {
+    fetchUserId(user.attributes.email)
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()

@@ -1,19 +1,24 @@
 import React, {useState, useMemo} from 'react'
-import '@aws-amplify/ui-react/styles.css';
+import './history.css'
 import { API } from 'aws-amplify';
-import Amplify, { Auth } from 'aws-amplify';
-import awsconfig from '../aws-exports';
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import { useTable } from 'react-table'
 import { Columns } from './table'
+import '@aws-amplify/ui-react/styles.css';
+
+import Amplify, { Auth } from 'aws-amplify';
+import awsconfig from '../aws-exports';
+Amplify.configure(awsconfig);
+Auth.configure(awsconfig);
+
 function History({ signOut, user }) {
 
 
   const columns = useMemo(() => Columns,[])
-  //const datas = useMemo(() => data,[])
+  const datas = useMemo(() => user_hist,[])
   const tableInstance = useTable({
     columns,
-    //datas
+    datas
   })
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,} = tableInstance
   //Database Access
@@ -41,7 +46,7 @@ function History({ signOut, user }) {
     console.log(apiData)
     getHist(apiData.inputHistory)
   }
-
+  console.log(user.attributes.email)
   //Create or Check User from database
   async function fetchUserId(email){
     getUser.queryStringParameters.user = email
@@ -50,11 +55,19 @@ function History({ signOut, user }) {
   }
 
 
-
+  
   fetchUserId(user.attributes.email)
-
+  // window.onload = setprediction;
+  // useEffect(() => {
+  //   // fetchNewsArt()
+  //   // fetchNewsAlgo()
+  //   // useMemo()
+  //   // setCategory()
+  // }, [user_id])
   return (
     <>
+    <div>
+      {userid}
     <table {...getTableProps()}>
       <thead>
         {headerGroups.map((headerGroup) => (
@@ -88,6 +101,7 @@ function History({ signOut, user }) {
         
       </tbody>
     </table>
+    </div>
     </>
   )
 }
