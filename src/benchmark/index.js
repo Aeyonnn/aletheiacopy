@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Component} from 'react'
-import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable} from './BenchmarkElements'
+import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable, NavBtnLink} from './BenchmarkElements'
 import './table.css'
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -276,6 +276,7 @@ function Progress({ signOut, user }) {
               window.location.href='https://forms.gle/zmsf1yn5rwCYKXJm6';
               }}
         Click here>Survey Here!</button>
+        <NavBtnLink to ="/historypage">History</NavBtnLink>
     </Container>
 
     </>

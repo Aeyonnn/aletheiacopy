@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import { Link as LinkR} from 'react-router-dom';
 
-export const Icon = styled(Link)`
+export const Icon = styled(LinkR)`
     position: fixed;
     margin-left: 32px;
     margin-top: 32px;
@@ -69,4 +69,22 @@ export const ContentTable = styled.div`
         padding: 10px;
     }
 `
+export const NavBtnLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #33415C;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+`
