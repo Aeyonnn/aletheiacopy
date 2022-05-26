@@ -39,7 +39,7 @@ function Progress({ signOut, user }) {
   const [randomf, getRandomf] = useState(null)
   const [news_art, getNewsArt] = useState(null)
   const [prediction, setprediction] = useState(null)
-
+  //Setting Loading
   //Setting Category
   const [category,setCategory] = useState("URL")
   //Loading Spinner
@@ -62,9 +62,11 @@ function Progress({ signOut, user }) {
   const handleClick = () => {
     setLoading(true)
     setDisable(false)
-    setTimeout(() => {
-      setLoading(false)
-    }, 9000)
+    setEnable(false)
+    getHist(null)
+    // setTimeout(() => {
+  
+    // }, 9000)
   }
   
   //Feedback call
@@ -139,6 +141,7 @@ function Progress({ signOut, user }) {
   async function fetchNewsAlgo(article){
     getPredict.queryStringParameters.news = article
     const apiData = await API.get('algoapi', '/pythonapi', getPredict)
+    setLoading(false)
     getCombination(apiData.combination)
     getDecision(apiData.decision)
     getNeural(apiData.neural)
@@ -164,7 +167,6 @@ function Progress({ signOut, user }) {
     // setCategory()
   }, [prediction])
 
-  const obj = userid
   return (
     <>
     <Icon to='/'>Aletheia</Icon>
@@ -307,12 +309,15 @@ function Progress({ signOut, user }) {
           </thead>
           <tbody>
           {user_hist.slice(1, user_hist.length).map((item,index) => {
+            if (item[6] === null){
+              item[6] = "To be evaluated"
+            }
             return (
               <tr>
-                <td>{item[2]}</td>
                 <td>{item[3]}</td>
                 <td>{item[4]}</td>
                 <td>{item[5]}</td>
+                <td>{item[6]}</td>
               </tr>
             )
           })}
