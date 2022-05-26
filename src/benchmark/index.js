@@ -1,12 +1,16 @@
-import React, { useState, useEffect, Component} from 'react'
+import React, { useState, useEffect, useMemo} from 'react'
 import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable, NavBtnLink} from './BenchmarkElements'
 import './table.css'
+import './history.css'
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
 import  Radio from '@mui/material/Radio'
 import FormLabel from '@mui/material/FormLabel';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useTable } from 'react-table'
+import { Columns } from './table'
+import MOCK_DATA from './MOCK_DATA.json'
 import { Link } from 'react-router-dom'
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
@@ -18,6 +22,13 @@ Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
 function Progress({ signOut, user }) {
+  const columns = useMemo(() => Columns,[])
+  const data = useMemo(() => MOCK_DATA,[])
+  const tableInstance = useTable({
+    columns,
+    data
+  })
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,} = tableInstance
   //Database Access
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
@@ -43,7 +54,11 @@ function Progress({ signOut, user }) {
 
   //Text Field Var
   const [textf, getText] = useState(null)
-
+  const historyClick = () => {
+    setEnable(true)
+    console.log(user_hist)
+    console.table(user_hist)
+  }
   const handleClick = () => {
     setLoading(true)
     setDisable(false)
@@ -103,7 +118,6 @@ function Progress({ signOut, user }) {
   async function getHistory(user_id){
     queryUserHistory.queryStringParameters.user = user_id
     const apiData = await API.get('algoapi', '/aletheidbhistory', queryUserHistory)
-    console.log(apiData)
     getHist(apiData.inputHistory)
   }
   async function writeUserQuery(user_id, type, newsbody, comb, usereval){
@@ -113,13 +127,13 @@ function Progress({ signOut, user }) {
     inputUserQuery.queryStringParameters.alcomb = comb
     inputUserQuery.queryStringParameters.usereval = usereval
     const apiData = await API.get('algoapi', '/aletheiadbwrite', inputUserQuery)
-    console.log(apiData)
   }
   //Create or Check User from database
   async function fetchUserId(email){
     getUser.queryStringParameters.user = email
     const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
     getId(apiData.user_id)
+    getHistory(apiData.user_id)
   }
   //Calling API to get results
   async function fetchNewsAlgo(article){
@@ -150,6 +164,7 @@ function Progress({ signOut, user }) {
     // setCategory()
   }, [prediction])
 
+  const obj = userid
   return (
     <>
     <Icon to='/'>Aletheia</Icon>
@@ -277,7 +292,33 @@ function Progress({ signOut, user }) {
               window.location.href='https://forms.gle/zmsf1yn5rwCYKXJm6';
               }}
         Click here>Survey Here!</button>
-        <NavBtnLink to ="/historypage">History</NavBtnLink>
+        <button onClick={historyClick}>History</button>
+        {
+          enable ? (
+          <table>
+          <thead>
+            <tr>
+              <th>News Body</th>
+              <th>News Prediction</th>
+              <th>User Evaluation</th>
+              <th>Checked</th>
+            </tr>
+            
+          </thead>
+          <tbody>
+          {user_hist.slice(1, user_hist.length).map((item,index) => {
+            return (
+              <tr>
+                <td>{item[2]}</td>
+                <td>{item[3]}</td>
+                <td>{item[4]}</td>
+                <td>{item[5]}</td>
+              </tr>
+            )
+          })}
+          </tbody>
+        </table>) : ("")
+        }
     </Container>
 
     </>

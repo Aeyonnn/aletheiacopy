@@ -5,26 +5,30 @@ import { withAuthenticator } from '@aws-amplify/ui-react';
 import { useTable } from 'react-table'
 import { Columns } from './table'
 import '@aws-amplify/ui-react/styles.css';
-
+import MOCK_DATA from './MOCK_DATA.json'
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
-function History({ signOut, user }) {
+function History() {
+
+  var userid = require('./index.js')
+
+  var datauserid = userid.user
 
 
+  console.log(datauserid)
   const columns = useMemo(() => Columns,[])
-  const datas = useMemo(() => user_hist,[])
+  const data = useMemo(() => MOCK_DATA,[])
   const tableInstance = useTable({
     columns,
-    datas
+    data
   })
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,} = tableInstance
   //Database Access
-  const [userid, getId] = useState(null)
-  const [user_hist, getHist] = useState(null)
-  const [data, getData] = useState(null)
+  // const [userid, getId] = useState(null)
+  // const [user_hist, getHist] = useState(null)
 
   //Get user history
   const queryUserHistory = {
@@ -39,31 +43,23 @@ function History({ signOut, user }) {
     }
   };
 
-  //Create or Check User from database
-  async function getHistory(user_id){
-    queryUserHistory.queryStringParameters.user = user_id
-    const apiData = await API.get('algoapi', '/aletheidbhistory', queryUserHistory)
-    console.log(apiData)
-    getHist(apiData.inputHistory)
-  }
-  console.log(user.attributes.email)
-  //Create or Check User from database
-  async function fetchUserId(email){
-    getUser.queryStringParameters.user = email
-    const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
-    getId(apiData.user_id)
-  }
-
-
+  // //Create or Check User from database
+  // async function getHistory(userid){
+  //   queryUserHistory.queryStringParameters.user = userid
+  //   const apiData = await API.get('algoapi', '/aletheidbhistory', queryUserHistory)
+  //   console.log(apiData)
+  //   getHist(apiData.inputHistory)
+  // }
+  // // console.log(user.attributes.email)
+  // //Create or Check User from database
+  // async function fetchUserId(email){
+  //   getUser.queryStringParameters.user = email
+  //   const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
+  //   getId(apiData.user_id)
+  //   getHistory(apiData.user_id)
+  // }
   
-  fetchUserId(user.attributes.email)
-  // window.onload = setprediction;
-  // useEffect(() => {
-  //   // fetchNewsArt()
-  //   // fetchNewsAlgo()
-  //   // useMemo()
-  //   // setCategory()
-  // }, [user_id])
+  // fetchUserId(user.attributes.email)
   return (
     <>
     <div>
@@ -82,6 +78,7 @@ function History({ signOut, user }) {
         
       </thead>
       <tbody {...getTableBodyProps()}>
+        
         {
           rows.map(row => {
             prepareRow(row)
@@ -91,6 +88,7 @@ function History({ signOut, user }) {
                   row.cells.map( cell => {
                     return <td {...cell.getCellProps()}>
                       {cell.render('Cell')}
+                      
                     </td>
                   })
                 }
@@ -106,4 +104,4 @@ function History({ signOut, user }) {
   )
 }
 
-export default withAuthenticator(History);
+export default History;
