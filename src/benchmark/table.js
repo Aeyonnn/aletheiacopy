@@ -1,17 +1,22 @@
 export const Columns = [
     {
-        //ID of the Model
-        Header: 'Id',
-        accessor: 'id'
+        //Body of the news
+        Header: 'News Body',
+        accessor: 'news_body'
     },
     {
-        //Name of the model
-        Header: 'Model',
-        accessor: 'model'
+        //Result of prediction
+        Header: 'News Prediction',
+        accessor: 'news_prediction'
     },
     {
-        //Result of the model
-        Header: 'Result',
-        accessor: 'result'
+        //Result of the feedback
+        Header: 'User Evaluation',
+        accessor: 'user_eval'
+    },
+    {
+        //Checked
+        Header: 'Checked',
+        accessor: 'checked'
     }
 ]
