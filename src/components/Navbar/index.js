@@ -33,6 +33,11 @@ return (
               <FaBars />
           </MobileIcon>
           <NavMenu>
+               <NavItem>
+                  <NavLinks to="carousel" onClick={toggleHome}
+                  smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  >How it Works</NavLinks>
+              </NavItem>
               <NavItem>
                   <NavLinks to="home"
                   smooth={true} duration={500} spy={true} exact='true' offset={-80}
@@ -54,9 +59,9 @@ return (
                   >Github</NavLinks>
               </NavItem>
           </NavMenu>
-          <NavBtn>
+          {/* <NavBtn>
               <NavBtnLink to ="/login">Login</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
           <NavBtn>
               <NavBtnLink to ="/bmpage">Benchmark</NavBtnLink>
           </NavBtn>

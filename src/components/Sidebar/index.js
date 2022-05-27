@@ -8,6 +8,7 @@ const Sidebar = ({isOpen, toggle }) => {
           </Icon>
           <SidebarWrapper>
               <SidebarMenu>
+                  <SidebarLink to="carousel" onClick={toggle}> How it Works </SidebarLink>
                   <SidebarLink to="home" onClick={toggle}> Home </SidebarLink>
                   <SidebarLink to="search" onClick={toggle}> Search </SidebarLink>
                   <SidebarLink to="school" onClick={toggle}> School </SidebarLink>

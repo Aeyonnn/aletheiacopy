@@ -30,7 +30,7 @@ const NextBtn = (props) => {
 };
 const Carousel = () => {
   return (
-      <InfoContainer>
+      <InfoContainer id="carousel">
         <InfoWrapper>
         <h1 style={{ marginTop: -120,marginBottom: 100 }}>Lorem Ipsum</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>

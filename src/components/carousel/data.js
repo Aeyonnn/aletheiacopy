@@ -48,7 +48,6 @@ export const InfoContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 800px;
     position: relative;
     z-index: 1;
