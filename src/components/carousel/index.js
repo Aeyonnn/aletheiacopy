@@ -8,7 +8,7 @@ import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 import multicar1 from "../../images/multicar1.jpg";
 import multicar2 from "../../images/multicar2.jpg";
 import multicar3 from "../../images/multicar3.jpg";
-import {Heading,Subtitle,CarouselOne,CarouselTwo,CarouselThree, InfoContainer, InfoWrapper} from './data'
+import {Heading,Subtitle,CarouselOne,CarouselTwo,CarouselThree, InfoContainer, InfoWrapper,CardContainer, CardContents} from './data'
 
 const PreviousBtn = (props) => {
   console.log(props);
@@ -45,38 +45,22 @@ const Carousel = () => {
 
 const Card = ({ img, title, paragraph }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "row",
-        textAlign: "center",
-        justifyContent: "center",
-        color: "black",
-      }}
-    >
+    <CardContainer id="card">
       <Avatar
+        id="img"
         imgProps={{ style: { borderRadius: "50%" } }}
         src={img}
         style={{
           width: 120,
           height: 120,
-          border: "1px solid lightgray",
-
+          border: "1px solid lightgray"
         }}
       />
-      <div 
-      style={{display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-        textAlign: "center",
-        color: "black",
-        marginLeft: 150,
-        }}>
+      <CardContents>
       <Heading>{title}</Heading>
       <Subtitle>{paragraph}</Subtitle>
-      </div>
-    </div>
+      </CardContents>
+    </CardContainer>
   );
 };
 

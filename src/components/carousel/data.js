@@ -66,8 +66,31 @@ export const InfoWrapper = styled.div`
     flex-direction: row;
 `
 
+export const CardContainer = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    color: "black";
+    @media screen and (max-width: 768px){
+        padding: 0;
+        flex-direction: column;
+    }
+`
 
-
+export const CardContents = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    margin-left: 150px;
+   
+    @media screen and (max-width: 768px){
+        margin-left: 0px;
+    }
+`
 
 
 //Data for the text

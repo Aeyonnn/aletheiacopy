@@ -25,6 +25,10 @@
 .slick-dots li {
   top: 15px;
 }
-.carousel .slick-dots{
-  margin-top: 200px;
+
+
+@media screen and (max-width: 768px) {
+  .slick-dots li button:before{
+    margin-top: 100px;
+  }
 }
