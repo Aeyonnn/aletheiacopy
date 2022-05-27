@@ -15,7 +15,7 @@ const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowBackIos style={{ color: "black", fontSize: "45px"
+      <ArrowBackIos style={{ color: "black", fontSize: "45px", float: "left", marginLeft: 40
     }} />
     </div>
   );
@@ -24,7 +24,7 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowForwardIos style={{ color: "black", fontSize: "45px" }} />
+      <ArrowForwardIos style={{ color: "black", fontSize: "45px", float: "right", marginRight: 40}} />
     </div>
   );
 };
@@ -32,7 +32,7 @@ const Carousel = () => {
   return (
       <InfoContainer id="carousel">
         <InfoWrapper>
-        <h1 style={{ marginTop: -120,marginBottom: 100 }}>Lorem Ipsum</h1>
+        <h1 style={{ marginTop: -180,marginBottom: 100 }}>Aletheia</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           <Card img={multicar1} {...CarouselOne}/>
           <Card img={multicar2} {...CarouselTwo}/>
@@ -49,8 +49,9 @@ const Card = ({ img, title, paragraph }) => {
       style={{
         display: "flex",
         alignItems: "center",
-        flexDirection: "column",
+        flexDirection: "row",
         textAlign: "center",
+        justifyContent: "center",
         color: "black",
       }}
     >
@@ -64,8 +65,17 @@ const Card = ({ img, title, paragraph }) => {
 
         }}
       />
+      <div 
+      style={{display: "flex",
+        alignItems: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        color: "black",
+        marginLeft: 150,
+        }}>
       <Heading>{title}</Heading>
       <Subtitle>{paragraph}</Subtitle>
+      </div>
     </div>
   );
 };

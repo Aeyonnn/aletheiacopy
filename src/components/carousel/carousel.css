@@ -1,5 +1,5 @@
-.testimonial .slick-arrow.slick-prev,
-.testimonial .slick-arrow.slick-next {
+.carousel .slick-arrow.slick-prev,
+.carousel .slick-arrow.slick-next {
   width: 40px;
   height: 40px;
   display: flex;
@@ -8,19 +8,23 @@
   z-index: 1;
   border-radius: 5px;
 }
-.testimonial .slick-prev::before,
-.testimonial .slick-next::before {
+.carousel .slick-prev::before,
+.carousel .slick-next::before {
   display: none;
 }
-.testimonial .slick-arrow.slick-next {
+.carousel .slick-arrow.slick-next {
   right: -70px;
 }
-.testimonial .slick-arrow.slick-prev {
+.carousel .slick-arrow.slick-prev {
   left: -70px;
 }
-.testimonial .slick-dots li button:before {
-  font-size: 15px;
+.slick-dots li button:before {
+  font-size: 10px;
+  margin-top: 200px;
 }
-.testimonial .slick-dots li {
+.slick-dots li {
   top: 15px;
+}
+.carousel .slick-dots{
+  margin-top: 200px;
 }

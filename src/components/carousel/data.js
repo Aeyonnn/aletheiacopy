@@ -51,7 +51,6 @@ export const InfoContainer = styled.div`
     height: 800px;
     position: relative;
     z-index: 1;
-
     @media screen and (max-width: 768px){
         padding: 100px 0;
     }
@@ -64,6 +63,7 @@ export const InfoWrapper = styled.div`
     height: 100%;
     overflow: hidden;
     text-align: center;
+    flex-direction: row;
 `
 
 
