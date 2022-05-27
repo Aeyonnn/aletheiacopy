@@ -11,26 +11,67 @@ export const multiData = [
 ];
 
 
-export const Heading = styled.h1`
+export const Heading = styled.h1` 
+    margin-top: 80px;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
+    text-align: center;
     font-weight: 600;
-    color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
+    color: black;
+    @media screen and (max-width: 768px){
+        font-size: 40px;
+    }
 
     @media screen and (max-width: 480px){
         font-size: 32px;
     }
 `
 export const Subtitle = styled.p`
-    max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+    margin-top: 24px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    max-width: 600;
+    
+    @media screen and (max-width: 768px){
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 18px;
+    }
+`
+export const InfoContainer = styled.div`
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 800px;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+    }
+`
+
+export const InfoWrapper = styled.div`
+    position: absolute;
+    padding-top: 300px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
 `
 
 
+
+
+
+//Data for the text
 export const CarouselOne = {
   paragraph: "hatdog",
   title: "si kynch"
