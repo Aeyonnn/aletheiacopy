@@ -7,7 +7,8 @@ export const GithubContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #fff;
-
+    padding: 10px;
+    
     @media screen and (max-width: 1000px){
         height: auto;
     }

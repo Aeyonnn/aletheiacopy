@@ -1,20 +1,19 @@
 import React, { useState, useEffect, useMemo} from 'react'
 import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable, NavBtnLink} from './BenchmarkElements'
+import { Link } from 'react-router-dom'
+//CSS
 import './table.css'
 import './history.css'
+//FORMIK
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
 import  Radio from '@mui/material/Radio'
 import FormLabel from '@mui/material/FormLabel';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CircularProgress from '@mui/material/CircularProgress';
-import { useTable } from 'react-table'
-import { Columns } from './table'
-import MOCK_DATA from './MOCK_DATA.json'
-import { Link } from 'react-router-dom'
+//AWS
 import { withAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
-
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
@@ -22,13 +21,6 @@ Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
 function Progress({ signOut, user }) {
-  const columns = useMemo(() => Columns,[])
-  const data = useMemo(() => MOCK_DATA,[])
-  const tableInstance = useTable({
-    columns,
-    data
-  })
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow,} = tableInstance
   //Database Access
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
@@ -56,7 +48,7 @@ function Progress({ signOut, user }) {
   //Text Field Var
   const [textf, getText] = useState(null)
   const historyClick = () => {
-    setEnable(true)
+    setEnable(!enable)
     fetchUserId(user.attributes.email)
     console.log(user_hist)
     console.table(user_hist)
@@ -66,9 +58,6 @@ function Progress({ signOut, user }) {
     setDisable(false)
     setEnable(false)
     getHist(null)
-    // setTimeout(() => {
-  
-    // }, 9000)
   }
   
   //Feedback call
@@ -171,8 +160,6 @@ function Progress({ signOut, user }) {
   }, [prediction])
 
   return (
-    <>
-    <Icon to='/'>Aletheia</Icon>
     <Container>
         {/* user reference for new navbar since hatdog si ej */}
         <h1>Hello {user.attributes.email}</h1>
@@ -327,8 +314,6 @@ function Progress({ signOut, user }) {
         </table>) : ("")
         }
     </Container>
-
-    </>
   );
 };
 export default withAuthenticator(Progress);

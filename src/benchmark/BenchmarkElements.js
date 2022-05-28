@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 import { Link as LinkR} from 'react-router-dom';
 
-export const Icon = styled(LinkR)`
-    position: fixed;
-    margin-left: 32px;
-    margin-top: 32px;
-    text-decoration: none;
-    color: #33415C;
-    font-weight: 700;
-    font-size: 32px;
-    @media screen and (max-width: 480px){
-        margin-left: 16px;
-        margin-top: 8px;
-    }
-` 
+// export const Icon = styled(LinkR)`
+//     position: fixed;
+//     margin-left: 32px;
+//     margin-top: 32px;
+//     text-decoration: none;
+//     color: #33415C;
+//     font-weight: 700;
+//     font-size: 32px;
+//     @media screen and (max-width: 480px){
+//         margin-left: 16px;
+//         margin-top: 8px;
+//     }
+// ` 
 export const Container = styled.div`
     height: 100vh;
     background: #EDEDED;
