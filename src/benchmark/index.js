@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Icon , Container, FormWrap, FormContent, FormLoader, ContentTable, NavBtnLink} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 //CSS
 import './table.css'
 import './history.css'
 import './navbar.css'
 //Icons
-import { AiFillDownCircle } from "react-icons/ai";
+import {FaBars} from 'react-icons/fa'
 //FORMIK
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -22,6 +22,18 @@ import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
+
+
+const reviewSchemaText = yup.object({
+  newsSubmit:yup.string()
+  .required()
+})
+
+const reviewSchemaURL = yup.object({
+  newsSubmit:yup.string()
+  .url()
+  .required()
+})
 
 function Progress({ signOut, user }) {
   //Database Access
@@ -62,7 +74,12 @@ function Progress({ signOut, user }) {
     setEnable(false)
     getHist(null)
   }
-  
+  //For mobile
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   //Feedback call
   const feedbackVariable = (value) => {
     if (value === 'YES'){
@@ -163,22 +180,21 @@ function Progress({ signOut, user }) {
   }, [prediction])
 
   return (
-    <>
+    <div>
     {/* Navbar */}
-    <nav className='navbar'>
+    <nav className='navbar' toggle={toggle}>
       <Link to='/' className='navbar-logo'> Aletheia </Link>
       <ul className='nav-items'>
         <li className='nav-item'>
-          <a href='https://forms.gle/zmsf1yn5rwCYKXJm6'>Survey Here!</a>
+          <a href='https://forms.gle/zmsf1yn5rwCYKXJm6' id='Survey'>Survey Here!</a>
         </li>
         <li className='nav-item'>
-          <a id='emailadd' href=''>{user.attributes.email}<AiFillDownCircle/></a>
+          <p>{user.attributes.email}</p>
         </li>
+        <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
       </ul>
     </nav>
     <Container>
-        <h1>Hello {user.attributes.email}</h1>
-        <button onClick={signOut}>Sign out</button>
         <FormWrap>
             <FormContent>
               <FormLabel>Select Category</FormLabel>
@@ -187,7 +203,6 @@ function Progress({ signOut, user }) {
                   <FormControlLabel value="URL" control={<Radio/>} label="URL"/>
                </RadioGroup>
                                   {(() => {
-
                     if (category === "URL") {
                       return (
                         <div> You are using URL
@@ -195,6 +210,7 @@ function Progress({ signOut, user }) {
                         initialValues={{
                         newsSubmit: '',
                         }}
+                        validationSchema={reviewSchemaURL}
                         onSubmit=
                         {async (values, actions) => {
                         await new Promise((r) => setTimeout(r, 1000));
@@ -221,6 +237,7 @@ function Progress({ signOut, user }) {
                         initialValues={{
                         newsSubmit: '',
                         }}
+                        validationSchema={reviewSchemaText}
                         onSubmit=
                         {async (values, actions) => {
                         await new Promise((r) => setTimeout(r, 1000));
@@ -245,6 +262,9 @@ function Progress({ signOut, user }) {
                     })()}
           </FormContent>
         </FormWrap>
+    </Container>
+  <Container>
+    <FormWrap>
       <FormLoader>
         {//shows loading screen
         loading ? (<CircularProgress/>) : ("") }
@@ -290,17 +310,17 @@ function Progress({ signOut, user }) {
                   </div>
               </div>) : ("")}
         </ContentTable>
-        <button
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              window.location.href='https://forms.gle/zmsf1yn5rwCYKXJm6';
-              }}
-        Click here>Survey Here!</button>
-        <button onClick={historyClick}>History</button>
+        </FormWrap>
+        </Container>
+        <Container>
+          <div style={{display: "flex", justifyContent: "center"}}>
+        <Button onClick={historyClick}>History</Button>
+        </div>
+          <FormWrap>
+        <ContentTable>
         {
           enable ? (
-          <table>
+          <table class='fl-table'>
           <thead>
             <tr>
               <th>News Body</th>
@@ -327,8 +347,10 @@ function Progress({ signOut, user }) {
           </tbody>
         </table>) : ("")
         }
+        </ContentTable>
+        </FormWrap>
     </Container>
-    </>
+    </div>
   );
 };
 export default withAuthenticator(Progress);
