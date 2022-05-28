@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 //CSS
 import './table.css'
 import './history.css'
+import './navbar.css'
+//Icons
+import { AiFillDownCircle } from "react-icons/ai";
 //FORMIK
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -160,10 +163,21 @@ function Progress({ signOut, user }) {
   }, [prediction])
 
   return (
+    <>
+    {/* Navbar */}
+    <nav className='navbar'>
+      <Link to='/' className='navbar-logo'> Aletheia </Link>
+      <ul className='nav-items'>
+        <li className='nav-item'>
+          <a href='https://forms.gle/zmsf1yn5rwCYKXJm6'>Survey Here!</a>
+        </li>
+        <li className='nav-item'>
+          <a id='emailadd' href=''>{user.attributes.email}<AiFillDownCircle/></a>
+        </li>
+      </ul>
+    </nav>
     <Container>
-        {/* user reference for new navbar since hatdog si ej */}
         <h1>Hello {user.attributes.email}</h1>
-        {/* <h1>Hello {userid}</h1> */}
         <button onClick={signOut}>Sign out</button>
         <FormWrap>
             <FormContent>
@@ -314,6 +328,7 @@ function Progress({ signOut, user }) {
         </table>) : ("")
         }
     </Container>
+    </>
   );
 };
 export default withAuthenticator(Progress);

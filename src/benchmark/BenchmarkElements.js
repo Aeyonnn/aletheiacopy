@@ -15,17 +15,15 @@ import { Link as LinkR} from 'react-router-dom';
 //     }
 // ` 
 export const Container = styled.div`
-    height: 100vh;
     background: #EDEDED;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: auto;
     align-items: center;
     justify-content: center;
-    @media screen and (max-height:375px) {
-        max-height: 375px;
-        max-width: 667px;
+    @media screen and (max-height:780px) {
+        height: auto;
+        width: auto;
     }
 `
 export const FormWrap = styled.div`
