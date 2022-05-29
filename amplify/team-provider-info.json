@@ -16,11 +16,11 @@
       "function": {
         "aletheiawebpaged43aabeb": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
-          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-445779566558462f4643-build.zip"
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-6732555543394e436b64-build.zip"
         },
         "aletheiawebscraper": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
-          "s3Key": "amplify-builds/aletheiawebscraper-6c5243695064535a634e-build.zip"
+          "s3Key": "amplify-builds/aletheiawebscraper-4e72525730364933666b-build.zip"
         },
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheiawebpage-dev-210824-deployment",
