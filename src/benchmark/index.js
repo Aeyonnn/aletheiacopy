@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button, ContainerWhole} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
+import * as yup from 'yup';
 //CSS
 import './table.css'
 import './history.css'
@@ -180,7 +181,7 @@ function Progress({ signOut, user }) {
   }, [prediction])
 
   return (
-    <div>
+    <ContainerWhole>
     {/* Navbar */}
     <nav className='navbar' toggle={toggle}>
       <Link to='/' className='navbar-logo'> Aletheia </Link>
@@ -313,14 +314,14 @@ function Progress({ signOut, user }) {
         </FormWrap>
         </Container>
         <Container>
-          <div style={{display: "flex", justifyContent: "center"}}>
+          <div style={{display: "flex", justifyContent: "center", marginBottom: 20}}>
         <Button onClick={historyClick}>History</Button>
         </div>
-          <FormWrap>
         <ContentTable>
         {
           enable ? (
-          <table class='fl-table'>
+        <div class="table-wrapperbench">
+          <table class='tl-table'>
           <thead>
             <tr>
               <th>News Body</th>
@@ -345,12 +346,13 @@ function Progress({ signOut, user }) {
             )
           })}
           </tbody>
-        </table>) : ("")
+        </table>
+        </div>
+        ) : ("")
         }
         </ContentTable>
-        </FormWrap>
     </Container>
-    </div>
+</ContainerWhole>
   );
 };
 export default withAuthenticator(Progress);

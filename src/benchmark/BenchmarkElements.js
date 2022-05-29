@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 import { Link as LinkR} from 'react-router-dom';
 
+
+export const ContainerWhole = styled.div`
+    background: #EDEDED;
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+        
+    }
+`
+
 export const Container = styled.div`
     background: #EDEDED;
+    height: auto;
     @media screen and (max-width: 768px){
         padding: 100px 0;
         
@@ -43,6 +53,10 @@ export const FormContent = styled.div`
     margin: auto;
     padding: .625rem;
     border: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     @media screen and (max-width: 480px){
         padding: 10px;
         width: 100%;

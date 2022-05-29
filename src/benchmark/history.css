@@ -19,13 +19,15 @@ h2{
 
 /* Table Styles */
 
-.table-wrapper{
+.table-wrapperbench{
   margin: 20px 70px 100px;
   box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-  width: 460px;
+  width: 1080px;
+  height: 200px;
+  overflow-y: scroll;
 }
 
-.fl-table {
+.tl-table {
   border-radius: 5px;
   font-size: 12px;
   font-weight: normal;
@@ -35,31 +37,37 @@ h2{
   max-width: 100%;
   white-space: nowrap;
   background-color: #979DAC;
-  overflow-x:scroll;
+  table-layout: fixed;
+  top: 0;
 }
 
-.fl-table td, .fl-table th {
+.tl-table th{
+  position: sticky;
+}
+.tl-table td, .tl-table th {
   text-align: center;
   padding: 8px;
 }
 
-.fl-table td {
+.tl-table td {
   border-right: 1px solid #979DAC;
   font-size: 12px;
+  width: 100px;
+  overflow: hidden;
 }
 
-.fl-table thead th {
+.tl-table thead th {
   color: #ffffff;
   background: #0353A4;
 }
 
 
-.fl-table thead th:nth-child(odd) {
+.tl-table thead th:nth-child(odd) {
   color: #ffffff;
   background: #001845;
 }
 
-.fl-table tr:nth-child(even) {
+.tl-table tr:nth-child(even) {
   background: #7D8597;
 }
 
@@ -68,7 +76,7 @@ h2{
 
 /*Mobile View*/
 @media only screen and  (max-width: 760px) {
-  .table-wrapper{
+  .table-wrapperbench{
     width: 200px;
   }
   td, tr { display: block; }
