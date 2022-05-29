@@ -1,0 +1,51 @@
+import Icon1 from '../../images/vince.jpg'
+import Icon2 from '../../images/ej.jpg'
+import Icon3 from '../../images/kynch.jpg'
+export const homeObjOne = {
+    id: 'Vince sec',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Vince L. Dela Peña',
+    headline: 'Back-end Developer',
+    description: 'Vince is a back-end developer of the team, he specializes in data cleaning and created testing methods for our benchmark. Vince enjoys coding with his friend while playing Valorant. He is very creative and smart when it comes to solutions. He is also experienced in AWS and other cloud platforms.',
+    buttonLabel: 'Back-end Developer',
+    imgStart: false,
+    img: Icon1,
+    alt: 'Vince',
+    dark: true,
+    primary: true,
+    darkText: false,
+}
+export const homeObjTwo = {
+    id: 'Ej sec',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Elnathan John L. Salavarria',
+    headline: 'Back-end Developer',
+    description: 'Elnathan is a back-end developer of the team, he is a data solutions analyst and a webscraper for the news section. Elnathan is a disciplined programmer and hard-working.',
+    buttonLabel: 'Back-end Developer',
+    imgStart: true,
+    img: Icon2,
+    alt: 'EJ',
+    dark: false,
+    primary: false,
+    darkText: true,
+}
+export const homeObjThree = {
+    id: 'Kynch sec',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Kynch Tito R. Silao',
+    headline: 'Front-end Developer',
+    description: 'Kynch is the front-end developer of the team, he has experience with web development tools and created the website. He is also a gamer which specializes in first person shooters.',
+    buttonLabel: 'Front-end Developer',
+    imgStart: false,
+    img: Icon3,
+    alt: 'Kynch',
+    dark: true,
+    primary: true,
+    darkText: false,
+}

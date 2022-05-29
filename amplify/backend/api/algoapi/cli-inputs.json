@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "paths": {
+    "/aletheiadbwrite": {
+      "name": "/aletheiadbwrite",
+      "lambdaFunction": "aletheiadbwrite",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/aletheiadbhistory": {
+      "name": "/aletheiadbhistory",
+      "lambdaFunction": "aletheiadbhistory",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/aletheiadbconnect": {
+      "name": "/aletheiadbconnect",
+      "lambdaFunction": "aletheiadbconnect",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/aletheiawebscraper-dev": {
+      "name": "/aletheiawebscraper-dev",
+      "lambdaFunction": "aletheiawebscraper",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/pythonapi": {
+      "name": "/pythonapi",
+      "lambdaFunction": "aletheiawebpaged43aabeb",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
