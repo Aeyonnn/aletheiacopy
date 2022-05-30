@@ -21,19 +21,20 @@ import '@aws-amplify/ui-react/styles.css';
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
+import { ErrorSharp } from '@material-ui/icons';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
 
 const reviewSchemaText = yup.object({
   newsSubmit:yup.string()
-  .required()
+  .required('Input is required')
 })
 
 const reviewSchemaURL = yup.object({
   newsSubmit:yup.string()
-  .url()
-  .required()
+  .url('Not a valid URL')
+  .required('Input is required')
 })
 
 function Progress({ signOut, user }) {
@@ -220,11 +221,14 @@ function Progress({ signOut, user }) {
         
                         fetchNewsArt(values.newsSubmit)
                         }}>  
-                        {({isSubmitting}) => (
+                        {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
                           <Field id="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
-                          <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                          {
+                            errors.newsSubmit && touched.newsSubmit && <p className={'error'} style={{color: "black"}}> {errors.newsSubmit} </p>
+                          }
+                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
                         </Form>
@@ -248,11 +252,14 @@ function Progress({ signOut, user }) {
                         fetchNewsAlgo(values.newsSubmit);
                         
                         }}>  
-                        {({isSubmitting}) => (
+                        {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
                           <Field id="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
-                          <button id="submit" type="submit" disabled={isSubmitting} onClick={handleClick}> 
+                          {
+                            errors.newsSubmit && touched.newsSubmit && <p className={'error'} style={{color: "black"}}> {errors.newsSubmit} </p>
+                          }
+                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
                         </Form>
