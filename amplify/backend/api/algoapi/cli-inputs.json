@@ -35,6 +35,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/aletheiadbupdate": {
+      "name": "/aletheiadbupdate",
+      "lambdaFunction": "aletheiadbupdate",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
