@@ -13,8 +13,9 @@ def dbUpdate(check, news_id):
 
   cursor = mydb.cursor()
 
-  sql = 'UPDATE Aletheia.news_table SET check_eval = {} WHERE id_news = {};'.format(check, news_id)
-  cursor.execute(sql)
+  sql = 'UPDATE Aletheia.news_table SET check_eval = %s WHERE id_news = %s;'
+  val = (check, news_id)
+  cursor.execute(sql, val)
   mydb.commit()
 
   if mydb:
