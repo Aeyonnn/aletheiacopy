@@ -35,7 +35,7 @@
         },
         "aletheiadbupdate": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbupdate-4e4132666a5436412b63-build.zip"
+          "s3Key": "amplify-builds/aletheiadbupdate-6e4c53426c4e6e725770-build.zip"
         }
       },
       "auth": {

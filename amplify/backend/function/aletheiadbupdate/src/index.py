@@ -1,15 +1,22 @@
 import json
-
+from aletheiadb_update.dbupdate import dbUpdate
 def handler(event, context):
-  print('received event:')
-  print(event)
   
-  return {
-      'statusCode': 200,
-      'headers': {
+  check = event['queryStringParameters']['admineval']
+  print(check)
+  news_id = event['queryStringParameters']['newsid']
+  body = {
+    "message": dbUpdate(check, news_id)
+  }
+  response = {
+    "statusCode": 200,
+    "body": json.dumps(body),
+    "headers": {
+          "Content-Type": "application/json",
           'Access-Control-Allow-Headers': '*',
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
-      },
-      'body': json.dumps('Hello from your new Amplify Python lambda!')
+    }
   }
+  return response
+# print(str(lambdaGet()))
