@@ -1,5 +1,5 @@
 import json
-<<<<<<< HEAD
+
 
 def handler(event, context):
   print('received event:')
@@ -14,7 +14,7 @@ def handler(event, context):
       },
       'body': json.dumps('Hello from your new Amplify Python lambda!')
   }
-=======
+
 from aletheiadb_update.dbupdate import dbUpdate
 def handler(event, context):
   
@@ -36,4 +36,4 @@ def handler(event, context):
   }
   return response
 # print(str(lambdaGet()))
->>>>>>> 40f2a2731cea91183c31f434cbd10c7d23a5f7bb
+
