@@ -27,7 +27,7 @@ h2{
   overflow-y: scroll;
 }
 
-.tl-table {
+/* .tl-table {
   border-radius: 5px;
   font-size: 12px;
   font-weight: normal;
@@ -39,70 +39,82 @@ h2{
   background-color: #979DAC;
   table-layout: fixed;
   top: 0;
+} */
+.tl-table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  top: 0;
+  white-space: nowrap;
+  overflow-y: scroll;
 }
 
-.tl-table th{
-  position: sticky;
-}
-.tl-table td, .tl-table th {
-  text-align: center;
-  padding: 8px;
+.tl-table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
 }
 
+.tl-table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.tl-table th,
 .tl-table td {
-  border-right: 1px solid #979DAC;
-  font-size: 12px;
-  width: 100px;
+  padding: .625em;
+  text-align: center;
   overflow: hidden;
 }
 
-.tl-table thead th {
-  color: #ffffff;
-  background: #0353A4;
+.tl-table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 }
-
-
-.tl-table thead th:nth-child(odd) {
-  color: #ffffff;
-  background: #001845;
-}
-
-.tl-table tr:nth-child(even) {
-  background: #7D8597;
-}
-
 
 /* Responsive */
 
 /*Mobile View*/
-@media only screen and  (max-width: 760px) {
-  .table-wrapperbench{
-    width: 200px;
+@media screen and (max-width: 600px) {
+  .tl-table {
+    border: 0;
   }
-  td, tr { display: block; }
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-  tr { border: 1px solid #023E7D; }
-  tr + tr { margin-top: 0.1em; }
-  td {
-    /* make like a "row" */
+  
+  .tl-table thead {
     border: none;
-    border-bottom: 1px solid #eee;
-    position: relative;
-    padding-left: 50%;
-    background-color: #979DAC;
-    text-align: left;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
-  td:before {
+  
+  .tl-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .tl-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  .tl-table td::before {
     content: attr(data-label);
-    display: inline-block;
-    line-height: 1.5;
-    margin-left: -100%;
-    width: 100%;
-    white-space: nowrap;
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tl-table td:last-child {
+    border-bottom: 0;
   }
 }

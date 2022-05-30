@@ -6,6 +6,7 @@ export const ContainerWhole = styled.div`
     background: #EDEDED;
     @media screen and (max-width: 768px){
         padding: 100px 0;
+        width: 100%;
         
     }
 `
