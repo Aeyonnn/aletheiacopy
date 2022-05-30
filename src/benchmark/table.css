@@ -25,7 +25,7 @@ h2{
   width: 460px;
 }
 
-.fl-table {
+.tl-table-admin {
   border-radius: 5px;
   font-size: 12px;
   font-weight: normal;
@@ -37,28 +37,28 @@ h2{
   background-color: #979DAC;
 }
 
-.fl-table td, .fl-table th {
+.tl-table-admin td, .tl-table-admin th {
   text-align: center;
   padding: 8px;
 }
 
-.fl-table td {
+.tl-table-admin td {
   border-right: 1px solid #979DAC;
   font-size: 12px;
 }
 
-.fl-table thead th {
+.tl-table-admin thead th {
   color: #ffffff;
   background: #0353A4;
 }
 
 
-.fl-table thead th:nth-child(odd) {
+.tl-table-admin thead th:nth-child(odd) {
   color: #ffffff;
   background: #001845;
 }
 
-.fl-table tr:nth-child(even) {
+.tl-table-admin tr:nth-child(even) {
   background: #7D8597;
 }
 
@@ -94,5 +94,91 @@ h2{
     margin-left: -100%;
     width: 100%;
     white-space: nowrap;
+  }
+}
+
+
+/* Admin */
+/* Table Styles */
+
+.table-wrapperadmin{
+  margin: 20px 70px 100px;
+  box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+  width: auto;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.tl-table-admin {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  table-layout: fixed;
+  white-space: nowrap;
+  overflow-y: scroll;
+}
+
+.tl-table-admin tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.tl-table-admin th,
+.tl-table-admin td {
+  padding: .625em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tl-table-admin th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+
+/*Mobile View*/
+@media screen and (max-width: 600px) {
+  .tl-table-admin {
+    border: 0;
+  }
+  
+  .tl-table-admin thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .tl-table-admin tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .tl-table-admin td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  .tl-table-admin td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .tl-table-admin td:last-child {
+    border-bottom: 0;
   }
 }

@@ -10,10 +10,28 @@ export const ContainerWhole = styled.div`
         
     }
 `
+export const ContainerWholeAdmin = styled.div`
+    background: #EDEDED;
+    height: 100%;
+
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+        width: 100%;
+        
+    }
+`
 
 export const Container = styled.div`
     background: #EDEDED;
     height: auto;
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+        
+    }
+`
+export const ContainerAdmin = styled.div`
+    background: #EDEDED;
+    height: 1080px;
     @media screen and (max-width: 768px){
         padding: 100px 0;
         
@@ -73,6 +91,18 @@ export const FormLoader = styled.div`
     }
 `
 export const ContentTable = styled.div`
+    height: 380px;
+    margin: auto;
+    border: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEDED;
+    @media screen and (max-width: 480px){
+        display: flex;
+        padding: 10px;
+    }
+`
+export const ContentTableAdmin = styled.div`
     height: 380px;
     margin: auto;
     border: 10rem;

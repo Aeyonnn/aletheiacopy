@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button, ContainerWhole} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
 import './table.css'
 import './history.css'
 import './navbar.css'
+import './styles.css'
 //Icons
 import {FaBars} from 'react-icons/fa'
 //FORMIK
@@ -36,6 +37,11 @@ const reviewSchemaURL = yup.object({
   .url('Not a valid URL')
   .required('Input is required')
 })
+const reviewSchemaEval = yup.object({
+  updateValue:yup.string()
+  .required('Input is required')
+  .min(2,'Use TRUE or FALSE')
+})
 
 function Progress({ signOut, user }) {
   //Database Access
@@ -54,7 +60,7 @@ function Progress({ signOut, user }) {
   //Loading Spinner
   const [loading, setLoading] = useState(false)
   //Enabling
-  const [enable,setEnable] = useState(false)
+  const [enable,setEnable] = useState(null)
   //Disabling
   const [disable,setDisable] = useState(false)
   //Feedback
@@ -181,6 +187,95 @@ function Progress({ signOut, user }) {
     // setCategory()
   }, [prediction])
 
+  if (userid === 1 || userid === 2 || userid === 3 ){
+    return (
+      <ContainerWholeAdmin>
+      <nav className='navbar' toggle={toggle}>
+        <Link to='/' className='navbar-logo'> Aletheia </Link>
+        <ul className='nav-items'>
+          <li className='nav-item'>
+            <p>{user.attributes.email}</p>
+          </li>
+          <li className='nav-item'>
+            <p>Admin</p>
+          </li>
+          <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
+        </ul>
+      </nav>
+          <ContainerAdmin>
+            <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop:100}}>
+          <Button onClick={historyClick}>Refresh</Button>
+          </div>
+          <ContentTableAdmin>
+          {
+            enable ? (
+          <div class="table-wrapperadmin">
+            <table class='tl-table-admin'>
+            <thead>
+              <tr>
+                <th>News ID</th>
+                <th>User ID</th>
+                <th>News Type</th>
+                <th>News Body</th>
+                <th>News Prediction</th>
+                <th>User Evaluation</th>
+                <th>Checked</th>
+                <th>Update</th>
+              </tr>
+              
+            </thead>
+            <tbody>
+            {user_hist.slice(0, user_hist.length).map((item,index) => {
+              if (item[6] === null){
+                item[6] = "To be evaluated"
+              }
+              return (
+                <tr>
+                  <td>{item[0]}</td>
+                  <td>{item[1]}</td>
+                  <td>{item[2]}</td>
+                  <td>{item[3]}</td>
+                  <td>{item[4]}</td>
+                  <td>{item[5]}</td>
+                  <td>{item[6]}</td>
+                  <td>
+                    <div>
+                    <Formik
+                          initialValues={{
+                          updateValue: '',
+                          }}
+                          validationSchema={reviewSchemaEval}
+                          onSubmit=
+                          {async (values, actions) => {
+                          }}>
+                          {({isSubmitting, errors, touched, isValid, dirty}) => 
+                          {console.log(errors)
+                            return(
+                          <Form>
+                          <label htmlFor="updateValue"></label>
+                            <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE"/>
+                            {errors.updateValue && touched.updateValue && <p className={'error'} style={{color:"black"}} >{errors.updateValue}</p>}
+                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={handleClick}> 
+                            Submit
+                            </button>
+                          </Form>
+                          )}}
+                        </Formik>
+                   </div></td>
+                </tr>
+              )
+            })}
+            </tbody>
+          </table>
+          </div>
+          ) : ("")
+          }
+          </ContentTableAdmin>
+      </ContainerAdmin>
+  </ContainerWholeAdmin>
+    );
+        }
+  else {
   return (
     <ContainerWhole>
     {/* Navbar */}
@@ -362,4 +457,5 @@ function Progress({ signOut, user }) {
 </ContainerWhole>
   );
 };
+  }
 export default withAuthenticator(Progress);

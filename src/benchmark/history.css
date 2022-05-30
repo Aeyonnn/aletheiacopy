@@ -52,11 +52,6 @@ h2{
   overflow-y: scroll;
 }
 
-.tl-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
-
 .tl-table tr {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
