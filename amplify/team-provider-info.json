@@ -15,7 +15,7 @@
       "function": {
         "aletheiadbhistory": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbhistory-476542316a466f63554d-build.zip"
+          "s3Key": "amplify-builds/aletheiadbhistory-4655557a356831395a2b-build.zip"
         },
         "aletheiadbwrite": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
