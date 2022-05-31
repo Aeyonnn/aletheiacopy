@@ -72,6 +72,9 @@ function Progress({ signOut, user }) {
   const [submitting,setSubmitting] = useState(false)
   //Text Field Var
   const [textf, getText] = useState(null)
+
+  const [adminEval, setAdminEval] = useState(null)
+
   const historyClick = () => {
     setRefresh(!refresh)
     setEnable(!enable)
@@ -146,6 +149,18 @@ function Progress({ signOut, user }) {
       newslink: ""
     }
   };
+  //Update History
+  const updateAdminHistory = {
+    queryStringParameters: {
+      admineval: "",
+      newsid: ""
+    }
+  };
+  async function getUpdates(check, news_id){
+    updateAdminHistory.queryStringParameters.admineval = check
+    updateAdminHistory.queryStringParameters.newsid = news_id
+    const apiData = await API.get('algoapi', '/aletheiadbupdate', updateAdminHistory)
+  }
   //Create or Check User from database
   async function getHistory(user_id){
     queryUserHistory.queryStringParameters.user = user_id
@@ -261,14 +276,15 @@ function Progress({ signOut, user }) {
                           validationSchema={reviewSchemaEval}
                           onSubmit=
                           {async (values, actions) => {
+                            getUpdates(values.updateValue, item[0])
                           }}>
                           {({isSubmitting, errors, touched, isValid, dirty}) => 
                           {console.log(errors)
                             return(
                           <Form className='formupdate'>
                           <label htmlFor="updateValue"></label>
-                            <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE"/>
-                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting}> 
+                            <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE" />
+                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick)}}> 
                             Submit
                             </button>
                             {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
@@ -327,7 +343,6 @@ function Progress({ signOut, user }) {
                         await new Promise((r) => setTimeout(r, 1000));
                         getNews.queryStringParameters.newslink = values.newsSubmit;
                         getText(values.newsSubmit)
-        
                         fetchNewsArt(values.newsSubmit)
                         }}>  
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
