@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
@@ -54,7 +54,9 @@ function Progress({ signOut, user }) {
   const [randomf, getRandomf] = useState(null)
   const [news_art, getNewsArt] = useState(null)
   const [prediction, setprediction] = useState(null)
-  //Setting Loading
+  const [showtable, setShowtable] = useState(null)
+  //Setting Results
+  const [outcome,setOutcome] = useState(null)
   //Setting Category
   const [category,setCategory] = useState("URL")
   //Loading Spinner
@@ -81,6 +83,7 @@ function Progress({ signOut, user }) {
     setDisable(false)
     setEnable(false)
     getHist(null)
+    setShowtable(false)
   }
   //For mobile
   const [isOpen, setIsOpen] = useState(false)
@@ -166,7 +169,8 @@ function Progress({ signOut, user }) {
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
     setprediction(apiData)
-    setSubmitting(false);
+    setSubmitting(false)
+    setShowtable(true)
   }
   //Calling API to extract new from link
   async function fetchNewsArt(link){
@@ -210,6 +214,7 @@ function Progress({ signOut, user }) {
           {
             enable ? (
           <div class="table-wrapperadmin">
+
             <table class='tl-table-admin'>
             <thead>
               <tr>
@@ -251,13 +256,13 @@ function Progress({ signOut, user }) {
                           {({isSubmitting, errors, touched, isValid, dirty}) => 
                           {console.log(errors)
                             return(
-                          <Form>
+                          <Form className='formupdate'>
                           <label htmlFor="updateValue"></label>
                             <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE"/>
-                            {errors.updateValue && touched.updateValue && <p className={'error'} style={{color:"black"}} >{errors.updateValue}</p>}
-                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={handleClick}> 
+                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting}> 
                             Submit
                             </button>
+                            {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
                           </Form>
                           )}}
                         </Formik>
@@ -320,12 +325,12 @@ function Progress({ signOut, user }) {
                         <Form>
                         <label htmlFor="newsSubmit"></label>
                           <Field id="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
-                          {
-                            errors.newsSubmit && touched.newsSubmit && <p className={'error'} style={{color: "black"}}> {errors.newsSubmit} </p>
-                          }
                           <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
+                          {
+                            errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
+                          }
                         </Form>
                         )}
                       </Formik></div>
@@ -351,12 +356,12 @@ function Progress({ signOut, user }) {
                         <Form>
                         <label htmlFor="newsSubmit"></label>
                           <Field id="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
-                          {
-                            errors.newsSubmit && touched.newsSubmit && <p className={'error'} style={{color: "black"}}> {errors.newsSubmit} </p>
-                          }
                           <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
+                          {
+                            errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
+                          }
                         </Form>
                         )}
                       </Formik></div>
@@ -374,8 +379,18 @@ function Progress({ signOut, user }) {
       </FormLoader>
       <ContentTable>
         {//shows table
-        combination ? (
+        combination && showtable
+         ? (
                   <div class="table-wrapper">
+                    {({condition}) => {
+                      if({condition} === "['TRUE']"){
+                        setOutcome(true)
+                      }
+                      else{
+                        setOutcome(false)
+                      }
+                    }}
+                    {outcome ? (<h1>The news is real</h1>) : (<h1>The news is fake</h1>)}
                   <table class="fl-table">
                       <thead>
                       <tr>
@@ -402,24 +417,28 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
-                  <div>
-                    <p>Is it true?</p>
-                    <button id="submit" type="submit" disabled={disable}  onClick={() => feedbackVariable('YES')}> 
+                  <div style={{backgroundColor: '#979DAC', display: 'flex', justifyContent: 'center'}}>
+                    <p id='paragraph'>Is this true?</p>
+                    <div id='yesbutton'>
+                    <button id="submittable" type="submit" disabled={disable}  onClick={() => feedbackVariable('YES')}> 
                           Yes
                           </button>
-                          <button id="submit" type="submit" disabled={disable} onClick={() => feedbackVariable('NO')}> 
+                          </div>
+                    <div id='nobutton'>
+                          <button id="submittable" type="submit" disabled={disable} onClick={() => feedbackVariable('NO')}> 
                           No
                           </button>
+                          </div>
                   </div>
               </div>) : ("")}
         </ContentTable>
         </FormWrap>
         </Container>
         <Container>
-          <div style={{display: "flex", justifyContent: "center", marginBottom: 20}}>
+          <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -100}}>
         <Button onClick={historyClick}>History</Button>
         </div>
-        <ContentTable>
+        <ContentTableHistory>
         {
           enable ? (
         <div class="table-wrapperbench">
@@ -452,7 +471,7 @@ function Progress({ signOut, user }) {
         </div>
         ) : ("")
         }
-        </ContentTable>
+        </ContentTableHistory>
     </Container>
 </ContainerWhole>
   );

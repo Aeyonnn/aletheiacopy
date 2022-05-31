@@ -1,3 +1,109 @@
 #updateValue{
     width: 100px;
 }
+/* Admin */
+/* Table Styles */
+
+.table-wrapperadmin{
+    margin: 20px 70px 100px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+    width: auto;
+    height: 800px;
+    overflow-y: scroll;
+  }
+  
+  .tl-table-admin {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    table-layout: fixed;
+    white-space: nowrap;
+    overflow-y: scroll;
+  }
+  
+  .tl-table-admin tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  .tl-table-admin th,
+  .tl-table-admin td {
+    padding: .625em;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .tl-table-admin th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  #submit{
+    font-size: 12px;
+    margin-left: 5px;
+    padding-top: 5px;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  
+  /*Mobile View*/
+  @media screen and (max-width: 600px) {
+    .tl-table-admin {
+      border: 0;
+    }
+    
+    .tl-table-admin thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .tl-table-admin tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .tl-table-admin td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .tl-table-admin td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .tl-table-admin td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  /* Input is required */
+
+.error{
+    font-size: 12px;
+}
+.errorhandler{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.erroradmin{
+  font-size: 12px;
+  margin-left: 8px;
+}

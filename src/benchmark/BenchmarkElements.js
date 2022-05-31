@@ -76,9 +76,11 @@ export const FormContent = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -140px;
     @media screen and (max-width: 480px){
         padding: 10px;
         width: 100%;
+        margin-bottom: 200px;
     }
 `
 export const FormLoader = styled.div`
@@ -86,6 +88,7 @@ export const FormLoader = styled.div`
     margin: auto;
     width: auto;
     border: 10rem;
+    margin-top: -200px;
     @media screen and (max-width: 480px){
         padding: 10px;
     }
@@ -97,6 +100,21 @@ export const ContentTable = styled.div`
     display: flex;
     justify-content: center;
     background-color: #EDEDED;
+    margin-top: -400px;
+    @media screen and (max-width: 480px){
+        display: flex;
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+`
+export const ContentTableHistory = styled.div`
+    height: 380px;
+    margin: auto;
+    border: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEDED;
+    margin-top: 50px;
     @media screen and (max-width: 480px){
         display: flex;
         padding: 10px;
