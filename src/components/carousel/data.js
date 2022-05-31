@@ -28,19 +28,23 @@ export const Heading = styled.h1`
     }
 `
 export const Subtitle = styled.p`
-    margin-top: 24px;
+    margin-top: 6px;
     margin-bottom: 25px;
     color: black;
     font-size: 24px;
-    text-align: center;
+    text-align: justify;
     max-width: 600;
     
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 840px){
         font-size: 24px;
+        margin-top: -40px;
+        margin-left: 12px;
     }
 
     @media screen and (max-width: 480px){
         font-size: 18px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 `
 export const InfoContainer = styled.div`
@@ -70,13 +74,21 @@ export const CardContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     color: "black";
+    @media screen and (max-width: 840px){
+        margin-top: -100px;
+        padding: 0;
+        text-align: justify;
+    }
     @media screen and (max-width: 768px){
+        margin-top:  50px;
         padding: 0;
         flex-direction: column;
+        text-align: justify;
     }
+
 `
 
 export const CardContents = styled.div`

@@ -32,7 +32,7 @@ const Carousel = () => {
     <div className="container">
     <div
       className="carousel">
-      <div style={{ width: "100%", textAlign: "center" }}>
+      <div style={{ width: "80%", textAlign: "center" }}>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           <Card img={multicar1} {...CarouselOne}/>
           <Card img={multicar2} {...CarouselTwo}/>
