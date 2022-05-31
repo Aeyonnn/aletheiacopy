@@ -15,8 +15,7 @@ const PreviousBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowBackIos style={{ color: "black", fontSize: "45px", float: "left", marginLeft: 40
-    }} />
+      <ArrowBackIos style={{ color: "gray", fontSize: "45px" }} />
     </div>
   );
 };
@@ -24,22 +23,25 @@ const NextBtn = (props) => {
   const { className, onClick } = props;
   return (
     <div className={className} onClick={onClick}>
-      <ArrowForwardIos style={{ color: "black", fontSize: "45px", float: "right", marginRight: 40}} />
+      <ArrowForwardIos style={{ color: "gray", fontSize: "45px" }} />
     </div>
   );
 };
 const Carousel = () => {
   return (
-      <InfoContainer id="carousel">
-        <InfoWrapper>
-        <h1 style={{ marginTop: -180,marginBottom: 100 }}>Aletheia</h1>
+    <div className="container">
+    <div
+      className="carousel">
+      <div style={{ width: "50%", textAlign: "center" }}>
+      <h1 style={{ marginBottom: 20 }}>TESTIMONIALS</h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
           <Card img={multicar1} {...CarouselOne}/>
           <Card img={multicar2} {...CarouselTwo}/>
           <Card img={multicar3} {...CarouselThree}/>
         </Slider>
-        </InfoWrapper>
-      </InfoContainer>
+      </div>
+    </div>
+    </div>
   );
 };
 
