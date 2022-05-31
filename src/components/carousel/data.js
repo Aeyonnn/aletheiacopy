@@ -95,15 +95,15 @@ export const CardContents = styled.div`
 
 //Data for the text
 export const CarouselOne = {
-  paragraph: "Algorithm",
-  title: "si kynch"
+  paragraph: "The Algorithms chosen for this study are from previous studies that focuses on fake news detection. These are Adaboost, Decision Tree, KNN, Logistic Regression, Naïve Bayes, Neural Network(MLP), Random Forest, Support Machine Vector. These Algorithms were tested with different datasets to get the parameters they needed for the combination test.",
+  title: "Algorithm"
 }
 
 export const CarouselTwo = {
-  paragraph: "Dataset",
-  title: "si vince"
+  paragraph: "The Dataset used to train the model for this project was built using web scrappers. The data are from both local and international news sources and also inlcudes Filipino Language news. Labels for each news were given by the researches. ",
+  title: "Dataset"
 }
 export const CarouselThree = {
-  paragraph: "Combination",
-  title: "si ej"
+  paragraph: "Using the Ensamble Voting Classifier, the researchers of this project tested all possible combination from the first 9 algorithms. These test was conducted in 5 different datasets to show the uniqueness of each combination. The list of combination results was ran through Correlational Analaysis to determine the most unique combination for each test and get the top performing combination.",
+  title: "Combination"
 }
