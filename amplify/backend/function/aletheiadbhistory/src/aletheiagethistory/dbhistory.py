@@ -12,7 +12,7 @@ def getHistory(user_id):
 
     cursor = mydb.cursor()
     if (user_id == '1' or user_id == '2' or user_id == '3'):
-        cursor.execute("SELECT * FROM news_table ORDER BY id_news")
+        cursor.execute("SELECT * FROM news_table ORDER BY id_news DESC")
         # return my result its a list or dictionary pa check nalang
         myresult = cursor.fetchall()
         for x in myresult:

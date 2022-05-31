@@ -15,7 +15,7 @@
       "function": {
         "aletheiadbhistory": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbhistory-476542316a466f63554d-build.zip"
+          "s3Key": "amplify-builds/aletheiadbhistory-4655557a356831395a2b-build.zip"
         },
         "aletheiadbwrite": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
@@ -31,11 +31,11 @@
         },
         "aletheiawebpaged43aabeb": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-6343496f44456b6f794b-build.zip"
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-46544b4532654d305473-build.zip"
         },
         "aletheiadbupdate": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbupdate-44733355784f514a782f-build.zip"
+          "s3Key": "amplify-builds/aletheiadbupdate-454d67786c6f77424a30-build.zip"
         }
       },
       "auth": {
