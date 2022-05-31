@@ -95,15 +95,15 @@ export const CardContents = styled.div`
 
 //Data for the text
 export const CarouselOne = {
-  paragraph: "hatdog",
+  paragraph: "Algorithm",
   title: "si kynch"
 }
 
 export const CarouselTwo = {
-  paragraph: "hatdog",
+  paragraph: "Dataset",
   title: "si vince"
 }
 export const CarouselThree = {
-  paragraph: "hatdog",
+  paragraph: "Combination",
   title: "si ej"
 }

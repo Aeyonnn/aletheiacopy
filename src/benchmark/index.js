@@ -73,11 +73,17 @@ function Progress({ signOut, user }) {
   //Text Field Var
   const [textf, getText] = useState(null)
   const historyClick = () => {
+    setRefresh(!refresh)
     setEnable(!enable)
     fetchUserId(user.attributes.email)
     console.log(user_hist)
     console.table(user_hist)
   }
+
+  const refreshclick = () => {
+    fetchUserId(user.attributes.email)
+  }
+
   const handleClick = () => {
     setLoading(true)
     setDisable(false)
@@ -87,6 +93,8 @@ function Progress({ signOut, user }) {
   }
   //For mobile
   const [isOpen, setIsOpen] = useState(false)
+
+  const [refresh, setRefresh] = useState(null)
 
   const toggle = () => {
     setIsOpen(!isOpen)
@@ -208,7 +216,8 @@ function Progress({ signOut, user }) {
       </nav>
           <ContainerAdmin>
             <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop:100}}>
-          <Button onClick={historyClick}>Refresh</Button>
+          <Button onClick={historyClick}>Show Table</Button>
+          {refresh ?(<Button onClick={refreshclick}>refresh</Button>):('')}
           </div>
           <ContentTableAdmin>
           {
