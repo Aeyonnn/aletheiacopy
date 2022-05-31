@@ -22,7 +22,7 @@
   font-size: 15px;
 }
 .carousel .slick-dots li {
-  top: 15px;
+  top: 225px;
 }
 .carousel{
   height: 810px;
@@ -30,12 +30,22 @@
   justify-content: center;
 }
 .container{
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 
 @media screen and (max-width: 768px) {
   .slick-dots li button:before{
-    margin-top: 100px;
+    margin-top: -250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .slick-dots li button:before{
+    margin-top: -260px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .slick-dots li button:before{
+    margin-top: -260px;
   }
 }
