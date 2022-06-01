@@ -32,7 +32,7 @@
         },
         "aletheiawebpaged43aabeb": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-46544b4532654d305473-build.zip"
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-37706e32487479534634-build.zip"
         },
         "aletheiadbupdate": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
