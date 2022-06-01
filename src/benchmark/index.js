@@ -47,6 +47,7 @@ function Progress({ signOut, user }) {
   //Database Access
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
+  const [adminsummary, getSumCon] = useState(null)
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
   const [decision, getDecision] = useState(null)
@@ -125,6 +126,13 @@ function Progress({ signOut, user }) {
       user: ""
     }
   };
+
+  //Get Admin History
+  const getAdminSum = {
+    queryStringParameters: {
+      user: ""
+    }
+  };
   //Insert data from user query
   const inputUserQuery = {
     queryStringParameters: {
@@ -169,6 +177,12 @@ function Progress({ signOut, user }) {
     const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
     getHist(apiData.inputHistory)
   }
+    //Create or Check User from database
+    async function getSummary(user_id){
+      getAdminSum.queryStringParameters.user = user_id
+      const apiData = await API.get('algoapi', '/adminsum', queryUserHistory)
+      getSumCon(apiData.summarystat)
+    }
   async function writeUserQuery(user_id, type, newsbody, comb, usereval){
     inputUserQuery.queryStringParameters.user = user_id
     inputUserQuery.queryStringParameters.ntype = type
