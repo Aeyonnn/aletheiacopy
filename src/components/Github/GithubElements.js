@@ -41,8 +41,9 @@ export const GithubCard = styled.a`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 360px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -78,4 +79,6 @@ export const GithubP = styled.p`
     font-size: 1rem;
     color: #fff;
     text-align: center;
+    width: 100%;
+    margin: 0px;
 `

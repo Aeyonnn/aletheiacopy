@@ -93,6 +93,8 @@ function Progress({ signOut, user }) {
     setEnable(false)
     getHist(null)
     setShowtable(false)
+    setSubmitting(true)
+    setOutcome(true)
   }
   //For mobile
   const [isOpen, setIsOpen] = useState(false)
@@ -406,15 +408,7 @@ function Progress({ signOut, user }) {
         combination && showtable
          ? (
                   <div class="table-wrapper">
-                    {({condition}) => {
-                      if({condition} === "['TRUE']"){
-                        setOutcome(true)
-                      }
-                      else{
-                        setOutcome(false)
-                      }
-                    }}
-                    {outcome ? (<h1>The news is real</h1>) : (<h1>The news is fake</h1>)}
+                    {outcome ? (<h1>The news is {combination}</h1>) : ("")}
                   <table class="fl-table">
                       <thead>
                       <tr>
@@ -460,7 +454,7 @@ function Progress({ signOut, user }) {
         </Container>
         <Container>
           <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -100}}>
-        <Button onClick={historyClick}>History</Button>
+        <Button onClick={historyClick} disabled={submitting}>History</Button>
         </div>
         <ContentTableHistory>
         {

@@ -45,10 +45,23 @@
 
   #submit{
     font-size: 12px;
+    width: 70px;
+    height: 30px;
     margin-left: 5px;
-    padding-top: 5px;
     text-align: center;
+    border-radius: 50px;
+    background: #002855;
+    white-space: nowrap;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
   }
+  #submit:hover {
+    transition: all 0.2s ease-in-out;
+    background: #5C677D;
+  };
   
   /* Responsive */
   
