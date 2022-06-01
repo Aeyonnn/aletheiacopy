@@ -34,6 +34,11 @@
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
+    },
+    "getuserdb": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
     }
   },
   "api": {
@@ -92,6 +97,14 @@
         {
           "category": "function",
           "resourceName": "adminsum",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "getuserdb",
           "attributes": [
             "Name",
             "Arn"

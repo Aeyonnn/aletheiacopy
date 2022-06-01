@@ -48,6 +48,7 @@ function Progress({ signOut, user }) {
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
   const [adminsummary, getSumCon] = useState(null)
+  const [userdb, getUserDbCon] = useState(null)
   // Variables to extract algorithm model predictions
   const [combination, getCombination] = useState(null)
   const [decision, getDecision] = useState(null)
@@ -170,6 +171,18 @@ function Progress({ signOut, user }) {
       newsid: ""
     }
   };
+  //Update getUserDb
+  const getUserDb = {
+    queryStringParameters: {
+      user: ""
+    }
+  };
+  //Get user database in API
+  async function getUserDatabase(user_id){
+    getUserDb.queryStringParameters.user = user_id
+    const apiData = await API.get('algoapi', '/getuserdb', getUserDb)
+    getUserDb(apiData.UserDataBase)
+  }
   async function getUpdates(check, news_id){
     updateAdminHistory.queryStringParameters.admineval = check
     updateAdminHistory.queryStringParameters.newsid = news_id

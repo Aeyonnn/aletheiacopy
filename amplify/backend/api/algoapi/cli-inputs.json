@@ -79,6 +79,19 @@
           "delete"
         ]
       }
+    },
+    "/getuserdb": {
+      "name": "/getuserdb",
+      "lambdaFunction": "getuserdb",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }
