@@ -79,12 +79,13 @@ function Progress({ signOut, user }) {
   const historyClick = () => {
     setRefresh(!refresh)
     setEnable(!enable)
+    //Fetch UserId Executes get History and Summary
     fetchUserId(user.attributes.email)
-    getSumCon(getSummary(userid))
-    console.log(userid)
-    console.log(getSummary(userid))
-    console.table(user_hist)
     console.table(adminsummary)
+    console.log(userid)
+    // console.log(getSummary(userid))
+    console.table(user_hist)
+    // console.table(getSummary(userid))
   }
 
   const refreshclick = () => {
@@ -180,7 +181,7 @@ function Progress({ signOut, user }) {
     const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
     getHist(apiData.inputHistory)
   }
-    //Create or Check User from database
+    //Admin Summary
     async function getSummary(user_id){
       getAdminSum.queryStringParameters.user = user_id
       const apiData = await API.get('algoapi', '/adminsum', getAdminSum)
@@ -201,6 +202,7 @@ function Progress({ signOut, user }) {
     const apiData = await API.get('algoapi', '/aletheiadbconnect', getUser)
     getId(apiData.user_id)
     getHistory(apiData.user_id)
+    getSummary(apiData.user_id)
   }
   //Calling API to get results
   async function fetchNewsAlgo(article){
