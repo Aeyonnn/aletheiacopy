@@ -66,6 +66,19 @@
           "delete"
         ]
       }
+    },
+    "/adminsum": {
+      "name": "/adminsum",
+      "lambdaFunction": "adminsum",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
     }
   }
 }
