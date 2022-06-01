@@ -80,8 +80,11 @@ function Progress({ signOut, user }) {
     setRefresh(!refresh)
     setEnable(!enable)
     fetchUserId(user.attributes.email)
-    console.log(user_hist)
+    getSumCon(getSummary(userid))
+    console.log(userid)
+    console.log(getSummary(userid))
     console.table(user_hist)
+    console.table(adminsummary)
   }
 
   const refreshclick = () => {
@@ -180,8 +183,9 @@ function Progress({ signOut, user }) {
     //Create or Check User from database
     async function getSummary(user_id){
       getAdminSum.queryStringParameters.user = user_id
-      const apiData = await API.get('algoapi', '/adminsum', queryUserHistory)
+      const apiData = await API.get('algoapi', '/adminsum', getAdminSum)
       getSumCon(apiData.summarystat)
+      return apiData.summarystat
     }
   async function writeUserQuery(user_id, type, newsbody, comb, usereval){
     inputUserQuery.queryStringParameters.user = user_id
@@ -251,6 +255,35 @@ function Progress({ signOut, user }) {
           {refresh ?(<Button onClick={refreshclick}>refresh</Button>):('')}
           </div>
           <ContentTableAdmin>
+          {/* {
+            enable ? (
+          <div class="table-wrapperadmin">
+
+            <table class='tl-table-admin'>
+            <thead>
+              <tr>
+                <th>News ID</th>
+                <th>User ID</th>
+                <th>News Type</th>
+
+              </tr>
+              
+            </thead>
+            <tbody>
+            {adminsummary.slice(0, adminsummary.length).map((item,index) => {
+              return (
+                <tr>
+                  <td>{item[0]}</td>
+                  <td>{item[1]}</td>
+                  <td>{item[2]}</td>
+                </tr>
+              )
+            })}
+            </tbody>
+          </table>
+          </div>
+          ) : ("")
+          } */}
           {
             enable ? (
           <div class="table-wrapperadmin">
