@@ -38,7 +38,15 @@
       "dependsOn": [
         {
           "category": "function",
-          "resourceName": "aletheiadbwrite",
+          "resourceName": "aletheiawebscraper",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
+          "resourceName": "aletheiawebpaged43aabeb",
           "attributes": [
             "Name",
             "Arn"
@@ -54,23 +62,15 @@
         },
         {
           "category": "function",
+          "resourceName": "aletheiadbwrite",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        },
+        {
+          "category": "function",
           "resourceName": "aletheiadbconnect",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "aletheiawebscraper",
-          "attributes": [
-            "Name",
-            "Arn"
-          ]
-        },
-        {
-          "category": "function",
-          "resourceName": "aletheiawebpaged43aabeb",
           "attributes": [
             "Name",
             "Arn"

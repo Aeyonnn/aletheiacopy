@@ -9,7 +9,8 @@
       "UnauthRoleName": "amplify-aletheia-dev-222152-unauthRole",
       "StackName": "amplify-aletheia-dev-222152",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:823142838959:stack/amplify-aletheia-dev-222152/b181fea0-df5a-11ec-8c98-028e43abbd74",
-      "AmplifyAppId": "d3eiqbdniqq7zp"
+      "AmplifyAppId": "d3eiqbdniqq7zp",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-aletheia-dev-222152-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {

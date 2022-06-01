@@ -1,27 +1,6 @@
 {
   "version": 1,
   "paths": {
-    "/aletheiadbwrite": {
-      "name": "/aletheiadbwrite",
-      "lambdaFunction": "aletheiadbwrite",
-      "permissions": {
-        "setting": "open"
-      }
-    },
-    "/aletheiadbhistory": {
-      "name": "/aletheiadbhistory",
-      "lambdaFunction": "aletheiadbhistory",
-      "permissions": {
-        "setting": "open"
-      }
-    },
-    "/aletheiadbconnect": {
-      "name": "/aletheiadbconnect",
-      "lambdaFunction": "aletheiadbconnect",
-      "permissions": {
-        "setting": "open"
-      }
-    },
     "/aletheiawebscraper-dev": {
       "name": "/aletheiawebscraper-dev",
       "lambdaFunction": "aletheiawebscraper",
@@ -36,11 +15,56 @@
         "setting": "open"
       }
     },
+    "/aletheiadbhistory": {
+      "name": "/aletheiadbhistory",
+      "lambdaFunction": "aletheiadbhistory",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/aletheiadbwrite": {
+      "name": "/aletheiadbwrite",
+      "lambdaFunction": "aletheiadbwrite",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
+    "/aletheiadbconnect": {
+      "name": "/aletheiadbconnect",
+      "lambdaFunction": "aletheiadbconnect",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    },
     "/aletheiadbupdate": {
       "name": "/aletheiadbupdate",
       "lambdaFunction": "aletheiadbupdate",
       "permissions": {
-        "setting": "open"
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
       }
     }
   }
