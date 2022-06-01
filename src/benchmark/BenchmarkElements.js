@@ -37,21 +37,30 @@ export const ContainerAdmin = styled.div`
         
     }
 `
+export const ContainerTable = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+        
+    }
+`
 
 export const Button = styled.button`
     text-align: center;
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#002855' : '#7D8597')};
+    background: #002855;
     white-space: nowrap;
-    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#fff' : '#010606')};
+    padding: 12px 24px;
+    color: #fff;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#5C677D' : '#002855')};
+        background: #5C677D;
     }
 `
 
@@ -100,7 +109,7 @@ export const ContentTable = styled.div`
     display: flex;
     justify-content: center;
     background-color: #EDEDED;
-    margin-top: -400px;
+    margin-top: -360px;
     @media screen and (max-width: 480px){
         display: flex;
         padding: 10px;
@@ -127,6 +136,21 @@ export const ContentTableAdmin = styled.div`
     display: flex;
     justify-content: center;
     background-color: #EDEDED;
+    width: 100%;
+    @media screen and (max-width: 480px){
+        display: flex;
+        padding: 10px;
+    }
+`
+export const ContentTableAdminSummary = styled.div`
+    height: 60px;
+    margin: auto;
+    border: 10rem;
+    display: flex;
+    justify-content: center;
+    background-color: #EDEDED;
+    width: 100%;
+    margin-bottom: 200px;
     @media screen and (max-width: 480px){
         display: flex;
         padding: 10px;

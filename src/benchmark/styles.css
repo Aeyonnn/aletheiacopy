@@ -21,7 +21,6 @@
     top: 0;
     table-layout: fixed;
     white-space: nowrap;
-    overflow-y: scroll;
   }
   
   .tl-table-admin tr {
@@ -121,4 +120,48 @@
 .erroradmin{
   font-size: 12px;
   margin-left: 8px;
+}
+
+
+/* tooltip */
+.tooltip
+{
+ display: inline;
+ position: relative;
+}
+.tooltip:hover:after
+{
+ background: #333;
+ background: rgba(0,0,0,.8);
+ border-radius: 5px;
+ bottom: 26px;
+ color: #fff;
+ content: attr(title);
+ left: 20%;
+ padding: 5px 15px;
+ position: absolute;
+ z-index: 98;
+ word-wrap: break-word;
+ text-align: left;
+ white-space: pre-line;
+ width: 600px;
+ 
+}
+.tooltip:hover:before
+{
+ border: solid;
+ border-color: #333 transparent;
+ border-width: 6px 6px 0 6px;
+ bottom: 20px;
+ content: "";
+ left: 50%;
+ position: absolute;
+ z-index: 99;
+ width: auto;
+}
+
+/* Input Field */
+.newsSubmit{
+  background-color: #EDEDED;
+  border-radius: 10px;
 }

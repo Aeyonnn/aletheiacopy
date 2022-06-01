@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin,ContentTableAdminSummary,ContainerTable} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
@@ -256,8 +256,9 @@ function Progress({ signOut, user }) {
           <Button onClick={historyClick}>Show Table</Button>
           {refresh ?(<Button onClick={refreshclick}>refresh</Button>):('')}
           </div>
-          <ContentTableAdmin>
-          {/* {
+          <ContainerTable>
+          <ContentTableAdminSummary>
+          {
             enable ? (
           <div class="table-wrapperadmin">
 
@@ -285,7 +286,9 @@ function Progress({ signOut, user }) {
           </table>
           </div>
           ) : ("")
-          } */}
+          }
+          </ContentTableAdminSummary>
+          <ContentTableAdmin>
           {
             enable ? (
           <div class="table-wrapperadmin">
@@ -352,6 +355,7 @@ function Progress({ signOut, user }) {
           ) : ("")
           }
           </ContentTableAdmin>
+          </ContainerTable>
       </ContainerAdmin>
   </ContainerWholeAdmin>
     );
@@ -375,6 +379,7 @@ function Progress({ signOut, user }) {
     <Container>
         <FormWrap>
             <FormContent>
+              <FormLabel><h3>Test your news here!</h3></FormLabel>
               <FormLabel>Select Category</FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
                   <FormControlLabel value="TEXT" control={<Radio/>} label="Text"/>
@@ -399,7 +404,7 @@ function Progress({ signOut, user }) {
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
-                          <Field id="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
+                          <Field className="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
                           <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
@@ -430,7 +435,7 @@ function Progress({ signOut, user }) {
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
-                          <Field id="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
+                          <Field className="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
                           <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
@@ -455,9 +460,9 @@ function Progress({ signOut, user }) {
       <ContentTable>
         {//shows table
         combination && showtable
-         ? (
-                  <div class="table-wrapper">
-                    {outcome ? (<h1>The news is {combination}</h1>) : ("")}
+         ? (      
+                  <div className="table-wrapper">
+                    <div>{outcome ? (<h1>The news is {combination}</h1>) : ("")}</div>
                   <table class="fl-table">
                       <thead>
                       <tr>
@@ -467,7 +472,7 @@ function Progress({ signOut, user }) {
                       </thead>
                       <tbody>
                       <tr>
-                          <td>Combination</td>
+                          <td><span title='Lorem Ipsum Labrador Persian Cat Pitbull Shitzu Labrador Golden Retriever Cacha Lorem Ipsum Labrador Persian Cat Pitbull Shitzu Labrador Golden Retriever Cacha Lorem Ipsum Labrador Persian Cat Pitbull Shitzu Labrador Golden Retriever Cacha Lorem Ipsum Labrador Persian Cat Pitbull Shitzu Labrador Golden Retriever Cacha Lorem Ipsum Labrador Persian Cat Pitbull Shitzu Labrador Golden Retriever Cacha'className='tooltip'>Combination</span></td>
                           <td><b>{combination}</b></td>
                       </tr>
                       <tr>
@@ -487,7 +492,7 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
-                  <div style={{backgroundColor: '#979DAC', display: 'flex', justifyContent: 'center'}}>
+                  <div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}>
                     <p id='paragraph'>Is this true?</p>
                     <div id='yesbutton'>
                     <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick()}}> 
@@ -505,7 +510,7 @@ function Progress({ signOut, user }) {
         </FormWrap>
         </Container>
         <Container>
-          <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -100}}>
+          <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -70}}>
         <Button onClick={historyClick} disabled={submitting}>History</Button>
         </div>
         <ContentTableHistory>
