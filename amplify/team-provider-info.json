@@ -32,7 +32,7 @@
         },
         "aletheiawebpaged43aabeb": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-5a322f674e682b565a48-build.zip"
+          "s3Key": "amplify-builds/aletheiawebpaged43aabeb-4c7372774532584d7571-build.zip"
         },
         "aletheiadbupdate": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
@@ -44,7 +44,7 @@
         },
         "getuserdb": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/getuserdb-4a4f5a67666d78414367-build.zip"
+          "s3Key": "amplify-builds/getuserdb-466d4562715846416b39-build.zip"
         }
       },
       "auth": {
