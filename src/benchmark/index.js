@@ -284,7 +284,7 @@ function Progress({ signOut, user }) {
                           <Form className='formupdate'>
                           <label htmlFor="updateValue"></label>
                             <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE" />
-                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick)}}> 
+                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick); refreshclick()}}> 
                             Submit
                             </button>
                             {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
@@ -444,12 +444,12 @@ function Progress({ signOut, user }) {
                   <div style={{backgroundColor: '#979DAC', display: 'flex', justifyContent: 'center'}}>
                     <p id='paragraph'>Is this true?</p>
                     <div id='yesbutton'>
-                    <button id="submittable" type="submit" disabled={disable}  onClick={() => feedbackVariable('YES')}> 
+                    <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick()}}> 
                           Yes
                           </button>
                           </div>
                     <div id='nobutton'>
-                          <button id="submittable" type="submit" disabled={disable} onClick={() => feedbackVariable('NO')}> 
+                          <button id="submittable" type="submit" disabled={disable} onClick={() => {feedbackVariable('NO'); refreshclick()}}> 
                           No
                           </button>
                           </div>
