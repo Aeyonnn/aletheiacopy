@@ -419,19 +419,22 @@ function Progress({ signOut, user }) {
                       <tbody>
                       <tr>
                           <td>Combination</td>
-                          <td>{combination}</td>
+                          <td><b>{combination}</b></td>
+                      </tr>
+                      <tr>
+                        <td colSpan={2}><b>Algorithms</b></td>
                       </tr>
                       <tr>
                           <td>Decision Tree</td>
-                          <td>{decision}</td>
+                          <td><b>{decision}</b></td>
                       </tr>
                       <tr>
                           <td>Neural Network</td>
-                          <td>{neural}</td>
+                          <td><b>{neural}</b></td>
                       </tr>
                       <tr>
                           <td>Random Forest</td>
-                          <td>{randomf}</td>
+                          <td><b>{randomf}</b></td>
                       </tr>
                       </tbody>
                   </table>
