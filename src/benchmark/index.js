@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin,ContentTableAdminSummary,ContainerTable} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin,ContentTableAdminSummary,ContainerTable,ContainerTableAdminSum} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
@@ -8,7 +8,7 @@ import './history.css'
 import './navbar.css'
 import './styles.css'
 //Icons
-import {FaBars} from 'react-icons/fa'
+import { GrRefresh } from "react-icons/gr";
 //FORMIK
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -75,7 +75,9 @@ function Progress({ signOut, user }) {
   //Text Field Var
   const [textf, getText] = useState(null)
 
-  const [adminEval, setAdminEval] = useState(null)
+  //Shows Admin Table
+  const [showadmin, setAdmin] = useState(null)
+  const [searchadmin, setSearchAdmin] = useState(null)
 
   const historyClick = () => {
     setRefresh(!refresh)
@@ -83,16 +85,14 @@ function Progress({ signOut, user }) {
     //Fetch UserId Executes get History and Summary
     fetchUserId(user.attributes.email)
     console.table(adminsummary)
-    console.log(userid)
-    // console.log(getSummary(userid))
     console.table(user_hist)
-    // console.table(getSummary(userid))
+    console.table(userdb)
   }
 
   const refreshclick = () => {
     fetchUserId(user.attributes.email)
+    getSummary(userid)
   }
-
   const handleClick = () => {
     setLoading(true)
     setDisable(false)
@@ -102,6 +102,15 @@ function Progress({ signOut, user }) {
     setSubmitting(true)
     setOutcome(true)
   }
+  const adminClick = () => {
+    setAdmin(!showadmin)
+    setSearchAdmin(false)
+  }
+  const adminSearch = () => {
+    setSearchAdmin(true)
+    setAdmin(false)
+  }
+
   //For mobile
   const [isOpen, setIsOpen] = useState(false)
 
@@ -181,7 +190,7 @@ function Progress({ signOut, user }) {
   async function getUserDatabase(user_id){
     getUserDb.queryStringParameters.user = user_id
     const apiData = await API.get('algoapi', '/getuserdb', getUserDb)
-    getUserDb(apiData.UserDataBase)
+    getUserDbCon(apiData.UserDataBase)
   }
   async function getUpdates(check, news_id){
     updateAdminHistory.queryStringParameters.admineval = check
@@ -216,6 +225,7 @@ function Progress({ signOut, user }) {
     getId(apiData.user_id)
     getHistory(apiData.user_id)
     getSummary(apiData.user_id)
+    getUserDatabase(apiData.user_id)
   }
   //Calling API to get results
   async function fetchNewsAlgo(article){
@@ -246,133 +256,174 @@ function Progress({ signOut, user }) {
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
-    // setCategory()
   }, [prediction])
 
   if (userid === 1 || userid === 2 || userid === 3 ){
     return (
-      <ContainerWholeAdmin>
+  <ContainerWholeAdmin>
       <nav className='navbar' toggle={toggle}>
         <Link to='/' className='navbar-logo'> Aletheia </Link>
         <ul className='nav-items'>
-          <li className='nav-item'>
-            <p>{user.attributes.email}</p>
-          </li>
-          <li className='nav-item'>
-            <p>Admin</p>
-          </li>
-          <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
+        <li className='nav-item'>
+        <p>{user.attributes.email}</p>
+        </li>
+        <li className='nav-item'>
+        <p>Admin</p>
+        </li>
+        <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
         </ul>
-      </nav>
-          <ContainerAdmin>
-            <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop:100}}>
-          <Button onClick={historyClick}>Show Table</Button>
-          {refresh ?(<Button onClick={refreshclick}>refresh</Button>):('')}
-          </div>
+    </nav>
+  <ContainerAdmin>
+    <Button onClick={historyClick}>Welcome! Click me</Button>
+    {refresh ?(''):('')}
+  </ContainerAdmin>
+  <ContainerTable>
+  {
+      enable ? (
+    <ContainerTableAdminSum>
+    <div class="table-wrapper-adminsummary">
+
+      <table class='tl-table-adminsummary'>
+      <thead>
+        <tr>
+          <th>Evaluation</th>
+          <th>Feedback</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+      {adminsummary.slice(0, adminsummary.length).map((item,index) => {
+        return (
+          <tr>
+            <td>{item[0]}</td>
+            <td>{item[1]}</td>
+            <td>{item[2]}</td>
+          </tr>
+        )
+      })}
+      </tbody>
+    </table>
+    </div>
+    <div class="table-wrapper-adminusers">
+    <table class='tl-table-adminusers'>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+        </tr>
+      </thead>
+      <tbody>
+      {userdb.slice(0, userdb.length).map((item,index) => {
+        return (
+          <tr>
+            <td>{item[0]}</td>
+            <td>{item[1]}</td>
+          </tr>
+        )
+      })}
+      </tbody>
+    </table>
+    </div>
+    </ContainerTableAdminSum>
+    ) : ("")
+    }
+    {enable ? (
+      <ContainerWhole>
+      <ContainerAdmin>
+            <Formik
+              initialValues={{
+                adminsearch: '',
+              }}
+              validationSchema={reviewSchemaText}
+              onSubmit=
+              {async (values, actions) => {
+              await new Promise((r) => setTimeout(r, 1000));
+              getNews.queryStringParameters.newslink = values.adminsearch;
+              getText(values.adminsearch)
+              fetchNewsAlgo(values.adminsearch);
+                }}>  
+              {({isSubmitting,errors,touched,isValid,dirty}) => (
+                  <Form>
+                    <label htmlFor="adminsearch"></label>
+                      <Field className="adminsearch" name="adminsearch" placeholder="Enter User ID" />
+                        <button id="submit" type="submit" disabled={isSubmitting} onClick={adminSearch}> 
+                        Search User
+                        </button>
+                          {
+                            errors.adminsearch && touched.adminsearch && <p className='error' style={{color: "black"}}> {errors.adminsearch} </p>
+                          }
+                  </Form>
+                        )}
+          </Formik>
+          <button id="showadmintable" onClick={adminClick}>Show Admin Table</button>
+          </ContainerAdmin>
           <ContainerTable>
-          <ContentTableAdminSummary>
-          {
-            enable ? (
-          <div class="table-wrapperadmin">
+          {searchadmin ? ("search admin") : ("")}
+          {showadmin ? (    <div class="table-wrapperadmin">
 
-            <table class='tl-table-admin'>
-            <thead>
-              <tr>
-                <th>News ID</th>
-                <th>User ID</th>
-                <th>News Type</th>
-
-              </tr>
-              
-            </thead>
-            <tbody>
-            {adminsummary.slice(0, adminsummary.length).map((item,index) => {
-              return (
-                <tr>
-                  <td>{item[0]}</td>
-                  <td>{item[1]}</td>
-                  <td>{item[2]}</td>
-                </tr>
-              )
-            })}
-            </tbody>
-          </table>
-          </div>
-          ) : ("")
-          }
-          </ContentTableAdminSummary>
-          <ContentTableAdmin>
-          {
-            enable ? (
-          <div class="table-wrapperadmin">
-
-            <table class='tl-table-admin'>
-            <thead>
-              <tr>
-                <th>News ID</th>
-                <th>User ID</th>
-                <th>News Type</th>
-                <th>News Body</th>
-                <th>News Prediction</th>
-                <th>User Evaluation</th>
-                <th>Checked</th>
-                <th>Update</th>
-              </tr>
-              
-            </thead>
-            <tbody>
-            {user_hist.slice(0, user_hist.length).map((item,index) => {
-              if (item[6] === null){
-                item[6] = "To be evaluated"
-              }
-              return (
-                <tr>
-                  <td>{item[0]}</td>
-                  <td>{item[1]}</td>
-                  <td>{item[2]}</td>
-                  <td>{item[3]}</td>
-                  <td>{item[4]}</td>
-                  <td>{item[5]}</td>
-                  <td>{item[6]}</td>
-                  <td>
-                    <div>
-                    <Formik
-                          initialValues={{
-                          updateValue: '',
-                          }}
-                          validationSchema={reviewSchemaEval}
-                          onSubmit=
-                          {async (values, actions) => {
-                            getUpdates(values.updateValue, item[0])
-                          }}>
-                          {({isSubmitting, errors, touched, isValid, dirty}) => 
-                          {console.log(errors)
-                            return(
-                          <Form className='formupdate'>
-                          <label htmlFor="updateValue"></label>
-                            <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE" />
-                            <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick); refreshclick()}}> 
-                            Submit
-                            </button>
-                            {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
-                          </Form>
-                          )}}
-                        </Formik>
-                   </div></td>
-                </tr>
-              )
-            })}
-            </tbody>
-          </table>
-          </div>
-          ) : ("")
-          }
-          </ContentTableAdmin>
-          </ContainerTable>
-      </ContainerAdmin>
-  </ContainerWholeAdmin>
-    );
-        }
+<table class='tl-table-admin'>
+<thead>
+  <tr>
+    <th>News ID</th>
+    <th>User ID</th>
+    <th>News Type</th>
+    <th>News Body</th>
+    <th>News Prediction</th>
+    <th>User Evaluation</th>
+    <th>Checked</th>
+    <th>Update</th>
+  </tr>
+  
+</thead>
+<tbody>
+{user_hist.slice(0, user_hist.length).map((item,index) => {
+  return (
+    <tr>
+      <td>{item[0]}</td>
+      <td>{item[1]}</td>
+      <td>{item[2]}</td>
+      <td>{item[3]}</td>
+      <td>{item[4]}</td>
+      <td>{item[5]}</td>
+      <td>{item[6]}</td>
+      <td>
+        <div>
+        <Formik
+              initialValues={{
+              updateValue: '',
+              }}
+              validationSchema={reviewSchemaEval}
+              onSubmit=
+              {async (values, actions) => {
+                getUpdates(values.updateValue, item[0])
+              }}>
+              {({isSubmitting, errors, touched, isValid, dirty}) => 
+              {console.log(errors)
+                return(
+              <Form className='formupdate'>
+              <label htmlFor="updateValue"></label>
+                <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE" />
+                <button id="valid" type="valid" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick); refreshclick()}}> 
+                Submit
+                </button>
+                {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
+              </Form>
+              )}}
+            </Formik>
+       </div></td>
+    </tr>
+  )
+})}
+</tbody>
+</table>
+</div>) : ("")}
+                  </ContainerTable>
+        </ContainerWhole> 
+          
+          ) : ("")}
+  </ContainerTable>
+</ContainerWholeAdmin>
+        )}
   else {
   return (
     <ContainerWhole>

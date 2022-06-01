@@ -12,11 +12,9 @@ export const ContainerWhole = styled.div`
 `
 export const ContainerWholeAdmin = styled.div`
     background: #EDEDED;
-    height: 100%;
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
-        width: 100%;
         
     }
 `
@@ -30,8 +28,9 @@ export const Container = styled.div`
     }
 `
 export const ContainerAdmin = styled.div`
-    background: #EDEDED;
-    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     @media screen and (max-width: 768px){
         padding: 100px 0;
         
@@ -46,9 +45,17 @@ export const ContainerTable = styled.div`
         
     }
 `
+export const ContainerTableAdminSum = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media screen and (max-width: 768px){
+        padding: 100px 0;
+        
+    }
+`
 
 export const Button = styled.button`
-    text-align: center;
     border-radius: 50px;
     background: #002855;
     white-space: nowrap;
