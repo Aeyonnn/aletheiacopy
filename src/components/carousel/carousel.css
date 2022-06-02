@@ -13,7 +13,7 @@
   display: none;
 }
 .carousel .slick-arrow.slick-next {
-  right: -70px;
+  right: -70px
 }
 .carousel .slick-arrow.slick-prev {
   left: -70px;
@@ -38,14 +38,26 @@
   .slick-dots li button:before{
     margin-top: -250px;
   }
+  .carousel .slick-arrow.slick-prev,
+  .carousel .slick-arrow.slick-next{
+    display: none;
+  }
 }
 @media screen and (max-width: 400px) {
   .slick-dots li button:before{
-    margin-top: -260px;
+    margin-top: -220px;
+  }
+  .carousel .slick-arrow.slick-prev,
+  .carousel .slick-arrow.slick-next{
+    display: none;
   }
 }
 @media screen and (max-width: 360px) {
   .slick-dots li button:before{
     margin-top: -260px;
+  }
+  .carousel .slick-arrow.slick-prev,
+  .carousel .slick-arrow.slick-next{
+    display: none;
   }
 }

@@ -402,31 +402,30 @@
 }
 
 
-/* tooltip */
-.tooltip
+ /* tooltip */
+[data-tooltip]
 {
  display: inline;
  position: relative;
 }
-.tooltip:hover:after
+[data-tooltip]:hover:after
 {
  background: #333;
  background: rgba(0,0,0,.8);
  border-radius: 5px;
  bottom: 26px;
  color: #fff;
- content: attr(title);
+ content: attr(data-tooltip);
  left: 20%;
  padding: 5px 15px;
  position: absolute;
- z-index: 98;
  word-wrap: break-word;
  text-align: left;
  white-space: pre-line;
  width: 600px;
  
 }
-.tooltip:hover:before
+[data-tooltip]:hover:before
 {
  border: solid;
  border-color: #333 transparent;

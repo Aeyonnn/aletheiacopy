@@ -626,22 +626,22 @@ function Progress({ signOut, user }) {
                       </thead>
                       <tbody>
                       <tr>
-                          <td><span title='This is the combination of the three algorithms and is the product of the study. Using Ensemble voting classifier, we combined the three algorithms to provide which of the algorithms will be best suited when working together for the dataset that we built. 'className='tooltip'>Combination</span></td>
+                          <td><div data-tooltip='This is the combination of the three algorithms and is the product of the study. Using Ensemble voting classifier, we combined the three algorithms to provide which of the algorithms will be best suited when working together for the dataset that we built. 'className='tooltip'>Combination</div></td>
                           <td><b>{combination}</b></td>
                       </tr>
                       <tr>
                         <td colSpan={2}><b>Algorithms</b></td>
                       </tr>
                       <tr>
-                          <td><span title='A decision tree is a type of supervised machine learning that categorizes or predicts outcomes based on the answers to prior questions. The model is supervised learning, which means it is trained and tested on a set of data containing the intended categorization.'className='tooltip'>Decision Tree</span></td>
+                          <td><div data-tooltip='A decision tree is a type of supervised machine learning that categorizes or predicts outcomes based on the answers to prior questions. The model is supervised learning, which means it is trained and tested on a set of data containing the intended categorization.'className='tooltip'>Decision Tree</div></td>
                           <td><b>{decision}</b></td>
                       </tr>
                       <tr>
-                          <td><span title='The type of Neural Network used in this study is an MLP (Multilayer Perceptron). An MLP creates outputs from a set of inputs. The input is distributed in multiple layers that are linked to the data and the output'className='tooltip'>Neural Network</span></td>
+                          <td><div data-tooltip='The type of Neural Network used in this study is an MLP (Multilayer Perceptron). An MLP creates outputs from a set of inputs. The input is distributed in multiple layers that are linked to the data and the output'className='tooltip'>Neural Network</div></td>
                           <td><b>{neural}</b></td>
                       </tr>
                       <tr>
-                          <td><span title='A random forest is a decision tree that is bundled up together. In this case multiple decision tree exist to create output based on the data and input.'className='tooltip'>Random Forest</span></td>
+                          <td><div data-tooltip='A random forest is a decision tree that is bundled up together. In this case multiple decision tree exist to create output based on the data and input.'className='tooltip'>Random Forest</div></td>
                           <td><b>{randomf}</b></td>
                       </tr>
                       </tbody>
