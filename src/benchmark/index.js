@@ -659,12 +659,13 @@ function Progress({ signOut, user }) {
                           </button>
                           </div>
                   </div>
+                  <p className='hovertip'>*hover over the algorithms and combination to know about them</p>
               </div>) : ("")}
         </ContentTable>
         </FormWrap>
         </Container>
         <Container>
-          <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -70}}>
+        <div style={{display: "flex", justifyContent: "center", marginBottom: 20}}>
         <Button id="history" onClick={historyClick} disabled={dbutton} >History</Button>
         </div>
         <ContentTableHistory>
