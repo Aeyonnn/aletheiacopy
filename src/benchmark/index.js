@@ -282,7 +282,7 @@ function Progress({ signOut, user }) {
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
-    setTimeout(()=> setdbutton(false), 5000)
+    setTimeout(()=> setdbutton(false), 1500)
   }, [prediction])
 
   if (userid === 1 || userid === 2 || userid === 3 ){
@@ -390,10 +390,12 @@ function Progress({ signOut, user }) {
             <table class='tl-table-admin'>
             <thead>
               <tr>
-                <th>News Body</th>
+                <th>News</th>
                 <th>News Prediction</th>
                 <th>User Evaluation</th>
                 <th>Checked</th>
+                <th>Date Submitted</th>
+                <th>Date Checked</th>
                 <th>Update</th>
               </tr>
               
@@ -409,6 +411,8 @@ function Progress({ signOut, user }) {
                   <td>{item[4]}</td>
                   <td>{item[5]}</td>
                   <td>{item[6]}</td>
+                  <td>{item[7]}</td>
+                  <td>{item[8]}</td>
                   <td>
         <div>
         <Formik
@@ -449,10 +453,12 @@ function Progress({ signOut, user }) {
     <th>News ID</th>
     <th>User ID</th>
     <th>News Type</th>
-    <th>News Body</th>
+    <th>News</th>
     <th>News Prediction</th>
     <th>User Evaluation</th>
     <th>Checked</th>
+    <th>Date Submitted</th>
+    <th>Date Checked</th>
     <th>Update</th>
   </tr>
   
@@ -468,6 +474,8 @@ function Progress({ signOut, user }) {
       <td>{item[4]}</td>
       <td>{item[5]}</td>
       <td>{item[6]}</td>
+      <td>{item[7]}</td>
+      <td>{item[8]}</td>
       <td>
         <div>
         <Formik
@@ -670,6 +678,8 @@ function Progress({ signOut, user }) {
               <th>News Prediction</th>
               <th>User Evaluation</th>
               <th>Checked</th>
+              <th>Date Submitted</th>
+              <th>Date Checked</th>
             </tr>
             
           </thead>
@@ -684,6 +694,8 @@ function Progress({ signOut, user }) {
                 <td>{item[4]}</td>
                 <td>{item[5]}</td>
                 <td>{item[6]}</td>
+                <td>{item[7]}</td>
+                <td>{item[8]}</td>
               </tr>
             )
           })}
