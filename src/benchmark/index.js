@@ -43,6 +43,12 @@ const reviewSchemaEval = yup.object({
   .min(2,'Use TRUE or FALSE')
 })
 
+const adminSchemaEval = yup.object({
+   adminsearch:yup.number()
+   .integer("Must be more than 0")
+   .required("This field is required")
+})
+
 function Progress({ signOut, user }) {
   //Database Access
   const [userid, getId] = useState(null)
@@ -106,11 +112,11 @@ function Progress({ signOut, user }) {
   const adminClick = () => {
     setAdmin(!showadmin)
     setSearchAdmin(false)
+    fetchUserId(user.attributes.email)
   }
   const adminSearch = () => {
     setSearchAdmin(true)
     setAdmin(false)
-    console.log(admin_hist)
   }
 
   //For mobile
@@ -215,7 +221,7 @@ function Progress({ signOut, user }) {
   async function getAdminHistory(user_id){
     queryadminHistory.queryStringParameters.user = user_id
     const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
-    getAdminquery(apiData.inputHistory)
+    getHist(apiData.inputHistory)
   }
     //Admin Summary
   async function getSummary(user_id){
@@ -348,17 +354,16 @@ function Progress({ signOut, user }) {
               initialValues={{
                 adminsearch: '',
               }}
+              validationSchema={adminSchemaEval}
               onSubmit=
               {async (values, actions) => {
-                console.log(values.adminsearch)
-                queryadminHistory.queryStringParameters.user = values.adminsearch
-                getAdminHistory(values.adminsearch)
+                getHistory(values.adminsearch)
                 }}>  
               {({isSubmitting,errors,touched,isValid,dirty}) => (
                   <Form>
                     <label htmlFor="adminsearch"></label>
                       <Field className="adminsearch" name="adminsearch" placeholder="Enter User ID" />
-                        <button id="submit" type="submit" disabled={isSubmitting} onClick={adminSearch}> 
+                        <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={adminSearch}> 
                         Search User
                         </button>
                           {
@@ -384,12 +389,40 @@ function Progress({ signOut, user }) {
             </thead>
             <tbody>
             {user_hist.slice(0, user_hist.length).map((item,index) => {
+              if (item[6] === null){
+                item[6] = "To be evaluated"
+              }
               return (
                 <tr>
                   <td>{item[3]}</td>
                   <td>{item[4]}</td>
                   <td>{item[5]}</td>
                   <td>{item[6]}</td>
+                  <td>
+        <div>
+        <Formik
+              initialValues={{
+              updateValue: '',
+              }}
+              validationSchema={reviewSchemaEval}
+              onSubmit=
+              {async (values, actions) => {
+                getUpdates(values.updateValue, item[0])
+              }}>
+              {({isSubmitting, errors, touched, isValid, dirty}) => 
+              {console.log(errors)
+                return(
+              <Form className='formupdate'>
+              <label htmlFor="updateValue"></label>
+                <Field id="updateValue" name="updateValue" placeholder="TRUE OR FALSE" />
+                <button id="valid" type="valid" disabled={!(dirty && isValid) || isSubmitting} onClick={()=>{getUpdates(handleClick); refreshclick()}}> 
+                Submit
+                </button>
+                {errors.updateValue && touched.updateValue && <p className='erroradmin' style={{color:"black"}} >{errors.updateValue}</p>}
+              </Form>
+              )}}
+            </Formik>
+       </div></td>
                 </tr>
               )
             })}
