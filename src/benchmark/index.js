@@ -85,7 +85,12 @@ function Progress({ signOut, user }) {
   //Shows Admin Table
   const [showadmin, setAdmin] = useState(null)
   const [searchadmin, setSearchAdmin] = useState(null)
-
+  //Show 5 secs disabled button
+  const [dbutton,setdbutton] = useState(true)
+  // const disabledButton = () => {
+  //   setdbutton(true);
+  //   setTimeout(timeout_trigger,5000)
+  // }
   const historyClick = () => {
     setRefresh(!refresh)
     setEnable(!enable)
@@ -271,11 +276,13 @@ function Progress({ signOut, user }) {
 
   window.onload = setprediction;
   
+  
   useEffect(() => {
     fetchUserId(user.attributes.email)
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
+    setTimeout(()=> setdbutton(false), 5000)
   }, [prediction])
 
   if (userid === 1 || userid === 2 || userid === 3 ){
@@ -650,7 +657,7 @@ function Progress({ signOut, user }) {
         </Container>
         <Container>
           <div style={{display: "flex", justifyContent: "center", marginBottom: 20, marginTop: -70}}>
-        <Button onClick={historyClick} disabled={submitting}>History</Button>
+        <Button id="history" onClick={historyClick} disabled={dbutton} >History</Button>
         </div>
         <ContentTableHistory>
         {
