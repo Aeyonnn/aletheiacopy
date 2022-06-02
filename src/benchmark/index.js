@@ -47,6 +47,7 @@ function Progress({ signOut, user }) {
   //Database Access
   const [userid, getId] = useState(null)
   const [user_hist, getHist] = useState(null)
+  const [admin_hist, getAdminquery] = useState(null)
   const [adminsummary, getSumCon] = useState(null)
   const [userdb, getUserDbCon] = useState(null)
   // Variables to extract algorithm model predictions
@@ -109,6 +110,7 @@ function Progress({ signOut, user }) {
   const adminSearch = () => {
     setSearchAdmin(true)
     setAdmin(false)
+    console.log(admin_hist)
   }
 
   //For mobile
@@ -136,6 +138,12 @@ function Progress({ signOut, user }) {
   }
   //Get user history
   const queryUserHistory = {
+    queryStringParameters: {
+      user: ""
+    }
+  };
+
+  const queryadminHistory = {
     queryStringParameters: {
       user: ""
     }
@@ -203,13 +211,20 @@ function Progress({ signOut, user }) {
     const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
     getHist(apiData.inputHistory)
   }
+  //Get User History per ID
+  async function getAdminHistory(user_id){
+    queryadminHistory.queryStringParameters.user = user_id
+    const apiData = await API.get('algoapi', '/aletheiadbhistory', queryUserHistory)
+    getAdminquery(apiData.inputHistory)
+  }
     //Admin Summary
-    async function getSummary(user_id){
-      getAdminSum.queryStringParameters.user = user_id
-      const apiData = await API.get('algoapi', '/adminsum', getAdminSum)
-      getSumCon(apiData.summarystat)
-      return apiData.summarystat
-    }
+  async function getSummary(user_id){
+    getAdminSum.queryStringParameters.user = user_id
+    const apiData = await API.get('algoapi', '/adminsum', getAdminSum)
+    getSumCon(apiData.summarystat)
+    return apiData.summarystat
+  }
+  //Write user Query
   async function writeUserQuery(user_id, type, newsbody, comb, usereval){
     inputUserQuery.queryStringParameters.user = user_id
     inputUserQuery.queryStringParameters.ntype = type
@@ -247,7 +262,6 @@ function Progress({ signOut, user }) {
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
   }
-
 
   window.onload = setprediction;
   
@@ -334,13 +348,11 @@ function Progress({ signOut, user }) {
               initialValues={{
                 adminsearch: '',
               }}
-              validationSchema={reviewSchemaText}
               onSubmit=
               {async (values, actions) => {
-              await new Promise((r) => setTimeout(r, 1000));
-              getNews.queryStringParameters.newslink = values.adminsearch;
-              getText(values.adminsearch)
-              fetchNewsAlgo(values.adminsearch);
+                console.log(values.adminsearch)
+                queryadminHistory.queryStringParameters.user = values.adminsearch
+                getAdminHistory(values.adminsearch)
                 }}>  
               {({isSubmitting,errors,touched,isValid,dirty}) => (
                   <Form>
@@ -358,7 +370,33 @@ function Progress({ signOut, user }) {
           <button id="showadmintable" onClick={adminClick}>Show Admin Table</button>
           </ContainerAdmin>
           <ContainerTable>
-          {searchadmin ? ("search admin") : ("")}
+          {searchadmin ? (
+            <div class="table-wrapperbench">
+            <table class='tl-table'>
+            <thead>
+              <tr>
+                <th>News Body</th>
+                <th>News Prediction</th>
+                <th>User Evaluation</th>
+                <th>Checked</th>
+              </tr>
+              
+            </thead>
+            <tbody>
+            {user_hist.slice(0, user_hist.length).map((item,index) => {
+              return (
+                <tr>
+                  <td>{item[3]}</td>
+                  <td>{item[4]}</td>
+                  <td>{item[5]}</td>
+                  <td>{item[6]}</td>
+                </tr>
+              )
+            })}
+            </tbody>
+          </table>
+          </div>
+          ) : ("")}
           {showadmin ? (    <div class="table-wrapperadmin">
 
 <table class='tl-table-admin'>
