@@ -20,7 +20,7 @@
         },
         "aletheiadbwrite": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbwrite-3763482f45662b4b3933-build.zip"
+          "s3Key": "amplify-builds/aletheiadbwrite-7945516a546f736b3356-build.zip"
         },
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
