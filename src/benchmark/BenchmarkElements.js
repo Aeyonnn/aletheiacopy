@@ -12,10 +12,10 @@ export const ContainerWhole = styled.div`
 `
 export const ContainerWholeAdmin = styled.div`
     background: #EDEDED;
-
+    height: 1080px;
     @media screen and (max-width: 768px){
         padding: 100px 0;
-        
+        height: 1080px;
     }
 `
 
@@ -31,18 +31,40 @@ export const ContainerAdmin = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 100px;
     @media screen and (max-width: 768px){
-        padding: 100px 0;
-        
+        flex-direction: column;
+    }
+`
+export const ContainerAdminShow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+`
+export const ContainerAdminButton = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    @media screen and (max-width: 768px){
+        margin-top: 20px;
+        flex-direction: column;
     }
 `
 export const ContainerTable = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 50px;
     @media screen and (max-width: 768px){
-        padding: 100px 0;
-        
+        padding-top: 100px;
     }
 `
 export const ContainerTableAdminSum = styled.div`
@@ -50,8 +72,8 @@ export const ContainerTableAdminSum = styled.div`
     flex-direction: row;
     justify-content: center;
     @media screen and (max-width: 768px){
-        padding: 100px 0;
-        
+        flex-direction: column;
+        margin-top: -100px;
     }
 `
 
@@ -68,6 +90,9 @@ export const Button = styled.button`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #5C677D;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 14px;
     }
 `
 

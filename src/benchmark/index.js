@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContentTableAdmin,ContainerAdmin,ContentTableAdminSummary,ContainerTable,ContainerTableAdminSum} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow} from './BenchmarkElements'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
@@ -293,10 +293,10 @@ function Progress({ signOut, user }) {
         <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
         </ul>
     </nav>
-  <ContainerAdmin>
+  <ContainerAdminShow>
     <Button onClick={historyClick}>Welcome! Click me</Button>
     {refresh ?(''):('')}
-  </ContainerAdmin>
+  </ContainerAdminShow>
   <ContainerTable>
   {
       enable ? (
@@ -360,30 +360,34 @@ function Progress({ signOut, user }) {
                 getHistory(values.adminsearch)
                 }}>  
               {({isSubmitting,errors,touched,isValid,dirty}) => (
-                  <Form>
+                  <Form className='formadminsearch'>
                     <label htmlFor="adminsearch"></label>
                       <Field className="adminsearch" name="adminsearch" placeholder="Enter User ID" />
                         <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={adminSearch}> 
                         Search User
                         </button>
-                          {
-                            errors.adminsearch && touched.adminsearch && <p className='error' style={{color: "black"}}> {errors.adminsearch} </p>
+                        {
+                            errors.adminsearch && touched.adminsearch && <p className='errorsearchuser' style={{color: "black"}}> {errors.adminsearch} </p>
                           }
+                        <ContainerAdminButton>
+                        <button id="showadmintable" onClick={adminClick}>Show Admin Table</button>
+                        </ContainerAdminButton>
+                          
                   </Form>
                         )}
           </Formik>
-          <button id="showadmintable" onClick={adminClick}>Show Admin Table</button>
           </ContainerAdmin>
           <ContainerTable>
           {searchadmin ? (
-            <div class="table-wrapperbench">
-            <table class='tl-table'>
+            <div class="table-wrapperadmin">
+            <table class='tl-table-admin'>
             <thead>
               <tr>
                 <th>News Body</th>
                 <th>News Prediction</th>
                 <th>User Evaluation</th>
                 <th>Checked</th>
+                <th>Update</th>
               </tr>
               
             </thead>
@@ -430,8 +434,8 @@ function Progress({ signOut, user }) {
           </table>
           </div>
           ) : ("")}
-          {showadmin ? (    <div class="table-wrapperadmin">
-
+          {showadmin ? (    
+<div class="table-wrapperadmin">
 <table class='tl-table-admin'>
 <thead>
   <tr>
