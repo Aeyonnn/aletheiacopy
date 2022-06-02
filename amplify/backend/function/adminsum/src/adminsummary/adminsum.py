@@ -12,7 +12,7 @@ def getSummary(user_id):
 
     cursor = mydb.cursor()
     if (user_id == '1' or user_id == '2' or user_id == '3'):
-        cursor.execute("SELECT news_pred, user_eval, COUNT(*) FROM news_table GROUP BY news_pred, user_eval")
+        cursor.execute("SELECT news_pred, user_eval, COUNT(*) FROM news_table WHERE(news_pred IS NOT NULL AND user_eval IS NOT NULL) GROUP BY news_pred, user_eval")
         myresult = cursor.fetchall()
         for x in myresult:
             data = myresult
