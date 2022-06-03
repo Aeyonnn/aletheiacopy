@@ -30,6 +30,7 @@ const Footer = ({ toggle }) => {
                       <FooterLinkItems>
                         <FooterLinkTitle>About Us</FooterLinkTitle>
                             <FooterLinkL to="/abtpage" target="_blank">Thesis</FooterLinkL>
+                            <FooterLinkL to="/privacyact" target="_blank">Privacy Act</FooterLinkL>
                       </FooterLinkItems>
                        {/* If you want to add more footer links */}
                       {/* <FooterLinkItems>

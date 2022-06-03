@@ -4,6 +4,7 @@ import Home from './pages';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import bmpage from './pages/bmpage';
 import aboutpage from './pages/abtpage';
+import privacyact from './pages/privacyact';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' component={Home} exact />
         <Route path='/bmpage' component={bmpage} exact />
         <Route path='/abtpage' component={aboutpage} exact />
+        <Route path='/privacyact' component={privacyact} exact />
       </Switch>
     </Router>
   );
