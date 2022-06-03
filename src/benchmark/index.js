@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo} from 'react'
 import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow} from './BenchmarkElements'
+import Loading from './loading'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
 //CSS
@@ -22,7 +23,7 @@ import '@aws-amplify/ui-react/styles.css';
 import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
-import { ErrorSharp } from '@material-ui/icons';
+import { ErrorSharp, SingleBed } from '@material-ui/icons';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
@@ -78,19 +79,18 @@ function Progress({ signOut, user }) {
   const [yes,setYes] = useState('')
   const [no,setNo] = useState('')
   //Submitting
-  const [submitting,setSubmitting] = useState(false)
+  const [submitting,setSubmitting] = useState(true)
   //Text Field Var
   const [textf, getText] = useState(null)
-
+  //Error Handler Table
+  const [errortable, seterrortable] = useState(false)
   //Shows Admin Table
   const [showadmin, setAdmin] = useState(null)
   const [searchadmin, setSearchAdmin] = useState(null)
   //Show 5 secs disabled button
-  const [dbutton,setdbutton] = useState(true)
-  // const disabledButton = () => {
-  //   setdbutton(true);
-  //   setTimeout(timeout_trigger,5000)
-  // }
+  const [fdbutton,setfdbutton] = useState(true)
+  const [dbutton,setdbutton] =useState(true)
+
   const historyClick = () => {
     setRefresh(!refresh)
     setEnable(!enable)
@@ -111,8 +111,9 @@ function Progress({ signOut, user }) {
     setEnable(false)
     getHist(null)
     setShowtable(false)
-    setSubmitting(true)
     setOutcome(true)
+    setfdbutton(true)
+    seterrortable(false)
   }
   const adminClick = () => {
     setAdmin(!showadmin)
@@ -263,11 +264,12 @@ function Progress({ signOut, user }) {
     getNeural(apiData.neural)
     getRandomf(apiData.randomf)
     setprediction(apiData)
-    setSubmitting(false)
     setShowtable(true)
   }
   //Calling API to extract new from link
   async function fetchNewsArt(link){
+    // setTimeout(()=> setLoading(false), 10000)
+    // setTimeout(()=> seterrortable(true), 10000)
     getNews.queryStringParameters.newslink = link
     const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
     getNewsArt(apiData.newsart)
@@ -542,7 +544,10 @@ function Progress({ signOut, user }) {
                                   {(() => {
                     if (category === "URL") {
                       return (
-                        <div> You are using URL
+                        <>
+                        <div>You are using URL. Input your choice of URL here. 
+                        </div>
+                        <div>
                         <Formik
                         initialValues={{
                         newsSubmit: '',
@@ -568,10 +573,14 @@ function Progress({ signOut, user }) {
                         </Form>
                         )}
                       </Formik></div>
+                      </>
                       )
                     } else if (category === "TEXT") {
                       return (
-                        <div> You are using Text
+                        <>
+                        <div> You are using Text. Input the headline or the body of the news.
+                        </div>
+                        <div>
                         <Formik
                         initialValues={{
                         newsSubmit: '',
@@ -590,7 +599,7 @@ function Progress({ signOut, user }) {
                         <Form>
                         <label htmlFor="newsSubmit"></label>
                           <Field className="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
-                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
+                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={() => {handleClick()}}> 
                           Submit
                           </button>
                           {
@@ -599,6 +608,7 @@ function Progress({ signOut, user }) {
                         </Form>
                         )}
                       </Formik></div>
+                      </>
                       )
                     }
                     })()}
@@ -609,12 +619,13 @@ function Progress({ signOut, user }) {
     <FormWrap>
       <FormLoader>
         {//shows loading screen
-        loading ? (<CircularProgress/>) : ("") }
+        loading ? (<Loading/>) : ("") }
       </FormLoader>
       <ContentTable>
         {//shows table
-        combination && showtable
+        showtable
          ? (      
+           
                   <div className="table-wrapper">
                     <div>{outcome ? (<h1>The news is {combination}</h1>) : ("")}</div>
                   <table class="fl-table">
@@ -646,21 +657,23 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
-                  <div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}>
+                    {fdbutton ? (<div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}>
                     <p id='paragraph'>Is this true?</p>
                     <div id='yesbutton'>
-                    <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick()}}> 
+                    <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick(); setfdbutton(false)}}> 
                           Yes
                           </button>
                           </div>
                     <div id='nobutton'>
-                          <button id="submittable" type="submit" disabled={disable} onClick={() => {feedbackVariable('NO'); refreshclick()}}> 
+                          <button id="submittable" type="submit" disabled={disable} onClick={() => {feedbackVariable('NO'); refreshclick(); setfdbutton(false)}}> 
                           No
                           </button>
                           </div>
-                  </div>
+                  </div>) : 
+                  (<div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}><h3>Thank you for answering our feedback!</h3></div>
+                  )}
                   <p className='hovertip'>*hover over the algorithms and combination to know about them</p>
-              </div>) : ("")}
+              </div>) : (<div>{errortable ? (<h3>It looks like there is an error in extracting the text from the website. Try using the text method instead.</h3>) : ("")}</div>)}
         </ContentTable>
         </FormWrap>
         </Container>
