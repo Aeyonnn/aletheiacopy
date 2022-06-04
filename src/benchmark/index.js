@@ -79,7 +79,7 @@ function Progress({ signOut, user }) {
   const [yes,setYes] = useState('')
   const [no,setNo] = useState('')
   //Submitting
-  const [submitting,setSubmitting] = useState(true)
+  const [submitting,setSubmitting] = useState(false)
   //Text Field Var
   const [textf, getText] = useState(null)
   //Error Handler Table
@@ -114,6 +114,7 @@ function Progress({ signOut, user }) {
     setOutcome(true)
     setfdbutton(true)
     seterrortable(false)
+    setSubmitting(true)
   }
   const adminClick = () => {
     setAdmin(!showadmin)
@@ -265,6 +266,7 @@ function Progress({ signOut, user }) {
     getRandomf(apiData.randomf)
     setprediction(apiData)
     setShowtable(true)
+    setSubmitting(false)
   }
   //Calling API to extract new from link
   async function fetchNewsArt(link){
@@ -293,6 +295,7 @@ function Progress({ signOut, user }) {
       <nav className='navbar' toggle={toggle}>
         <Link to='/' className='navbar-logo'> Aletheia </Link>
         <ul className='nav-items'>
+        <li className='nav-item'><a onClick={historyClick}>Show Table</a></li>
         <li className='nav-item'>
         <p>{user.attributes.email}</p>
         </li>
@@ -302,10 +305,6 @@ function Progress({ signOut, user }) {
         <li className='nav-item'><a onClick={signOut}>Log Out</a></li>
         </ul>
     </nav>
-  <ContainerAdminShow>
-    <Button onClick={historyClick}>Welcome! Click me</Button>
-    {refresh ?(''):('')}
-  </ContainerAdminShow>
   <ContainerTable>
   {
       enable ? (
@@ -658,7 +657,7 @@ function Progress({ signOut, user }) {
                       </tbody>
                   </table>
                     {fdbutton ? (<div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}>
-                    <p id='paragraph'>Is this true?</p>
+                    <p id='paragraph'>Is the prediction correct?</p>
                     <div id='yesbutton'>
                     <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick(); setfdbutton(false)}}> 
                           Yes
@@ -679,7 +678,7 @@ function Progress({ signOut, user }) {
         </Container>
         <Container>
         <div style={{display: "flex", justifyContent: "center", marginBottom: 20}}>
-        <Button id="history" onClick={historyClick} disabled={dbutton} >History</Button>
+        <Button id="history" onClick={historyClick} disabled={dbutton || submitting} >History</Button>
         </div>
         <ContentTableHistory>
         {
