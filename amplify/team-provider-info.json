@@ -16,11 +16,11 @@
       "function": {
         "aletheiadbhistory": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbhistory-4655557a356831395a2b-build.zip"
+          "s3Key": "amplify-builds/aletheiadbhistory-76366953476e364f5475-build.zip"
         },
         "aletheiadbwrite": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbwrite-7945516a546f736b3356-build.zip"
+          "s3Key": "amplify-builds/aletheiadbwrite-596431656a334737524c-build.zip"
         },
         "aletheiadbconnect": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
@@ -36,7 +36,7 @@
         },
         "aletheiadbupdate": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/aletheiadbupdate-547149742f6275644743-build.zip"
+          "s3Key": "amplify-builds/aletheiadbupdate-7a72786a532f6e6e7447-build.zip"
         },
         "adminsum": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
