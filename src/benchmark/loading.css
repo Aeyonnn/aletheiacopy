@@ -7,7 +7,7 @@ body {
     width:600px;
     height:36px;
     left:50%;
-    top:40%;
+    top:50%;
     margin-left:-300px;
     overflow:visible;
     -webkit-user-select:none;
@@ -15,7 +15,7 @@ body {
     -ms-user-select:none;
     user-select:none;
     cursor:default;
-    margin-top: 100px;
+    margin-top: 300px;
     font-size: 24px;
 }
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow, Buttondiv,Resultdiv,Popupdiv,Popupinner,CloseButton} from './BenchmarkElements'
 import Loading from './loading'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
@@ -9,7 +9,7 @@ import './history.css'
 import './navbar.css'
 import './styles.css'
 //Icons
-import { GrRefresh } from "react-icons/gr";
+import { FaRegWindowClose } from "react-icons/fa";
 //FORMIK
 import { Formik, Field, Form } from 'formik';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -24,6 +24,7 @@ import { API } from 'aws-amplify';
 import Amplify, { Auth } from 'aws-amplify';
 import awsconfig from '../aws-exports';
 import { ErrorSharp, SingleBed } from '@material-ui/icons';
+import { color } from '@mui/system';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
 
@@ -65,6 +66,9 @@ function Progress({ signOut, user }) {
   const [news_art, getNewsArt] = useState(null)
   const [prediction, setprediction] = useState(null)
   const [showtable, setShowtable] = useState(null)
+  const [popuptable, setpopuptable] = useState(null)
+  //Changingcolor background result
+  const [colorresult,setColorresult] = useState(true)
   //Setting Results
   const [outcome,setOutcome] = useState(null)
   //Setting Category
@@ -115,6 +119,10 @@ function Progress({ signOut, user }) {
     setfdbutton(true)
     seterrortable(false)
     setSubmitting(true)
+  }
+  const popupexitClick = () => {
+    setpopuptable(false)
+    setLoading(false)
   }
   const adminClick = () => {
     setAdmin(!showadmin)
@@ -267,17 +275,24 @@ function Progress({ signOut, user }) {
     setprediction(apiData)
     setShowtable(true)
     setSubmitting(false)
+    setpopuptable(true)
+    Getresultcombi(apiData.combination)
   }
   //Calling API to extract new from link
   async function fetchNewsArt(link){
-    // setTimeout(()=> setLoading(false), 10000)
-    // setTimeout(()=> seterrortable(true), 10000)
+    setTimeout(()=> setLoading(false), 10000)
+    setTimeout(()=> seterrortable(true), 10000)
     getNews.queryStringParameters.newslink = link
     const apiData = await API.get('algoapi', '/aletheiawebscraper-dev', getNews)
     getNewsArt(apiData.newsart)
     await fetchNewsAlgo(apiData.newsart)
   }
-
+  function Getresultcombi(combination){
+    if(combination === 'REAL'){
+    setColorresult(true);
+    }else{
+    setColorresult(false);
+    }}
   window.onload = setprediction;
   
   
@@ -286,7 +301,7 @@ function Progress({ signOut, user }) {
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
-    setTimeout(()=> setdbutton(false), 1500)
+    setTimeout(()=> setdbutton(false), 2000)
   }, [prediction])
 
   if (userid === 1 || userid === 2 || userid === 3 ){
@@ -518,12 +533,15 @@ function Progress({ signOut, user }) {
   else {
   return (
     <ContainerWhole>
-    {/* Navbar */}
+      {/* Navbar */}
     <nav className='navbar' toggle={toggle}>
       <Link to='/' className='navbar-logo'> Aletheia </Link>
       <ul className='nav-items'>
+      <li className='nav-item'>
+          <button id='history' onClick={historyClick} disabled={dbutton || submitting}>History</button>
+        </li>
         <li className='nav-item'>
-          <a href='https://forms.gle/zmsf1yn5rwCYKXJm6' id='Survey'>Survey Here!</a>
+          <a href='https://forms.gle/zmsf1yn5rwCYKXJm6' id='Survey' target="_blank">Survey Here!</a>
         </li>
         <li className='nav-item'>
           <p>{user.attributes.email}</p>
@@ -532,10 +550,9 @@ function Progress({ signOut, user }) {
       </ul>
     </nav>
     <Container>
-        <FormWrap>
             <FormContent>
               <FormLabel><h3>Test your news here!</h3></FormLabel>
-              <FormLabel>Select Category</FormLabel>
+              <FormLabel><div className='category'>Select Category</div></FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
                   <FormControlLabel value="TEXT" control={<Radio/>} label="Text"/>
                   <FormControlLabel value="URL" control={<Radio/>} label="URL"/>
@@ -543,10 +560,7 @@ function Progress({ signOut, user }) {
                                   {(() => {
                     if (category === "URL") {
                       return (
-                        <>
-                        <div>You are using URL. Input your choice of URL here. 
-                        </div>
-                        <div>
+                        
                         <Formik
                         initialValues={{
                         newsSubmit: '',
@@ -562,24 +576,21 @@ function Progress({ signOut, user }) {
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
+                        {
+                            errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
+                          }
                           <Field className="newsSubmit" name="newsSubmit" placeholder="Enter URL Here" />
+                          <Buttondiv>
                           <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
-                          {
-                            errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
-                          }
+                          </Buttondiv>
                         </Form>
                         )}
-                      </Formik></div>
-                      </>
+                      </Formik>
                       )
                     } else if (category === "TEXT") {
                       return (
-                        <>
-                        <div> You are using Text. Input the headline or the body of the news.
-                        </div>
-                        <div>
                         <Formik
                         initialValues={{
                         newsSubmit: '',
@@ -597,36 +608,31 @@ function Progress({ signOut, user }) {
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
                         <Form>
                         <label htmlFor="newsSubmit"></label>
-                          <Field className="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
-                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={() => {handleClick()}}> 
-                          Submit
-                          </button>
-                          {
+                        {
                             errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
                           }
+                          <Field className="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
+                          <Buttondiv>
+                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
+                          Submit
+                          </button>
+                          </Buttondiv>
                         </Form>
                         )}
-                      </Formik></div>
-                      </>
+                      </Formik>
                       )
                     }
                     })()}
           </FormContent>
-        </FormWrap>
     </Container>
-  <Container>
-    <FormWrap>
-      <FormLoader>
-        {//shows loading screen
-        loading ? (<Loading/>) : ("") }
-      </FormLoader>
-      <ContentTable>
-        {//shows table
-        showtable
-         ? (      
-           
-                  <div className="table-wrapper">
-                    <div>{outcome ? (<h1>The news is {combination}</h1>) : ("")}</div>
+    {popuptable ? (
+    <Popupdiv>
+    <Popupinner>
+        <CloseButton onClick={popupexitClick}>close</CloseButton>
+        <div className="table-wrapper">
+                    <div>{outcome ? (<Resultdiv>
+          <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+        : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) : ("")}</div>
                   <table class="fl-table">
                       <thead>
                       <tr>
@@ -640,7 +646,7 @@ function Progress({ signOut, user }) {
                           <td><b>{combination}</b></td>
                       </tr>
                       <tr>
-                        <td colSpan={2}><b>Algorithms</b></td>
+                        <td className='algo' colSpan={2}><b>Algorithms</b></td>
                       </tr>
                       <tr>
                           <td><div data-tooltip='A decision tree is a type of supervised machine learning that categorizes or predicts outcomes based on the answers to prior questions. The model is supervised learning, which means it is trained and tested on a set of data containing the intended categorization.'className='tooltip'>Decision Tree</div></td>
@@ -656,8 +662,8 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
-                    {fdbutton ? (<div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}>
-                    <p id='paragraph'>Is the prediction correct?</p>
+                    {fdbutton ? (<div style={{backgroundColor: '#33415C', display: 'flex', justifyContent: 'center'}}>
+                    <p className='paragraph'>Is the prediction correct?</p>
                     <div id='yesbutton'>
                     <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick(); setfdbutton(false)}}> 
                           Yes
@@ -669,18 +675,18 @@ function Progress({ signOut, user }) {
                           </button>
                           </div>
                   </div>) : 
-                  (<div style={{backgroundColor: '#EDEDED', display: 'flex', justifyContent: 'center',marginTop:10}}><h3>Thank you for answering our feedback!</h3></div>
+                  (<div style={{backgroundColor: '#33415C', display: 'flex', justifyContent: 'center'}}><h3 className='thankbox'>Thank you for answering our feedback!</h3></div>
                   )}
                   <p className='hovertip'>*hover over the algorithms and combination to know about them</p>
-              </div>) : (<div>{errortable ? (<h3>It looks like there is an error in extracting the text from the website. Try using the text method instead.</h3>) : ("")}</div>)}
-        </ContentTable>
-        </FormWrap>
-        </Container>
-        <Container>
-        <div style={{display: "flex", justifyContent: "center", marginBottom: 20}}>
-        <Button id="history" onClick={historyClick} disabled={dbutton || submitting} >History</Button>
-        </div>
-        <ContentTableHistory>
+              </div>
+    </Popupinner>
+</Popupdiv>
+  ) : ("")}
+    <FormLoader>
+        {//shows loading screen
+        loading ? (<Loading/>) : ("") }
+      </FormLoader>
+    <ContentTableHistory>
         {
           enable ? (
         <div class="table-wrapperbench">
@@ -715,11 +721,15 @@ function Progress({ signOut, user }) {
           </tbody>
         </table>
         </div>
-        ) : ("")
+        ) : (<div>{showtable ? 
+          (<div>{outcome ? (<Resultdiv>
+            <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+          : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) 
+          : ("")}</div>) 
+          : ("") }</div>)
         }
         </ContentTableHistory>
-    </Container>
-</ContainerWhole>
+    </ContainerWhole>
   );
 };
   }

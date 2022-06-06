@@ -22,8 +22,7 @@ h2{
 .table-wrapperbench{
   margin: 20px 70px 100px;
   box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
-  width: 1080px;
-  height: 200px;
+  height: 280px;
   overflow-y: scroll;
 }
 
@@ -54,7 +53,7 @@ h2{
 
 .tl-table tr {
   background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  border: 1px solid #B9B9B9;
   padding: .35em;
 }
 
@@ -69,6 +68,11 @@ h2{
   font-size: .85em;
   letter-spacing: .1em;
   text-transform: uppercase;
+  background-color: #002855;
+  color: #f8f8f8;
+}
+.tl-table td{
+  background-color: #B9B9B9;
 }
 
 /* Responsive */

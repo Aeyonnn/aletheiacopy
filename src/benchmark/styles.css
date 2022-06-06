@@ -3,6 +3,13 @@
     font-size: 10px;
     height: 30px;
 }
+.category{
+    font-size: 24px;
+}
+.resultshow{
+    color:red;
+    font-size: 36px;
+}
 /* Admin */
 /* Table Styles */
 
@@ -44,10 +51,10 @@
   }
 
   #submit{
-    font-size: 14px;
-    width: 100px;
-    height: 30px;
-    margin-left: 5px;
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+
     text-align: center;
     border-radius: 50px;
     background: #002855;
@@ -62,6 +69,26 @@
     transition: all 0.2s ease-in-out;
     background: #5C677D;
   }
+  #history{
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    margin-right: 18px;
+    text-align: center;
+    border-radius: 50px;
+    background: #33415C;
+    white-space: nowrap;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  #history:hover {
+    transition: all 0.2s ease-in-out;
+    background: #0466C8;
+  }
+
   #valid{
     font-size: 12px;
     width: 60px;
@@ -439,14 +466,25 @@
  width: auto;
 }
 .hovertip{
-    color: black;
+    color: #f2f2f2;
     font-style: italic;
     font-size: 12px;
+    width: 100%;
+    background-color: #33415C;
+    border-radius: 0px;
+}
+.thankbox{
+    color: #f2f2f2;
 }
 /* Input Field */
 .newsSubmit{
   background-color: #EDEDED;
-  border-radius: 10px;
+  border-radius: 47px;
+  height: 40px;
+  width: 700px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
 }
 .adminsearch{
   background-color: #EDEDED;

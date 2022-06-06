@@ -4,6 +4,7 @@ import { Link as LinkR} from 'react-router-dom';
 
 export const ContainerWhole = styled.div`
     background: #EDEDED;
+    height: 1080px;
     @media screen and (max-width: 768px){
         padding: 100px 0;
         width: 100%;
@@ -21,11 +22,10 @@ export const ContainerWholeAdmin = styled.div`
 
 export const Container = styled.div`
     background: #EDEDED;
-    height: auto;
-    @media screen and (max-width: 768px){
-        padding: 100px 0;
-        
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
 `
 export const ContainerAdmin = styled.div`
     display: flex;
@@ -76,12 +76,28 @@ export const ContainerTableAdminSum = styled.div`
         margin-top: -100px;
     }
 `
+export const Buttondiv = styled.div`
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+`
+
+export const Resultdiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`
 
 export const Button = styled.button`
-    border-radius: 50px;
-    background: #002855;
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 47px;
+    background-color: #33415C;
     white-space: nowrap;
-    padding: 12px 24px;
     color: #fff;
     outline: none;
     border: none;
@@ -96,43 +112,17 @@ export const Button = styled.button`
     }
 `
 
-export const FormWrap = styled.div`
-    height: 360px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 150px;
-
-    @media screen and (max-width: 400px){
-        height: auto;
-    }
-`
 export const FormContent = styled.div`
-    height: 100%;
-    margin: auto;
     padding: .625rem;
     border: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -140px;
-    @media screen and (max-width: 480px){
-        padding: 10px;
-        width: 100%;
-        margin-bottom: 200px;
-    }
+    margin-left: -320px;
 `
 export const FormLoader = styled.div`
-    height: 120px;
-    margin: auto;
-    width: auto;
-    border: 10rem;
-    margin-top: -200px;
-    @media screen and (max-width: 480px){
-        padding: 10px;
-    }
+
 `
 export const ContentTable = styled.div`
     height: 380px;
@@ -149,17 +139,9 @@ export const ContentTable = styled.div`
     }
 `
 export const ContentTableHistory = styled.div`
-    height: 380px;
-    margin: auto;
-    border: 10rem;
     display: flex;
     justify-content: center;
-    background-color: #EDEDED;
-    margin-top: 50px;
-    @media screen and (max-width: 480px){
-        display: flex;
-        padding: 10px;
-    }
+    margin-top: 600px;
 `
 export const ContentTableAdmin = styled.div`
     height: 380px;
@@ -206,4 +188,34 @@ export const NavBtnLink = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
+`
+export const Popupdiv = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+export const Popupinner = styled.div`
+    position: relative;
+    padding: 32px;
+    height: 700px;
+    width: 800px;
+    background-color: #EDEDED;
+`
+export const CloseButton = styled.button`
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: none;
+    color: black;
+    border-radius: 55px;
+    border: 2px solid black;
+    cursor: pointer;
 `
