@@ -17,7 +17,7 @@ def getHistory(user_id):
         myresult = cursor.fetchall()
         for x in myresult:
             data = myresult
-        info = json.dumps(data)
+        # info = json.dumps(data)
         return data
     else:
         cursor.execute("SELECT * FROM news_table WHERE id_user={} ORDER BY id_news DESC".format(user_id))
