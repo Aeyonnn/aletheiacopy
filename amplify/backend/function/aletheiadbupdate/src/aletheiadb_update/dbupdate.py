@@ -6,7 +6,7 @@ import dateutil.tz
 def dbUpdate(check, news_id):
   eastern = dateutil.tz.gettz('Asia/Shanghai')
   now = datetime.datetime.now(tz=eastern)
-  datenow = now.strftime("%m/%d/%Y")
+  datenow = now.strftime("%Y-%m-%d")
   mydb = mysql.connector.connect(
   host="database-1.cyqaefb6grs6.ap-southeast-1.rds.amazonaws.com",
   user="admin",
