@@ -98,8 +98,12 @@ export const Resultdiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 150px;
     @media screen and (max-width: 380px){
-        margin-top: -150px;
+        margin-top: -100px;
+    }
+    @media screen and (max-width: 440px){
+        margin-top: -50px;
     }
 `
 export const Resultdivpop = styled.div`
@@ -114,8 +118,10 @@ export const FeedbackContainer = styled.div`
     background-color: #33415C; 
     display: flex; 
     justify-content: 'center';
+    margin-left: -8px;
+    width:100%;
     @media screen and (max-width:380px){
-        height:80px
+        height:80px;
     }
 `
 export const Button = styled.button`

@@ -50,6 +50,7 @@ h3{
   max-width: 100%;
   white-space: nowrap;
   background-color: #979DAC;
+  margin-left: -8px;
 }
 
 .fl-table td, .fl-table th {
@@ -232,7 +233,6 @@ h3{
     width: 300px;
     height: 100px;
     margin-top: 20px;
-    margin-left: -8px;
   }
   .fl-table{
     width: 300px;
@@ -286,7 +286,7 @@ h3{
     width: 300px;
     height: 100px;
     margin-top: 100px;
-    margin-left: -8px;
+
   }
   .fl-table{
     width: 300px;
@@ -340,7 +340,7 @@ h3{
     width: 220px;
     height: 100px;
     margin-top: 100px;
-    margin-left: 18px;
+    margin-left: 25px;
   }
   .fl-table{
     width: 220px;

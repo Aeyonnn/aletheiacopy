@@ -186,9 +186,9 @@ body {
       font-size: 18px;
     }
   }
-  @media (max-width: 769px) {
+  @media (max-width: 780px) {
     #load{
-      margin-top: 100px;
+      margin-top: 300px;
       font-size: 18px;
     }
   }
@@ -200,7 +200,7 @@ body {
       font-size: 18px;
     }
   }
-  @media (max-width: 320px) {
+  @media (max-width: 430px) {
     #load{
       margin-top: 150px;
       max-width: 320px;
