@@ -40,7 +40,7 @@
         },
         "adminsum": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
-          "s3Key": "amplify-builds/adminsum-616a334f4735435a7962-build.zip"
+          "s3Key": "amplify-builds/adminsum-446938565a644474374d-build.zip"
         },
         "getuserdb": {
           "deploymentBucketName": "amplify-aletheia-dev-222152-deployment",
