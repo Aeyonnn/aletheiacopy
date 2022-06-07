@@ -329,8 +329,9 @@ function Progress({ signOut, user }) {
       <table class='tl-table-adminsummary'>
       <thead>
         <tr>
-          <th>Evaluation</th>
-          <th>Feedback</th>
+          <th>Prediction</th>
+          <th>User Evaluation</th>
+          <th>Admin Evaluation</th>
           <th>Count</th>
         </tr>
       </thead>
@@ -472,7 +473,7 @@ function Progress({ signOut, user }) {
     <th>News</th>
     <th>News Prediction</th>
     <th>User Evaluation</th>
-    <th>Checked</th>
+    <th>Admin Evaluation</th>
     <th>Date Submitted</th>
     <th>Date Checked</th>
     <th>Update</th>
