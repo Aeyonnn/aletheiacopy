@@ -19,7 +19,8 @@
     margin: 20px 70px 100px;
     box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
     width: auto;
-    height: 100%;
+    height: 300px;
+    overflow-y: auto;
   }
   
   .tl-table-admin {
@@ -35,7 +36,7 @@
 
   .tl-table-admin tr {
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 1p-tablex solid #ddd;
     padding: .35em;
   }
   
@@ -47,9 +48,14 @@
   }
   
   .tl-table-admin th {
-    font-size: .85em;
+    font-size: .75rem;
     letter-spacing: .1em;
     text-transform: uppercase;
+  }
+  .tl-table-admin td {
+    font-size: .73rem;
+    letter-spacing: .1em;
+    
   }
   #historydiv{
     font-size: 18px;
@@ -75,7 +81,6 @@
     font-size: 18px;
     width: 140px;
     height: 40px;
-
     text-align: center;
     border-radius: 50px;
     background: #002855;
@@ -111,7 +116,7 @@
   }
 
   #valid{
-    font-size: 12px;
+    font-size: .5rem;
     width: 60px;
     height: 30px;
     margin-left: 5px;
@@ -132,7 +137,7 @@
 
   #showadmintable{
     background: #002855;
-    font-size: 14px;
+    font-size: 10px;
     width: 150px;
     height: 30px;
     margin-left: 5px;
@@ -574,10 +579,17 @@
         font-size:.8rem;
         text-align: center;
     }
+    .adminsearch{
+        margin-left: 20px;
+    }
+    #showadmintable{
+        margin-left: 85px;
+    }
     #submit{
         width: 80px;
-        font-size: .8rem;
-        margin-left: 30px;
+        font-size: .5rem;
+        margin-left: 40px;
+        margin-top: 10px;
     }
     .newsSubmitText{
         width: 200px;
