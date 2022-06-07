@@ -10,6 +10,8 @@
     color:red;
     font-size: 36px;
 }
+
+  
 /* Admin */
 /* Table Styles */
 
@@ -49,6 +51,25 @@
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+  #historydiv{
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    margin-right: 18px;
+    text-align: center;
+    border-radius: 50px;
+    background: #002855;
+    white-space: nowrap;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  #historydiv:hover {
+    transition: all 0.2s ease-in-out;
+    background: #5C677D;
+  }
 
   #submit{
     font-size: 18px;
@@ -69,24 +90,24 @@
     transition: all 0.2s ease-in-out;
     background: #5C677D;
   }
-  #history{
+  #submittext{
     font-size: 18px;
     width: 140px;
     height: 40px;
-    margin-right: 18px;
     text-align: center;
     border-radius: 50px;
-    background: #33415C;
+    background: #002855;
     white-space: nowrap;
     color: #fff;
     outline: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    margin-top: -10px;
   }
-  #history:hover {
+  #submittext:hover {
     transition: all 0.2s ease-in-out;
-    background: #0466C8;
+    background: #5C677D;
   }
 
   #valid{
@@ -486,6 +507,31 @@
   padding-right: 30px;
   font-size: 18px;
 }
+.newsSubmitText{
+    overflow-y: auto;
+    border: 1px solid black;
+    background-color: #EDEDED;
+    resize: none;
+    height: 130px;
+    width: 700px;
+    padding: 12px 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .newsSubmitText::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .newsSubmitText::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+  .newsSubmitText::-webkit-scrollbar-thumb{
+    background-color: #002855;
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px
+  }
 .adminsearch{
   background-color: #EDEDED;
   border-radius: 15px;
@@ -512,5 +558,39 @@
     }
     .hovertip{
         display: none;
+    }
+}
+@media (max-width: 450px){
+    .category{
+        font-size: 1rem;
+        margin-top: -40px;
+    }
+    .radiogroup{
+        margin-top: -20px;
+    }
+    .newsSubmit{
+        width: 200px;
+        font-size:.8rem;
+        text-align: center;
+    }
+    #submit{
+        width: 80px;
+        font-size: .8rem;
+        margin-left: 30px;
+    }
+    .newsSubmitText{
+        width: 200px;
+        font-size: .8rem;
+    }
+    #submittext{
+        width: 80px;
+        font-size: .8rem;
+        margin-left: 30px;
+    }
+    #historydiv{
+        width: 80px;
+        font-size: .8rem;
+        margin-left: -85px;
+        margin-top: -10px;
     }
 }

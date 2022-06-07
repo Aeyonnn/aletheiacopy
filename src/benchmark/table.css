@@ -25,7 +25,7 @@ h2{
 h3{
   color:black;
   padding: 10px 0;
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -37,7 +37,7 @@ h3{
   box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 ); */
   height: 700px;
   width: 750px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .fl-table {
@@ -153,9 +153,17 @@ h3{
   box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
 }
 
-#paragraph{
-  color: black;
-  font-size: 18px;
+.paragraph{
+  color: white;
+  font-size: 25px;
+}
+.yesbutton{
+  margin-left: 150px;
+  margin-top: 7px;
+}
+.nobutton{
+  margin-left: 20px;
+  margin-top: 7px;
 }
 /* Responsive */
 
@@ -192,7 +200,7 @@ h3{
   }
   .paragraph{
     color: #f2f2f2;
-    font-size: 40px;
+    font-size: 12px;
   }
   #submittable{
     margin-top: 20px;
@@ -209,5 +217,174 @@ h3{
     color: Black;
     padding: 30px 0;
   }
+  h3{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: Black;
+    padding: 30px 0;
+  }
 
+}
+@media screen and  (max-width: 480px){
+  .table-wrapper{
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: -8px;
+  }
+  .fl-table{
+    width: 300px;
+    height: 100px;
+    margin-top: -20px;
+  }
+  td, tr { display: block; }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid #023E7D; }
+  tr + tr { margin-top: 0.1em; }
+  td {
+    /* make like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    background-color: #979DAC;
+    text-align: left;
+  }
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    line-height: 1.5;
+    margin-left: -100%;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .yesbutton, .nobutton{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .yesbutton{
+    margin-left: -60px;
+  }
+  .paragraph{
+    font-size: 1rem;
+  }
+  .thankbox{
+    font-size: 1rem;
+    margin-top: -28px;
+    height: 80px;
+  }
+}
+@media screen and  (max-width: 400px) {
+  .table-wrapper{
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: -8px;
+  }
+  .fl-table{
+    width: 300px;
+    height: 100px;
+    margin-top: -20px;
+  }
+  td, tr { display: block; }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid #023E7D; }
+  tr + tr { margin-top: 0.1em; }
+  td {
+    /* make like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    background-color: #979DAC;
+    text-align: left;
+  }
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    line-height: 1.5;
+    margin-left: -100%;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .yesbutton, .nobutton{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .yesbutton{
+    margin-left: -60px;
+  }
+  .paragraph{
+    font-size: 1rem;
+  }
+  .thankbox{
+    font-size: 1rem;
+    margin-top: -28px;
+  }
+}
+
+@media screen and  (max-width: 375px) {
+  .table-wrapper{
+    width: 220px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 18px;
+  }
+  .fl-table{
+    width: 220px;
+    height: 100px;
+    margin-top: -20px;
+  }
+  td, tr { display: block; }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { border: 1px solid #023E7D; }
+  tr + tr { margin-top: 0.1em; }
+  td {
+    /* make like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    background-color: #979DAC;
+    text-align: left;
+  }
+  td:before {
+    content: attr(data-label);
+    display: inline-block;
+    line-height: 1.5;
+    margin-left: -100%;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .yesbutton, .nobutton{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .yesbutton{
+    margin-left: -50px;
+  }
+  .paragraph{
+    font-size: .8rem;
+  }
+  .thankbox{
+    font-size: 1rem;
+    margin-top: -28px;
+  }
 }

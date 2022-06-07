@@ -83,13 +83,41 @@ export const Buttondiv = styled.div`
     justify-content: center;
     align-items: center;
 `
+export const Buttonhide = styled.div`
+    display: none;
+    @media screen and (max-width: 430px){
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+`
 
 export const Resultdiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @media screen and (max-width: 380px){
+        margin-top: -150px;
+    }
 `
-
+export const Resultdivpop = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media screen and (max-width: 380px){
+        margin-top: -100px;
+    }
+`
+export const FeedbackContainer = styled.div`
+    background-color: #33415C; 
+    display: flex; 
+    justify-content: 'center';
+    @media screen and (max-width:380px){
+        height:80px
+    }
+`
 export const Button = styled.button`
     font-size: 18px;
     width: 140px;
@@ -120,9 +148,13 @@ export const FormContent = styled.div`
     align-items: center;
     flex-direction: column;
     margin-left: -320px;
+    @media screen and (max-width: 430px){
+        margin-top: -200px;
+        margin-left: -100px;
+    }
 `
 export const FormLoader = styled.div`
-
+    
 `
 export const ContentTable = styled.div`
     height: 380px;
@@ -205,9 +237,16 @@ export const Popupdiv = styled.div`
 export const Popupinner = styled.div`
     position: relative;
     padding: 32px;
-    height: 700px;
+    height: 600px;
     width: 800px;
     background-color: #EDEDED;
+    @media screen and (max-width: 380px){
+        width:280px;
+        padding-right: 20px;
+    }
+    @media screen and  (max-width: 430px){
+        width: 350px;
+    }
 `
 export const CloseButton = styled.button`
     position: absolute;
@@ -218,4 +257,17 @@ export const CloseButton = styled.button`
     border-radius: 55px;
     border: 2px solid black;
     cursor: pointer;
+    @media screen and (max-width: 380px){
+        width:50px;
+        height: 30px;
+        font-size: .7rem;
+        text-align: center;
+        padding: 0px;
+        top:20px;
+        right:-10px;
+    }
+    @media screen and  (max-width: 430px){
+        top:20px;
+        right:-15px;
+    }
 `

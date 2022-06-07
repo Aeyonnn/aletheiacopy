@@ -48,8 +48,30 @@
     background-color: #0466C8;
     cursor: pointer;
 }
+.nav-item a:last-child{
+    margin-right: 0px;
+}
 
-
+#history{
+    font-size: 18px;
+    width: 140px;
+    height: 40px;
+    margin-right: 18px;
+    text-align: center;
+    border-radius: 50px;
+    background: #33415C;
+    white-space: nowrap;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  #history:hover {
+    transition: all 0.2s ease-in-out;
+    background: #0466C8;
+  }
+  
 @media screen and (max-width:800px) {
     .nav-item p{
        display: none;
@@ -67,10 +89,10 @@
         font-size: .8rem;
     }
     #Survey{
-        margin-left: 70px;
+        margin-left: 80px;
     }
     .navbar-logo{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .navbar{
         margin-top: -100px;
@@ -78,5 +100,8 @@
     .nav-items{
         margin-right: 0;
         width: 40%;
+    }
+    .nav-item button{
+        display: none;    
     }
 }

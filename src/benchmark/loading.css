@@ -200,3 +200,11 @@ body {
       font-size: 18px;
     }
   }
+  @media (max-width: 320px) {
+    #load{
+      margin-top: 150px;
+      max-width: 320px;
+      margin-left: -200px;
+      font-size: 18px;
+    }
+  }

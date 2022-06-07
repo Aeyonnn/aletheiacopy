@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo} from 'react'
-import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow, Buttondiv,Resultdiv,Popupdiv,Popupinner,CloseButton} from './BenchmarkElements'
+import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTableHistory, Button, ContainerWhole, ContainerWholeAdmin,ContainerAdmin,ContainerAdminButton,ContainerTable,ContainerTableAdminSum, ContainerAdminShow, Buttondiv,Resultdiv,Popupdiv,Popupinner,CloseButton,Buttonhide,Resultdivpop,FeedbackContainer} from './BenchmarkElements'
 import Loading from './loading'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
@@ -554,8 +554,10 @@ function Progress({ signOut, user }) {
               <FormLabel><h3>Test your news here!</h3></FormLabel>
               <FormLabel><div className='category'>Select Category</div></FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
+                 <div className='radiogroup'>
                   <FormControlLabel value="TEXT" control={<Radio/>} label="Text"/>
                   <FormControlLabel value="URL" control={<Radio/>} label="URL"/>
+                  </div>
                </RadioGroup>
                                   {(() => {
                     if (category === "URL") {
@@ -611,9 +613,9 @@ function Progress({ signOut, user }) {
                         {
                             errors.newsSubmit && touched.newsSubmit && <p className='error' style={{color: "black"}}> {errors.newsSubmit} </p>
                           }
-                          <Field className="newsSubmit" name="newsSubmit" placeholder="Enter Text Here" />
+                          <Field as='textarea' className="newsSubmitText" name="newsSubmit" placeholder="Enter Text Here" />
                           <Buttondiv>
-                          <button id="submit" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
+                          <button id="submittext" type="submit" disabled={isSubmitting || !(dirty && isValid)} onClick={handleClick}> 
                           Submit
                           </button>
                           </Buttondiv>
@@ -624,15 +626,18 @@ function Progress({ signOut, user }) {
                     }
                     })()}
           </FormContent>
+          <Buttonhide><button id='historydiv' onClick={historyClick} disabled={dbutton || submitting}>History
+                      </button>
+          </Buttonhide>
     </Container>
     {popuptable ? (
     <Popupdiv>
     <Popupinner>
         <CloseButton onClick={popupexitClick}>close</CloseButton>
         <div className="table-wrapper">
-                    <div>{outcome ? (<Resultdiv>
+                    <div>{outcome ? (<Resultdivpop>
           <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
-        : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) : ("")}</div>
+        : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdivpop>) : ("")}</div>
                   <table class="fl-table">
                       <thead>
                       <tr>
@@ -662,20 +667,20 @@ function Progress({ signOut, user }) {
                       </tr>
                       </tbody>
                   </table>
-                    {fdbutton ? (<div style={{backgroundColor: '#33415C', display: 'flex', justifyContent: 'center'}}>
+                    {fdbutton ? (<FeedbackContainer>
                     <p className='paragraph'>Is the prediction correct?</p>
-                    <div id='yesbutton'>
+                    <div className='yesbutton'>
                     <button id="submittable" type="submit" disabled={disable}  onClick={() => {feedbackVariable('YES'); refreshclick(); setfdbutton(false)}}> 
                           Yes
                           </button>
                           </div>
-                    <div id='nobutton'>
+                    <div className='nobutton'>
                           <button id="submittable" type="submit" disabled={disable} onClick={() => {feedbackVariable('NO'); refreshclick(); setfdbutton(false)}}> 
                           No
                           </button>
                           </div>
-                  </div>) : 
-                  (<div style={{backgroundColor: '#33415C', display: 'flex', justifyContent: 'center'}}><h3 className='thankbox'>Thank you for answering our feedback!</h3></div>
+                  </FeedbackContainer>) : 
+                  (<FeedbackContainer><h3 className='thankbox'>Thank you for answering our feedback!</h3></FeedbackContainer>
                   )}
                   <p className='hovertip'>*hover over the algorithms and combination to know about them</p>
               </div>
