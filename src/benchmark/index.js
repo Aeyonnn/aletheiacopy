@@ -393,7 +393,7 @@ function Progress({ signOut, user }) {
                         <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={adminSearch}> 
                         Search User
                         </button>
-                        <CSVLink data={user_hist}>Export to CSV</CSVLink>
+                        <button className='exportcsvbutton'><CSVLink data={user_hist} className='exportcsv'>Export to CSV</CSVLink></button>
                         {
                             errors.adminsearch && touched.adminsearch && <p className='errorsearchuser' style={{color: "black"}}> {errors.adminsearch} </p>
                           }
