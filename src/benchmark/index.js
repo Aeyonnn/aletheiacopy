@@ -3,6 +3,8 @@ import { Container, FormWrap, FormContent, FormLoader, ContentTable,ContentTable
 import Loading from './loading'
 import { Link } from 'react-router-dom'
 import * as yup from 'yup';
+//Importing CSV
+import {CSVLink} from 'react-csv'
 //CSS
 import './table.css'
 import './history.css'
@@ -391,6 +393,7 @@ function Progress({ signOut, user }) {
                         <button id="submit" type="submit" disabled={!(dirty && isValid) || isSubmitting} onClick={adminSearch}> 
                         Search User
                         </button>
+                        <CSVLink data={user_hist}>Export to CSV</CSVLink>
                         {
                             errors.adminsearch && touched.adminsearch && <p className='errorsearchuser' style={{color: "black"}}> {errors.adminsearch} </p>
                           }
