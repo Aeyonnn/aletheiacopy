@@ -606,10 +606,13 @@ function Progress({ signOut, user }) {
                         onSubmit=
                         {async (values, actions) => {
                         await new Promise((r) => setTimeout(r, 1000));
+                        var textsubmit = values.newsSubmit;
+                        textsubmit = textsubmit.replace(/(\r\n|\n|\r)/gm," ").replace(/"/g, '""')
+                        console.log(textsubmit)
                         getNews.queryStringParameters.newslink = values.newsSubmit;
-                        getText(values.newsSubmit)
+                        getText(textsubmit)
 
-                        fetchNewsAlgo(values.newsSubmit);
+                        fetchNewsAlgo(textsubmit);
                         
                         }}>  
                         {({isSubmitting,errors,touched,isValid,dirty}) => (
