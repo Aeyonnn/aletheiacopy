@@ -19,9 +19,11 @@ export const ContainerWholeAdmin = styled.div`
         height: 1080px;
     }
 `
-
+export const TextDiv = styled.div`
+    margin-top: 50px;
+`
 export const Container = styled.div`
-    background: #EDEDED;
+    background: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -154,6 +156,7 @@ export const FormContent = styled.div`
     align-items: center;
     flex-direction: column;
     margin-left: -320px;
+    margin-top: -100px;
     @media screen and (max-width: 430px){
         margin-top: -200px;
         margin-left: -100px;
