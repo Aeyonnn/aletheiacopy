@@ -50,12 +50,12 @@ return (
               </NavItem>
               <NavItem>
                   <NavLinks to="school"
-                  smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  smooth={true} duration={500} spy={true} exact='true' offset={-79}
                   >School</NavLinks>
               </NavItem>
               <NavItem>
                   <NavLinks to="github"
-                  smooth={true} duration={500} spy={true} exact='true' offset={-80}
+                  smooth={true} duration={500} spy={true} exact='true' offset={-79}
                   >Github</NavLinks>
               </NavItem>
           </NavMenu>
