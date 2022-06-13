@@ -8,7 +8,7 @@ body{
   -webkit-font-smoothing: antialiased;
   background: rgba( 71, 147, 227, 1);
 }
-h1{
+.table-wrapper h1, .resultdiv h1{
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -157,6 +157,8 @@ h3{
 .paragraph{
   color: white;
   font-size: 25px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 .yesbutton{
   margin-left: 150px;

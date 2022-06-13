@@ -28,7 +28,7 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    margin-left: -25px;
+    margin-left: 10px;
   }
   .exportcsvbutton:hover {
     transition: all 0.2s ease-in-out;
@@ -71,7 +71,7 @@
   }
   
   .tl-table-admin th {
-    font-size: .75rem;
+    font-size: .72rem;
     letter-spacing: .1em;
     text-transform: uppercase;
   }

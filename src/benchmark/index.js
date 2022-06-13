@@ -643,7 +643,7 @@ function Progress({ signOut, user }) {
     <Popupinner>
         <CloseButton onClick={popupexitClick}>close</CloseButton>
         <div className="table-wrapper">
-                    <div>{outcome ? (<Resultdivpop>
+                    <div className='resultdiv'>{outcome ? (<Resultdivpop>
           <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
         : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdivpop>) : ("")}</div>
                   <table class="fl-table">
@@ -735,7 +735,7 @@ function Progress({ signOut, user }) {
         </table>
         </div>
         ) : (<div>{showtable ? 
-          (<div>{outcome ? (<Resultdiv>
+          (<div className='resultdiv'>{outcome ? (<Resultdiv>
             <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
           : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) 
           : ("")}</div>) 
