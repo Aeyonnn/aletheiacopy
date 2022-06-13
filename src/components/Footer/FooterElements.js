@@ -54,7 +54,7 @@ export const FooterLink = styled.a`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
-
+    margin-left: 8px;
     &:hover {
         color: #0466C8;
         transition: 0.3s ease-out;
@@ -65,7 +65,7 @@ export const FooterLinkL = styled(Link)`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
-
+    margin-left: 8px;
     &:hover {
         color: #0466C8;
         transition: 0.3s ease-out;
@@ -76,7 +76,7 @@ export const FooterEmail = styled.a`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
-
+    margin-left: 8px;
     &:hover {
         color: #0466C8;
         transition: 0.3s ease-out;
