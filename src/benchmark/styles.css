@@ -611,8 +611,7 @@
     }
     #submit{
         width: 80px;
-        font-size: .5rem;
-        margin-left: 40px;
+        font-size: .7rem;
         margin-top: 10px;
     }
     .newsSubmitText{
@@ -626,8 +625,8 @@
     }
     #historydiv{
         width: 80px;
-        font-size: .8rem;
-        margin-left: -85px;
+        font-size: .7rem;
+        margin-left: -70px;
         margin-top: -10px;
     }
 }

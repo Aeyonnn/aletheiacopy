@@ -39,12 +39,14 @@ export const Subtitle = styled.p`
         font-size: 24px;
         margin-top: -40px;
         margin-left: 12px;
+        margin-top: 10px;
     }
 
     @media screen and (max-width: 480px){
         font-size: 18px;
         margin-left: 12px;
         margin-right: 12px;
+        margin-top: 10px;
     }
 `
 export const InfoContainer = styled.div`

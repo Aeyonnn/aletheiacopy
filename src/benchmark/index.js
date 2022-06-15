@@ -556,7 +556,7 @@ function Progress({ signOut, user }) {
     </nav>
     <Container>
             <FormContent>
-              <FormLabel><h3>Test your news here!</h3></FormLabel>
+              <FormLabel><h3 className='placename'>Test your news here!</h3></FormLabel>
               <FormLabel><div className='category'>Select Category</div></FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
                  <div className='radiogroup'>
@@ -644,7 +644,7 @@ function Progress({ signOut, user }) {
         <CloseButton onClick={popupexitClick}>close</CloseButton>
         <div className="table-wrapper">
                     <div className='resultdiv'>{outcome ? (<Resultdivpop>
-          <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+          <h1 className='resulth1'>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
         : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdivpop>) : ("")}</div>
                   <table class="fl-table">
                       <thead>
@@ -736,7 +736,7 @@ function Progress({ signOut, user }) {
         </div>
         ) : (<div>{showtable ? 
           (<div className='resultdiv'>{outcome ? (<Resultdiv>
-            <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+            <h1 className='resulth1'>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
           : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) 
           : ("")}</div>) 
           : ("") }</div>)

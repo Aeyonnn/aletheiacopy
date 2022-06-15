@@ -266,6 +266,13 @@ export const CloseButton = styled.button`
     border-radius: 55px;
     border: 2px solid black;
     cursor: pointer;
+    @media screen and  (max-width: 430px){
+        top:20px;
+        right: 10px;
+        width:50px;
+        height: 30px;
+        font-size: .7rem;
+    }
     @media screen and (max-width: 380px){
         width:50px;
         height: 30px;
@@ -273,10 +280,6 @@ export const CloseButton = styled.button`
         text-align: center;
         padding: 0px;
         top:20px;
-        right:-10px;
-    }
-    @media screen and  (max-width: 430px){
-        top:20px;
-        right:-15px;
+        right: 10px;
     }
 `
