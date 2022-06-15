@@ -303,7 +303,7 @@ function Progress({ signOut, user }) {
     // fetchNewsArt()
     // fetchNewsAlgo()
     setprediction()
-    setTimeout(()=> setdbutton(false), 2000)
+    setTimeout(()=> setdbutton(false), 2500)
   }, [prediction])
 
   if (userid === 1 || userid === 2 || userid === 3 ){
@@ -312,7 +312,7 @@ function Progress({ signOut, user }) {
       <nav className='navbar' toggle={toggle}>
         <Link to='/' className='navbar-logo'> Aletheia </Link>
         <ul className='nav-items'>
-        <li className='nav-item'><a onClick={historyClick}>Show Table</a></li>
+        <li className='nav-item'><button onClick={historyClick} disabled={dbutton}>Show Table</button></li>
         <li className='nav-item'>
         <p>{user.attributes.email}</p>
         </li>
