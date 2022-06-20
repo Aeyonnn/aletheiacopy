@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: '#Truth',
     headline: 'Benchmark',
-    description: 'The goal of this study is to create a system that can establish an optimized NLP algorithm for the researchers dataset in order to offer accurate and precise results. This research also focuses on developing a dataset that will be used to evaluate various NLP algorithms.',
+    description: 'The goal of this study is to detect fake news. The researchers" have built a system where you can put the text or URL of the news.',
     buttonLabel: 'Benchmark',
     imgStart: false,
     img: require('../../images/news.svg').default,

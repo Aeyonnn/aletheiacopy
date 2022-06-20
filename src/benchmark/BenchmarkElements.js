@@ -252,9 +252,11 @@ export const Popupinner = styled.div`
     @media screen and (max-width: 380px){
         width:280px;
         padding-right: 20px;
+        height: 800px;
     }
     @media screen and  (max-width: 430px){
         width: 350px;
+        height: 800px;
     }
 `
 export const CloseButton = styled.button`
