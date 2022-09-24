@@ -6,11 +6,8 @@ import { homeObjOne, homeObjThree, homeObjTwo } from '../components/InfoSection/
 import Github from '../components/Github';
 import Footer from '../components/Footer';
 import Carousel from '../components/carousel';
-import {Adsense} from '@ctrl/react-adsense';
-<Adsense
-  client="ca-pub-7640562161899788"
-  slot="7259870550"
-/>
+
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
 

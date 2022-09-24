@@ -29,11 +29,7 @@ import { ErrorSharp, SingleBed } from '@material-ui/icons';
 import { color } from '@mui/system';
 Amplify.configure(awsconfig);
 Auth.configure(awsconfig);
-import {Adsense} from '@ctrl/react-adsense';
-<Adsense
-  client="ca-pub-7640562161899788"
-  slot="7259870550"
-/>
+
 
 const reviewSchemaText = yup.object({
   newsSubmit:yup.string()
