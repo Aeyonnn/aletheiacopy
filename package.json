@@ -6,6 +6,7 @@
     "@aws-amplify/cli": "^7.6.26",
     "@aws-amplify/ui": "^3.9.1",
     "@aws-amplify/ui-react": "^2.18.3",
+    "@ctrl/react-adsense": "^1.6.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
