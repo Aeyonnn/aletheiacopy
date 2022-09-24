@@ -556,7 +556,7 @@ function Progress({ signOut, user }) {
     </nav>
     <Container>
             <FormContent>
-              <FormLabel><h3>Test your news here!</h3></FormLabel>
+              <FormLabel><h3 className='placename'>Test your news here!</h3></FormLabel>
               <FormLabel><div className='category'>Select Category</div></FormLabel>
                <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)} row>
                  <div className='radiogroup'>
@@ -644,7 +644,7 @@ function Progress({ signOut, user }) {
         <CloseButton onClick={popupexitClick}>close</CloseButton>
         <div className="table-wrapper">
                     <div className='resultdiv'>{outcome ? (<Resultdivpop>
-          <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+          <h1 className='resulth1'>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
         : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdivpop>) : ("")}</div>
                   <table class="fl-table">
                       <thead>
@@ -655,7 +655,7 @@ function Progress({ signOut, user }) {
                       </thead>
                       <tbody>
                       <tr>
-                          <td><div data-tooltip='This is the combination of the three algorithms and is the product of the study. Using Ensemble voting classifier, we combined the three algorithms to provide which of the algorithms will be best suited when working together for the dataset that we built. 'className='tooltip'>Combination</div></td>
+                          <td><div data-tooltip='This is the combination of the three algorithms and is the product of the study. Using Ensemble voting classifier, we combined the three algorithms to provide which of the algorithms will be best suited when working together for the dataset that we built. 'className='tooltip'>Aletheia</div></td>
                           <td><b>{combination}</b></td>
                       </tr>
                       <tr>
@@ -691,6 +691,7 @@ function Progress({ signOut, user }) {
                   (<FeedbackContainer><h3 className='thankbox'>Thank you for answering our feedback!</h3></FeedbackContainer>
                   )}
                   <p className='hovertip'>*hover over the algorithms and combination to know about them</p>
+                  <div>{colorresult ? (<div className='disclaimer'><p>The result is {combination}:</p> <p> This may be true due to possible reasons. The dataset, news article context, and website structure may contribute to this result. </p></div>) : (<div className='disclaimer'><p>The result is {combination}:</p> <p> This may be true due to possible reasons. The dataset, news article context, and website structure may contribute to this result. </p></div>)}</div>
               </div>
     </Popupinner>
 </Popupdiv>
@@ -735,9 +736,9 @@ function Progress({ signOut, user }) {
         </table>
         </div>
         ) : (<div>{showtable ? 
-          (<div className='resultdiv'>{outcome ? (<Resultdiv>
-            <h1>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
-          : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv>) 
+          (<div className='resultdiv'>{outcome ? (<div><Resultdiv>
+            <h1 className='resulth1'>The news is </h1>{colorresult ? (<h1 style={{color: 'green'}}>{combination}</h1>) 
+          : (<h1 style={{color: 'red'}}>{combination}</h1>)}</Resultdiv><div className='newsarticle'><p>Here is the news:</p><p>{news_art}</p></div></div>) 
           : ("")}</div>) 
           : ("") }</div>)
         }

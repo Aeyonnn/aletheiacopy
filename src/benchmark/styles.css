@@ -15,6 +15,13 @@
     color: white;
     font-size: .95rem;
 }
+.newsarticle{
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  width: 1000px;
+}
 .exportcsvbutton{
     font-size: .95rem;
     width: 140px;
@@ -589,6 +596,9 @@
     .hovertip{
         display: none;
     }
+    .newsarticle{
+      width: 600px;
+    }
 }
 @media (max-width: 450px){
     .category{
@@ -611,8 +621,7 @@
     }
     #submit{
         width: 80px;
-        font-size: .5rem;
-        margin-left: 40px;
+        font-size: .7rem;
         margin-top: 10px;
     }
     .newsSubmitText{
@@ -626,8 +635,12 @@
     }
     #historydiv{
         width: 80px;
-        font-size: .8rem;
-        margin-left: -85px;
+        font-size: .7rem;
+        margin-left: -70px;
         margin-top: -10px;
+    }
+    .newsarticle{
+      width: 200px;
+      font-size: .8rem;
     }
 }

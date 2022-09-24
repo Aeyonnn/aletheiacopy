@@ -39,12 +39,14 @@ export const Subtitle = styled.p`
         font-size: 24px;
         margin-top: -40px;
         margin-left: 12px;
+        margin-top: 10px;
     }
 
     @media screen and (max-width: 480px){
         font-size: 18px;
         margin-left: 12px;
         margin-right: 12px;
+        margin-top: 10px;
     }
 `
 export const InfoContainer = styled.div`
@@ -105,15 +107,15 @@ export const CardContents = styled.div`
 
 //Data for the text
 export const CarouselOne = {
-  paragraph: "The Algorithms chosen for this study are from previous studies that focuses on fake news detection. These are Adaboost, Decision Tree, KNN, Logistic Regression, Naïve Bayes, Neural Network(MLP), Random Forest, Support Machine Vector. These Algorithms were tested with different datasets to get the parameters they needed for the combination test.",
+  paragraph: "A procedure for solving a problem or performing a computation is referred to as an algorithm. Algorithms are a precise set of instructions that perform specified actions in either hardware or software-based routines. Algorithms are also used as data processing specifications and play an important role in automated systems.These are Adaboost, Decision Tree, KNN, Logistic Regression, Naïve Bayes, Neural Network(MLP), Random Forest, Support Machine Vector.",
   title: "Algorithm"
 }
 
 export const CarouselTwo = {
-  paragraph: "The Dataset used to train the model for this project was built using web scrappers. The data are from both local and international news sources and also inlcudes Filipino Language news. Labels for each news were given by the researches. ",
+  paragraph: "A data set is an ordered grouping of data. Data, as we know, is a collection of information obtained through observations, measurements, study, or analysis. It could contain facts, numbers, figures, names, or even basic descriptions of objects..The Dataset used to train the model for this project was built using web scrappers.",
   title: "Dataset"
 }
 export const CarouselThree = {
   paragraph: "Using the Ensamble Voting Classifier, the researchers of this project tested all possible combination from the first 9 algorithms. These test was conducted in 5 different datasets to show the uniqueness of each combination. The list of combination results was ran through Correlational Analaysis to determine the most unique combination for each test and get the top performing combination.",
-  title: "Combination"
+  title: "Aletheia"
 }

@@ -19,6 +19,7 @@ export const FooterLinksContainer = styled.div`
 
     @media screen and (max-width: 820px){
         padding: 32px;
+        padding-right: 0px;
     }
 `
 export const FooterLinksWrapper = styled.div`
